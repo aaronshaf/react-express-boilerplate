@@ -3,7 +3,7 @@ var webpack = require('webpack')
 module.exports = {
   entry: {
     'public/main': [
-//      'babel/polyfill',
+      'babel/polyfill',
       './client/main.js'
     ]
   },
@@ -15,7 +15,6 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loaders: [ 'babel?stage=1' ] }
     ]
   },
-/*
   plugins: [
     new webpack.DefinePlugin({
       "process.env": Object.keys(process.env).reduce(function(o, k) {
@@ -29,19 +28,8 @@ module.exports = {
     compress: true,
     // until cssnext handles loaders properly: https://github.com/cssnext/cssnext-loader/issues/4
     url: {
-      // note: doesn't handle absolute urls
-      maxSize: 10, // kb
+      maxSize: 10,
       url: 'inline'
     }
   },
-  formatMessage: {
-    translations: require('./locales/en'),
-    missingTranslation: 'ignore',
-    locale: 'en'
-  },
-  devServer: {
-    contentBase: 'dist/',
-    host: 'localhost',
-    inline: true
-  }*/
 }

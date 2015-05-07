@@ -44,18 +44,26 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
+	__webpack_require__(1);
+	module.exports = __webpack_require__(2);
 
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(4);
+
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _react = __webpack_require__(2);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -75,17 +83,24 @@
 	_react2['default'].render(_react2['default'].createElement(HelloMessage, { name: 'World' }), document.getElementById('application'));
 
 /***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(3);
-
-
-/***/ },
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	module.exports = __webpack_require__(5);
+
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(6);
+
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -100,27 +115,27 @@
 
 	'use strict';
 
-	var EventPluginUtils = __webpack_require__(4);
-	var ReactChildren = __webpack_require__(5);
-	var ReactComponent = __webpack_require__(6);
-	var ReactClass = __webpack_require__(7);
-	var ReactContext = __webpack_require__(8);
-	var ReactCurrentOwner = __webpack_require__(9);
-	var ReactElement = __webpack_require__(10);
-	var ReactElementValidator = __webpack_require__(11);
-	var ReactDOM = __webpack_require__(12);
-	var ReactDOMTextComponent = __webpack_require__(13);
-	var ReactDefaultInjection = __webpack_require__(14);
-	var ReactInstanceHandles = __webpack_require__(15);
-	var ReactMount = __webpack_require__(16);
-	var ReactPerf = __webpack_require__(17);
-	var ReactPropTypes = __webpack_require__(18);
-	var ReactReconciler = __webpack_require__(19);
-	var ReactServerRendering = __webpack_require__(20);
+	var EventPluginUtils = __webpack_require__(7);
+	var ReactChildren = __webpack_require__(8);
+	var ReactComponent = __webpack_require__(9);
+	var ReactClass = __webpack_require__(10);
+	var ReactContext = __webpack_require__(11);
+	var ReactCurrentOwner = __webpack_require__(12);
+	var ReactElement = __webpack_require__(13);
+	var ReactElementValidator = __webpack_require__(14);
+	var ReactDOM = __webpack_require__(15);
+	var ReactDOMTextComponent = __webpack_require__(16);
+	var ReactDefaultInjection = __webpack_require__(17);
+	var ReactInstanceHandles = __webpack_require__(18);
+	var ReactMount = __webpack_require__(19);
+	var ReactPerf = __webpack_require__(20);
+	var ReactPropTypes = __webpack_require__(21);
+	var ReactReconciler = __webpack_require__(22);
+	var ReactServerRendering = __webpack_require__(23);
 
-	var assign = __webpack_require__(21);
-	var findDOMNode = __webpack_require__(22);
-	var onlyChild = __webpack_require__(23);
+	var assign = __webpack_require__(24);
+	var findDOMNode = __webpack_require__(25);
+	var onlyChild = __webpack_require__(26);
 
 	ReactDefaultInjection.inject();
 
@@ -128,7 +143,7 @@
 	var createFactory = ReactElement.createFactory;
 	var cloneElement = ReactElement.cloneElement;
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  createElement = ReactElementValidator.createElement;
 	  createFactory = ReactElementValidator.createFactory;
 	  cloneElement = ReactElementValidator.cloneElement;
@@ -185,8 +200,8 @@
 	  });
 	}
 
-	if ("production" !== process.env.NODE_ENV) {
-	  var ExecutionEnvironment = __webpack_require__(24);
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	  var ExecutionEnvironment = __webpack_require__(27);
 	  if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
 
 	    // If we're in Chrome, look for the devtools marker and provide a download
@@ -234,13 +249,28 @@
 
 	module.exports = React;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 4 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+
+	__webpack_require__(92);
+
+	__webpack_require__(93);
+
+	if (global._babelPolyfill) {
+	  throw new Error("only one instance of babel/polyfill is allowed");
+	}
+	global._babelPolyfill = true;
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -253,9 +283,9 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
+	var EventConstants = __webpack_require__(28);
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Injected dependencies:
@@ -269,8 +299,8 @@
 	  Mount: null,
 	  injectMount: function(InjectedMount) {
 	    injection.Mount = InjectedMount;
-	    if ("production" !== process.env.NODE_ENV) {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        InjectedMount && InjectedMount.getNode,
 	        'EventPluginUtils.injection.injectMount(...): Injected Mount module ' +
 	        'is missing getNode.'
@@ -298,7 +328,7 @@
 
 
 	var validateEventDispatches;
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  validateEventDispatches = function(event) {
 	    var dispatchListeners = event._dispatchListeners;
 	    var dispatchIDs = event._dispatchIDs;
@@ -310,7 +340,7 @@
 	      dispatchListeners.length :
 	      dispatchListeners ? 1 : 0;
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      idsIsArr === listenersIsArr && IDsLen === listenersLen,
 	      'EventPluginUtils: Invalid `event`.'
 	    ) : invariant(idsIsArr === listenersIsArr && IDsLen === listenersLen));
@@ -325,7 +355,7 @@
 	function forEachEventDispatch(event, cb) {
 	  var dispatchListeners = event._dispatchListeners;
 	  var dispatchIDs = event._dispatchIDs;
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    validateEventDispatches(event);
 	  }
 	  if (Array.isArray(dispatchListeners)) {
@@ -373,7 +403,7 @@
 	function executeDispatchesInOrderStopAtTrueImpl(event) {
 	  var dispatchListeners = event._dispatchListeners;
 	  var dispatchIDs = event._dispatchIDs;
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    validateEventDispatches(event);
 	  }
 	  if (Array.isArray(dispatchListeners)) {
@@ -414,12 +444,12 @@
 	 * @return The return value of executing the single dispatch.
 	 */
 	function executeDirectDispatch(event) {
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    validateEventDispatches(event);
 	  }
 	  var dispatchListener = event._dispatchListeners;
 	  var dispatchID = event._dispatchIDs;
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    !Array.isArray(dispatchListener),
 	    'executeDirectDispatch(...): Invalid `event`.'
 	  ) : invariant(!Array.isArray(dispatchListener)));
@@ -458,13 +488,12 @@
 
 	module.exports = EventPluginUtils;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 5 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -477,11 +506,11 @@
 
 	'use strict';
 
-	var PooledClass = __webpack_require__(28);
-	var ReactFragment = __webpack_require__(29);
+	var PooledClass = __webpack_require__(30);
+	var ReactFragment = __webpack_require__(31);
 
-	var traverseAllChildren = __webpack_require__(30);
-	var warning = __webpack_require__(31);
+	var traverseAllChildren = __webpack_require__(32);
+	var warning = __webpack_require__(33);
 
 	var twoArgumentPooler = PooledClass.twoArgumentPooler;
 	var threeArgumentPooler = PooledClass.threeArgumentPooler;
@@ -548,8 +577,8 @@
 	  var mapResult = mapBookKeeping.mapResult;
 
 	  var keyUnique = !mapResult.hasOwnProperty(name);
-	  if ("production" !== process.env.NODE_ENV) {
-	    ("production" !== process.env.NODE_ENV ? warning(
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      keyUnique,
 	      'ReactChildren.map(...): Encountered two children with the same key, ' +
 	      '`%s`. Child keys must be unique; when two children share a key, only ' +
@@ -614,13 +643,12 @@
 
 	module.exports = ReactChildren;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 6 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -633,10 +661,10 @@
 
 	'use strict';
 
-	var ReactUpdateQueue = __webpack_require__(32);
+	var ReactUpdateQueue = __webpack_require__(34);
 
-	var invariant = __webpack_require__(27);
-	var warning = __webpack_require__(31);
+	var invariant = __webpack_require__(29);
+	var warning = __webpack_require__(33);
 
 	/**
 	 * Base class helpers for the updating state of a component.
@@ -672,7 +700,7 @@
 	 * @protected
 	 */
 	ReactComponent.prototype.setState = function(partialState, callback) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    typeof partialState === 'object' ||
 	    typeof partialState === 'function' ||
 	    partialState == null,
@@ -681,8 +709,8 @@
 	  ) : invariant(typeof partialState === 'object' ||
 	  typeof partialState === 'function' ||
 	  partialState == null));
-	  if ("production" !== process.env.NODE_ENV) {
-	    ("production" !== process.env.NODE_ENV ? warning(
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      partialState != null,
 	      'setState(...): You passed an undefined or null state object; ' +
 	      'instead, use forceUpdate().'
@@ -720,7 +748,7 @@
 	 * we would like to deprecate them, we're not going to move them over to this
 	 * modern base class. Instead, we define a getter that warns if it's accessed.
 	 */
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  var deprecatedAPIs = {
 	    getDOMNode: 'getDOMNode',
 	    isMounted: 'isMounted',
@@ -732,7 +760,7 @@
 	    try {
 	      Object.defineProperty(ReactComponent.prototype, methodName, {
 	        get: function() {
-	          ("production" !== process.env.NODE_ENV ? warning(
+	          ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	            false,
 	            '%s(...) is deprecated in plain JavaScript React classes.',
 	            displayName
@@ -753,13 +781,12 @@
 
 	module.exports = ReactComponent;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 7 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -772,21 +799,21 @@
 
 	'use strict';
 
-	var ReactComponent = __webpack_require__(6);
-	var ReactCurrentOwner = __webpack_require__(9);
-	var ReactElement = __webpack_require__(10);
-	var ReactErrorUtils = __webpack_require__(33);
-	var ReactInstanceMap = __webpack_require__(34);
-	var ReactLifeCycle = __webpack_require__(35);
-	var ReactPropTypeLocations = __webpack_require__(36);
-	var ReactPropTypeLocationNames = __webpack_require__(37);
-	var ReactUpdateQueue = __webpack_require__(32);
+	var ReactComponent = __webpack_require__(9);
+	var ReactCurrentOwner = __webpack_require__(12);
+	var ReactElement = __webpack_require__(13);
+	var ReactErrorUtils = __webpack_require__(35);
+	var ReactInstanceMap = __webpack_require__(36);
+	var ReactLifeCycle = __webpack_require__(37);
+	var ReactPropTypeLocations = __webpack_require__(38);
+	var ReactPropTypeLocationNames = __webpack_require__(39);
+	var ReactUpdateQueue = __webpack_require__(34);
 
-	var assign = __webpack_require__(21);
-	var invariant = __webpack_require__(27);
-	var keyMirror = __webpack_require__(38);
-	var keyOf = __webpack_require__(39);
-	var warning = __webpack_require__(31);
+	var assign = __webpack_require__(24);
+	var invariant = __webpack_require__(29);
+	var keyMirror = __webpack_require__(40);
+	var keyOf = __webpack_require__(41);
+	var warning = __webpack_require__(33);
 
 	var MIXINS_KEY = keyOf({mixins: null});
 
@@ -1088,7 +1115,7 @@
 	    }
 	  },
 	  childContextTypes: function(Constructor, childContextTypes) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      validateTypeDef(
 	        Constructor,
 	        childContextTypes,
@@ -1102,7 +1129,7 @@
 	    );
 	  },
 	  contextTypes: function(Constructor, contextTypes) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      validateTypeDef(
 	        Constructor,
 	        contextTypes,
@@ -1130,7 +1157,7 @@
 	    }
 	  },
 	  propTypes: function(Constructor, propTypes) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      validateTypeDef(
 	        Constructor,
 	        propTypes,
@@ -1153,7 +1180,7 @@
 	    if (typeDef.hasOwnProperty(propName)) {
 	      // use a warning instead of an invariant so components
 	      // don't show up in prod but not in __DEV__
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        typeof typeDef[propName] === 'function',
 	        '%s: %s type `%s` is invalid; it must be a function, usually from ' +
 	        'React.PropTypes.',
@@ -1172,7 +1199,7 @@
 
 	  // Disallow overriding of base class methods unless explicitly allowed.
 	  if (ReactClassMixin.hasOwnProperty(name)) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      specPolicy === SpecPolicy.OVERRIDE_BASE,
 	      'ReactClassInterface: You are attempting to override ' +
 	      '`%s` from your class specification. Ensure that your method names ' +
@@ -1183,7 +1210,7 @@
 
 	  // Disallow defining methods more than once unless explicitly allowed.
 	  if (proto.hasOwnProperty(name)) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      specPolicy === SpecPolicy.DEFINE_MANY ||
 	      specPolicy === SpecPolicy.DEFINE_MANY_MERGED,
 	      'ReactClassInterface: You are attempting to define ' +
@@ -1204,12 +1231,12 @@
 	    return;
 	  }
 
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    typeof spec !== 'function',
 	    'ReactClass: You\'re attempting to ' +
 	    'use a component class as a mixin. Instead, just use a regular object.'
 	  ) : invariant(typeof spec !== 'function'));
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    !ReactElement.isValidElement(spec),
 	    'ReactClass: You\'re attempting to ' +
 	    'use a component as a mixin. Instead, just use a regular object.'
@@ -1266,7 +1293,7 @@
 	          var specPolicy = ReactClassInterface[name];
 
 	          // These cases should already be caught by validateMethodOverride
-	          ("production" !== process.env.NODE_ENV ? invariant(
+	          ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	            isReactClassMethod && (
 	              (specPolicy === SpecPolicy.DEFINE_MANY_MERGED || specPolicy === SpecPolicy.DEFINE_MANY)
 	            ),
@@ -1287,7 +1314,7 @@
 	          }
 	        } else {
 	          proto[name] = property;
-	          if ("production" !== process.env.NODE_ENV) {
+	          if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	            // Add verbose displayName to the function, which helps when looking
 	            // at profiling tools.
 	            if (typeof property === 'function' && spec.displayName) {
@@ -1311,7 +1338,7 @@
 	    }
 
 	    var isReserved = name in RESERVED_SPEC_KEYS;
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      !isReserved,
 	      'ReactClass: You are attempting to define a reserved ' +
 	      'property, `%s`, that shouldn\'t be on the "statics" key. Define it ' +
@@ -1321,7 +1348,7 @@
 	    ) : invariant(!isReserved));
 
 	    var isInherited = name in Constructor;
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      !isInherited,
 	      'ReactClass: You are attempting to define ' +
 	      '`%s` on your component more than once. This conflict may be ' +
@@ -1340,14 +1367,14 @@
 	 * @return {object} one after it has been mutated to contain everything in two.
 	 */
 	function mergeIntoWithNoDuplicateKeys(one, two) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    one && two && typeof one === 'object' && typeof two === 'object',
 	    'mergeIntoWithNoDuplicateKeys(): Cannot merge non-objects.'
 	  ) : invariant(one && two && typeof one === 'object' && typeof two === 'object'));
 
 	  for (var key in two) {
 	    if (two.hasOwnProperty(key)) {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        one[key] === undefined,
 	        'mergeIntoWithNoDuplicateKeys(): ' +
 	        'Tried to merge two objects with the same key: `%s`. This conflict ' +
@@ -1410,7 +1437,7 @@
 	 */
 	function bindAutoBindMethod(component, method) {
 	  var boundMethod = method.bind(component);
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    boundMethod.__reactBoundContext = component;
 	    boundMethod.__reactBoundMethod = method;
 	    boundMethod.__reactBoundArguments = null;
@@ -1422,14 +1449,14 @@
 	      // ignore the value of "this" that the user is trying to use, so
 	      // let's warn.
 	      if (newThis !== component && newThis !== null) {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          false,
 	          'bind(): React component methods may only be bound to the ' +
 	          'component instance. See %s',
 	          componentName
 	        ) : null);
 	      } else if (!args.length) {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          false,
 	          'bind(): You are binding a component method to the component. ' +
 	          'React does this for you automatically in a high-performance ' +
@@ -1473,7 +1500,7 @@
 	  enumerable: false,
 	  get: function() {
 	    var displayName = this.displayName || this.name || 'Component';
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      false,
 	      '%s.type is deprecated. Use %s directly to access the class.',
 	      displayName,
@@ -1510,10 +1537,10 @@
 	   * @final
 	   */
 	  isMounted: function() {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      var owner = ReactCurrentOwner.current;
 	      if (owner !== null) {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          owner._warnedAboutRefsInRender,
 	          '%s is accessing isMounted inside its render() function. ' +
 	          'render() should be a pure function of props and state. It should ' +
@@ -1591,8 +1618,8 @@
 	      // This constructor is overridden by mocks. The argument is used
 	      // by mocks to assert on what gets mounted.
 
-	      if ("production" !== process.env.NODE_ENV) {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          this instanceof Constructor,
 	          'Something is calling a React component directly. Use a factory or ' +
 	          'JSX instead. See: http://fb.me/react-legacyfactory'
@@ -1612,7 +1639,7 @@
 	      // getInitialState and componentWillMount methods for initialization.
 
 	      var initialState = this.getInitialState ? this.getInitialState() : null;
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        // We allow auto-mocks to proceed as if they're returning null.
 	        if (typeof initialState === 'undefined' &&
 	            this.getInitialState._isMockFunction) {
@@ -1621,7 +1648,7 @@
 	          initialState = null;
 	        }
 	      }
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        typeof initialState === 'object' && !Array.isArray(initialState),
 	        '%s.getInitialState(): must return an object or null',
 	        Constructor.displayName || 'ReactCompositeComponent'
@@ -1643,7 +1670,7 @@
 	      Constructor.defaultProps = Constructor.getDefaultProps();
 	    }
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      // This is a tag to indicate that the use of these method names is ok,
 	      // since it's used with createClass. If it's not, then it's likely a
 	      // mistake so we'll warn you to use the static property, property
@@ -1656,13 +1683,13 @@
 	      }
 	    }
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      Constructor.prototype.render,
 	      'createClass(...): Class specification must implement a `render` method.'
 	    ) : invariant(Constructor.prototype.render));
 
-	    if ("production" !== process.env.NODE_ENV) {
-	      ("production" !== process.env.NODE_ENV ? warning(
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        !Constructor.prototype.componentShouldUpdate,
 	        '%s has a method called ' +
 	        'componentShouldUpdate(). Did you mean shouldComponentUpdate()? ' +
@@ -1681,7 +1708,7 @@
 
 	    // Legacy hook
 	    Constructor.type = Constructor;
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      try {
 	        Object.defineProperty(Constructor, 'type', typeDeprecationDescriptor);
 	      } catch (x) {
@@ -1702,13 +1729,12 @@
 
 	module.exports = ReactClass;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 8 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -1721,9 +1747,9 @@
 
 	'use strict';
 
-	var assign = __webpack_require__(21);
-	var emptyObject = __webpack_require__(40);
-	var warning = __webpack_require__(31);
+	var assign = __webpack_require__(24);
+	var emptyObject = __webpack_require__(42);
+	var warning = __webpack_require__(33);
 
 	var didWarn = false;
 
@@ -1758,8 +1784,8 @@
 	   * @return {ReactComponent|array<ReactComponent>}
 	   */
 	  withContext: function(newContext, scopedCallback) {
-	    if ("production" !== process.env.NODE_ENV) {
-	      ("production" !== process.env.NODE_ENV ? warning(
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        didWarn,
 	        'withContext is deprecated and will be removed in a future version. ' +
 	        'Use a wrapper component with getChildContext instead.'
@@ -1783,10 +1809,9 @@
 
 	module.exports = ReactContext;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 9 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -1824,10 +1849,10 @@
 
 
 /***/ },
-/* 10 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -1840,11 +1865,11 @@
 
 	'use strict';
 
-	var ReactContext = __webpack_require__(8);
-	var ReactCurrentOwner = __webpack_require__(9);
+	var ReactContext = __webpack_require__(11);
+	var ReactCurrentOwner = __webpack_require__(12);
 
-	var assign = __webpack_require__(21);
-	var warning = __webpack_require__(31);
+	var assign = __webpack_require__(24);
+	var warning = __webpack_require__(33);
 
 	var RESERVED_PROPS = {
 	  key: true,
@@ -1872,7 +1897,7 @@
 	    },
 
 	    set: function(value) {
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        false,
 	        'Don\'t set the %s property of the React element. Instead, ' +
 	        'specify the correct value when initially creating the element.',
@@ -1932,7 +1957,7 @@
 	  // through the owner.
 	  this._context = context;
 
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    // The validation flag and props are currently mutative. We put them on
 	    // an external backing store so that we can freeze the whole object.
 	    // This can be replaced with a WeakMap once they are implemented in
@@ -1971,7 +1996,7 @@
 	  _isReactElement: true
 	};
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  defineMutationMembrane(ReactElement.prototype);
 	}
 
@@ -2050,7 +2075,7 @@
 	    newProps
 	  );
 
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    // If the key on the original is valid, then the clone is valid
 	    newElement._store.validated = oldElement._store.validated;
 	  }
@@ -2132,13 +2157,12 @@
 
 	module.exports = ReactElement;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 11 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -2158,16 +2182,16 @@
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(10);
-	var ReactFragment = __webpack_require__(29);
-	var ReactPropTypeLocations = __webpack_require__(36);
-	var ReactPropTypeLocationNames = __webpack_require__(37);
-	var ReactCurrentOwner = __webpack_require__(9);
-	var ReactNativeComponent = __webpack_require__(41);
+	var ReactElement = __webpack_require__(13);
+	var ReactFragment = __webpack_require__(31);
+	var ReactPropTypeLocations = __webpack_require__(38);
+	var ReactPropTypeLocationNames = __webpack_require__(39);
+	var ReactCurrentOwner = __webpack_require__(12);
+	var ReactNativeComponent = __webpack_require__(43);
 
-	var getIteratorFn = __webpack_require__(42);
-	var invariant = __webpack_require__(27);
-	var warning = __webpack_require__(31);
+	var getIteratorFn = __webpack_require__(44);
+	var invariant = __webpack_require__(29);
+	var warning = __webpack_require__(33);
 
 	function getDeclarationErrorAddendum() {
 	  if (ReactCurrentOwner.current) {
@@ -2304,7 +2328,7 @@
 	    childOwnerAddendum = (" It was passed a child from " + childOwnerName + ".");
 	  }
 
-	  ("production" !== process.env.NODE_ENV ? warning(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	    false,
 	    message + '%s%s See http://fb.me/react-warning-keys for more information.',
 	    parentOrOwnerAddendum,
@@ -2375,7 +2399,7 @@
 	      try {
 	        // This is intentionally an invariant that gets caught. It's the same
 	        // behavior as without this statement except with a better message.
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          typeof propTypes[propName] === 'function',
 	          '%s: %s type `%s` is invalid; it must be a function, usually from ' +
 	          'React.PropTypes.',
@@ -2393,7 +2417,7 @@
 	        loggedTypeFailures[error.message] = true;
 
 	        var addendum = getDeclarationErrorAddendum(this);
-	        ("production" !== process.env.NODE_ENV ? warning(false, 'Failed propType: %s%s', error.message, addendum) : null);
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(false, 'Failed propType: %s%s', error.message, addendum) : null);
 	      }
 	    }
 	  }
@@ -2428,7 +2452,7 @@
 	    ownerInfo = ' The element was created by ' + ownerName + '.';
 	  }
 
-	  ("production" !== process.env.NODE_ENV ? warning(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	    false,
 	    'Don\'t set .props.%s of the React component%s. Instead, specify the ' +
 	    'correct value when initially creating the element or use ' +
@@ -2511,7 +2535,7 @@
 	    );
 	  }
 	  if (typeof componentClass.getDefaultProps === 'function') {
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      componentClass.getDefaultProps.isReactClassApproved,
 	      'getDefaultProps is only used on classic React.createClass ' +
 	      'definitions. Use a static property named `defaultProps` instead.'
@@ -2526,7 +2550,7 @@
 	  createElement: function(type, props, children) {
 	    // We warn in this case but don't throw. We expect the element creation to
 	    // succeed and there will likely be errors in render.
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      type != null,
 	      'React.createElement: type should not be null or undefined. It should ' +
 	        'be a string (for DOM elements) or a ReactClass (for composite ' +
@@ -2558,7 +2582,7 @@
 	    // Legacy hook TODO: Warn if this is accessed
 	    validatedFactory.type = type;
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      try {
 	        Object.defineProperty(
 	          validatedFactory,
@@ -2566,7 +2590,7 @@
 	          {
 	            enumerable: false,
 	            get: function() {
-	              ("production" !== process.env.NODE_ENV ? warning(
+	              ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	                false,
 	                'Factory.type is deprecated. Access the class directly ' +
 	                'before passing it to createFactory.'
@@ -2600,13 +2624,12 @@
 
 	module.exports = ReactElementValidator;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 12 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -2620,10 +2643,10 @@
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(10);
-	var ReactElementValidator = __webpack_require__(11);
+	var ReactElement = __webpack_require__(13);
+	var ReactElementValidator = __webpack_require__(14);
 
-	var mapObject = __webpack_require__(43);
+	var mapObject = __webpack_require__(45);
 
 	/**
 	 * Create a factory that creates HTML tag elements.
@@ -2632,7 +2655,7 @@
 	 * @private
 	 */
 	function createDOMFactory(tag) {
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    return ReactElementValidator.createFactory(tag);
 	  }
 	  return ReactElement.createFactory(tag);
@@ -2781,10 +2804,9 @@
 
 	module.exports = ReactDOM;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 13 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -2801,13 +2823,13 @@
 
 	'use strict';
 
-	var DOMPropertyOperations = __webpack_require__(44);
+	var DOMPropertyOperations = __webpack_require__(46);
 	var ReactComponentBrowserEnvironment =
-	  __webpack_require__(45);
-	var ReactDOMComponent = __webpack_require__(46);
+	  __webpack_require__(47);
+	var ReactDOMComponent = __webpack_require__(48);
 
-	var assign = __webpack_require__(21);
-	var escapeTextContentForBrowser = __webpack_require__(47);
+	var assign = __webpack_require__(24);
+	var escapeTextContentForBrowser = __webpack_require__(49);
 
 	/**
 	 * Text nodes violate a couple assumptions that React makes about components:
@@ -2905,10 +2927,10 @@
 
 
 /***/ },
-/* 14 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -2921,42 +2943,42 @@
 
 	'use strict';
 
-	var BeforeInputEventPlugin = __webpack_require__(48);
-	var ChangeEventPlugin = __webpack_require__(49);
-	var ClientReactRootIndex = __webpack_require__(50);
-	var DefaultEventPluginOrder = __webpack_require__(51);
-	var EnterLeaveEventPlugin = __webpack_require__(52);
-	var ExecutionEnvironment = __webpack_require__(24);
-	var HTMLDOMPropertyConfig = __webpack_require__(53);
-	var MobileSafariClickEventPlugin = __webpack_require__(54);
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
+	var BeforeInputEventPlugin = __webpack_require__(50);
+	var ChangeEventPlugin = __webpack_require__(51);
+	var ClientReactRootIndex = __webpack_require__(52);
+	var DefaultEventPluginOrder = __webpack_require__(53);
+	var EnterLeaveEventPlugin = __webpack_require__(54);
+	var ExecutionEnvironment = __webpack_require__(27);
+	var HTMLDOMPropertyConfig = __webpack_require__(55);
+	var MobileSafariClickEventPlugin = __webpack_require__(56);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
 	var ReactComponentBrowserEnvironment =
-	  __webpack_require__(45);
-	var ReactDefaultBatchingStrategy = __webpack_require__(56);
-	var ReactDOMComponent = __webpack_require__(46);
-	var ReactDOMButton = __webpack_require__(57);
-	var ReactDOMForm = __webpack_require__(58);
-	var ReactDOMImg = __webpack_require__(59);
-	var ReactDOMIDOperations = __webpack_require__(60);
-	var ReactDOMIframe = __webpack_require__(61);
-	var ReactDOMInput = __webpack_require__(62);
-	var ReactDOMOption = __webpack_require__(63);
-	var ReactDOMSelect = __webpack_require__(64);
-	var ReactDOMTextarea = __webpack_require__(65);
-	var ReactDOMTextComponent = __webpack_require__(13);
-	var ReactElement = __webpack_require__(10);
-	var ReactEventListener = __webpack_require__(66);
-	var ReactInjection = __webpack_require__(67);
-	var ReactInstanceHandles = __webpack_require__(15);
-	var ReactMount = __webpack_require__(16);
-	var ReactReconcileTransaction = __webpack_require__(68);
-	var SelectEventPlugin = __webpack_require__(69);
-	var ServerReactRootIndex = __webpack_require__(70);
-	var SimpleEventPlugin = __webpack_require__(71);
-	var SVGDOMPropertyConfig = __webpack_require__(72);
+	  __webpack_require__(47);
+	var ReactDefaultBatchingStrategy = __webpack_require__(58);
+	var ReactDOMComponent = __webpack_require__(48);
+	var ReactDOMButton = __webpack_require__(59);
+	var ReactDOMForm = __webpack_require__(60);
+	var ReactDOMImg = __webpack_require__(61);
+	var ReactDOMIDOperations = __webpack_require__(62);
+	var ReactDOMIframe = __webpack_require__(63);
+	var ReactDOMInput = __webpack_require__(64);
+	var ReactDOMOption = __webpack_require__(65);
+	var ReactDOMSelect = __webpack_require__(66);
+	var ReactDOMTextarea = __webpack_require__(67);
+	var ReactDOMTextComponent = __webpack_require__(16);
+	var ReactElement = __webpack_require__(13);
+	var ReactEventListener = __webpack_require__(68);
+	var ReactInjection = __webpack_require__(69);
+	var ReactInstanceHandles = __webpack_require__(18);
+	var ReactMount = __webpack_require__(19);
+	var ReactReconcileTransaction = __webpack_require__(70);
+	var SelectEventPlugin = __webpack_require__(71);
+	var ServerReactRootIndex = __webpack_require__(72);
+	var SimpleEventPlugin = __webpack_require__(73);
+	var SVGDOMPropertyConfig = __webpack_require__(74);
 
-	var createFullPageComponent = __webpack_require__(73);
+	var createFullPageComponent = __webpack_require__(75);
 
 	function autoGenerateWrapperClass(type) {
 	  return ReactClass.createClass({
@@ -3051,10 +3073,10 @@
 	  ReactInjection.Component.injectEnvironment(ReactComponentBrowserEnvironment);
 	  ReactInjection.DOMComponent.injectIDOperations(ReactDOMIDOperations);
 
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    var url = (ExecutionEnvironment.canUseDOM && window.location.href) || '';
 	    if ((/[?&]react_perf\b/).test(url)) {
-	      var ReactDefaultPerf = __webpack_require__(74);
+	      var ReactDefaultPerf = __webpack_require__(76);
 	      ReactDefaultPerf.start();
 	    }
 	  }
@@ -3064,13 +3086,12 @@
 	  inject: inject
 	};
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 15 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -3084,9 +3105,9 @@
 
 	'use strict';
 
-	var ReactRootIndex = __webpack_require__(75);
+	var ReactRootIndex = __webpack_require__(77);
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	var SEPARATOR = '.';
 	var SEPARATOR_LENGTH = SEPARATOR.length;
@@ -3168,13 +3189,13 @@
 	 * @private
 	 */
 	function getNextDescendantID(ancestorID, destinationID) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    isValidID(ancestorID) && isValidID(destinationID),
 	    'getNextDescendantID(%s, %s): Received an invalid React DOM ID.',
 	    ancestorID,
 	    destinationID
 	  ) : invariant(isValidID(ancestorID) && isValidID(destinationID)));
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    isAncestorIDOf(ancestorID, destinationID),
 	    'getNextDescendantID(...): React has made an invalid assumption about ' +
 	    'the DOM hierarchy. Expected `%s` to be an ancestor of `%s`.',
@@ -3222,7 +3243,7 @@
 	    }
 	  }
 	  var longestCommonID = oneID.substr(0, lastCommonMarkerIndex);
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    isValidID(longestCommonID),
 	    'getFirstCommonAncestorID(%s, %s): Expected a valid React DOM ID: %s',
 	    oneID,
@@ -3247,13 +3268,13 @@
 	function traverseParentPath(start, stop, cb, arg, skipFirst, skipLast) {
 	  start = start || '';
 	  stop = stop || '';
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    start !== stop,
 	    'traverseParentPath(...): Cannot traverse from and to the same ID, `%s`.',
 	    start
 	  ) : invariant(start !== stop));
 	  var traverseUp = isAncestorIDOf(stop, start);
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    traverseUp || isAncestorIDOf(start, stop),
 	    'traverseParentPath(%s, %s, ...): Cannot traverse from two IDs that do ' +
 	    'not have a parent path.',
@@ -3272,7 +3293,7 @@
 	      // Only break //after// visiting `stop`.
 	      break;
 	    }
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      depth++ < MAX_TREE_DEPTH,
 	      'traverseParentPath(%s, %s, ...): Detected an infinite loop while ' +
 	      'traversing the React DOM ID tree. This may be due to malformed IDs: %s',
@@ -3403,13 +3424,12 @@
 
 	module.exports = ReactInstanceHandles;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 16 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -3422,28 +3442,28 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(76);
-	var ReactBrowserEventEmitter = __webpack_require__(77);
-	var ReactCurrentOwner = __webpack_require__(9);
-	var ReactElement = __webpack_require__(10);
-	var ReactElementValidator = __webpack_require__(11);
-	var ReactEmptyComponent = __webpack_require__(78);
-	var ReactInstanceHandles = __webpack_require__(15);
-	var ReactInstanceMap = __webpack_require__(34);
-	var ReactMarkupChecksum = __webpack_require__(79);
-	var ReactPerf = __webpack_require__(17);
-	var ReactReconciler = __webpack_require__(19);
-	var ReactUpdateQueue = __webpack_require__(32);
-	var ReactUpdates = __webpack_require__(80);
+	var DOMProperty = __webpack_require__(78);
+	var ReactBrowserEventEmitter = __webpack_require__(79);
+	var ReactCurrentOwner = __webpack_require__(12);
+	var ReactElement = __webpack_require__(13);
+	var ReactElementValidator = __webpack_require__(14);
+	var ReactEmptyComponent = __webpack_require__(80);
+	var ReactInstanceHandles = __webpack_require__(18);
+	var ReactInstanceMap = __webpack_require__(36);
+	var ReactMarkupChecksum = __webpack_require__(81);
+	var ReactPerf = __webpack_require__(20);
+	var ReactReconciler = __webpack_require__(22);
+	var ReactUpdateQueue = __webpack_require__(34);
+	var ReactUpdates = __webpack_require__(82);
 
-	var emptyObject = __webpack_require__(40);
-	var containsNode = __webpack_require__(81);
-	var getReactRootElementInContainer = __webpack_require__(82);
-	var instantiateReactComponent = __webpack_require__(83);
-	var invariant = __webpack_require__(27);
-	var setInnerHTML = __webpack_require__(84);
-	var shouldUpdateReactComponent = __webpack_require__(85);
-	var warning = __webpack_require__(31);
+	var emptyObject = __webpack_require__(42);
+	var containsNode = __webpack_require__(83);
+	var getReactRootElementInContainer = __webpack_require__(84);
+	var instantiateReactComponent = __webpack_require__(85);
+	var invariant = __webpack_require__(29);
+	var setInnerHTML = __webpack_require__(86);
+	var shouldUpdateReactComponent = __webpack_require__(87);
+	var warning = __webpack_require__(33);
 
 	var SEPARATOR = ReactInstanceHandles.SEPARATOR;
 
@@ -3459,7 +3479,7 @@
 	/** Mapping from reactRootID to `container` nodes. */
 	var containersByReactRootID = {};
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  /** __DEV__-only mapping from reactRootID to root elements. */
 	  var rootElementsByReactRootID = {};
 	}
@@ -3508,7 +3528,7 @@
 	    if (nodeCache.hasOwnProperty(id)) {
 	      var cached = nodeCache[id];
 	      if (cached !== node) {
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          !isValid(cached, id),
 	          'ReactMount: Two valid but unequal nodes with the same `%s`: %s',
 	          ATTR_NAME, id
@@ -3590,7 +3610,7 @@
 	 */
 	function isValid(node, id) {
 	  if (node) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      internalGetID(node) === id,
 	      'ReactMount: Unexpected modification of `%s`',
 	      ATTR_NAME
@@ -3735,7 +3755,7 @@
 	      nextElement,
 	      container,
 	      callback) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      ReactElementValidator.checkAndWarnForMutatedProps(nextElement);
 	    }
 
@@ -3746,7 +3766,7 @@
 	      }
 	    });
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      // Record the root element in case it later gets transplanted.
 	      rootElementsByReactRootID[getReactRootID(container)] =
 	        getReactRootElementInContainer(container);
@@ -3763,7 +3783,7 @@
 	   * @return {string} reactRoot ID prefix
 	   */
 	  _registerComponent: function(nextComponent, container) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      container && (
 	        (container.nodeType === ELEMENT_NODE_TYPE || container.nodeType === DOC_NODE_TYPE)
 	      ),
@@ -3794,7 +3814,7 @@
 	    // Various parts of our code (such as ReactCompositeComponent's
 	    // _renderValidatedComponent) assume that calls to render aren't nested;
 	    // verify that that's the case.
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      ReactCurrentOwner.current == null,
 	      '_renderNewRootComponent(): Render methods should be a pure function ' +
 	      'of props and state; triggering nested component updates from ' +
@@ -3820,7 +3840,7 @@
 	      shouldReuseMarkup
 	    );
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      // Record the root element in case it later gets transplanted.
 	      rootElementsByReactRootID[reactRootID] =
 	        getReactRootElementInContainer(container);
@@ -3842,7 +3862,7 @@
 	   * @return {ReactComponent} Component instance rendered in `container`.
 	   */
 	  render: function(nextElement, container, callback) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      ReactElement.isValidElement(nextElement),
 	      'React.render(): Invalid component element.%s',
 	      (
@@ -3880,12 +3900,12 @@
 	    var containerHasReactMarkup =
 	      reactRootElement && ReactMount.isRenderedByReact(reactRootElement);
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      if (!containerHasReactMarkup || reactRootElement.nextSibling) {
 	        var rootElementSibling = reactRootElement;
 	        while (rootElementSibling) {
 	          if (ReactMount.isRenderedByReact(rootElementSibling)) {
-	            ("production" !== process.env.NODE_ENV ? warning(
+	            ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	              false,
 	              'render(): Target node has markup rendered by React, but there ' +
 	              'are unrelated nodes as well. This is most commonly caused by ' +
@@ -3937,7 +3957,7 @@
 	   */
 	  constructAndRenderComponentByID: function(constructor, props, id) {
 	    var domNode = document.getElementById(id);
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      domNode,
 	      'Tried to get element with id of "%s" but it is not present on the page.',
 	      id
@@ -3979,7 +3999,7 @@
 	    // _renderValidatedComponent) assume that calls to render aren't nested;
 	    // verify that that's the case. (Strictly speaking, unmounting won't cause a
 	    // render but we still don't expect to be in a render call here.)
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      ReactCurrentOwner.current == null,
 	      'unmountComponentAtNode(): Render methods should be a pure function of ' +
 	      'props and state; triggering nested component updates from render is ' +
@@ -3987,7 +4007,7 @@
 	      'componentDidUpdate.'
 	    ) : null);
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      container && (
 	        (container.nodeType === ELEMENT_NODE_TYPE || container.nodeType === DOC_NODE_TYPE)
 	      ),
@@ -4004,7 +4024,7 @@
 	    ReactMount.unmountComponentFromNode(component, container);
 	    delete instancesByReactRootID[reactRootID];
 	    delete containersByReactRootID[reactRootID];
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      delete rootElementsByReactRootID[reactRootID];
 	    }
 	    return true;
@@ -4043,10 +4063,10 @@
 	    var reactRootID = ReactInstanceHandles.getReactRootIDFromNodeID(id);
 	    var container = containersByReactRootID[reactRootID];
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      var rootElement = rootElementsByReactRootID[reactRootID];
 	      if (rootElement && rootElement.parentNode !== container) {
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          // Call internalGetID here because getID calls isValid which calls
 	          // findReactContainerForID (this function).
 	          internalGetID(rootElement) === reactRootID,
@@ -4064,7 +4084,7 @@
 	          // warning is when the container is empty.
 	          rootElementsByReactRootID[reactRootID] = containerChild;
 	        } else {
-	          ("production" !== process.env.NODE_ENV ? warning(
+	          ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	            false,
 	            'ReactMount: Root element has been removed from its original ' +
 	            'container. New container:', rootElement.parentNode
@@ -4188,7 +4208,7 @@
 
 	    firstChildren.length = 0;
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      false,
 	      'findComponentRoot(..., %s): Unable to find element. This probably ' +
 	      'means the DOM was unexpectedly mutated (e.g., by the browser), ' +
@@ -4202,7 +4222,7 @@
 	  },
 
 	  _mountImageIntoNode: function(markup, container, shouldReuseMarkup) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      container && (
 	        (container.nodeType === ELEMENT_NODE_TYPE || container.nodeType === DOC_NODE_TYPE)
 	      ),
@@ -4232,7 +4252,7 @@
 	          markup.substring(diffIndex - 20, diffIndex + 20) +
 	          '\n (server) ' + rootMarkup.substring(diffIndex - 20, diffIndex + 20);
 
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          container.nodeType !== DOC_NODE_TYPE,
 	          'You\'re trying to render a component to the document using ' +
 	          'server rendering but the checksum was invalid. This usually ' +
@@ -4245,8 +4265,8 @@
 	          difference
 	        ) : invariant(container.nodeType !== DOC_NODE_TYPE));
 
-	        if ("production" !== process.env.NODE_ENV) {
-	          ("production" !== process.env.NODE_ENV ? warning(
+	        if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	          ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	            false,
 	            'React attempted to reuse markup in a container but the ' +
 	            'checksum was invalid. This generally means that you are ' +
@@ -4262,7 +4282,7 @@
 	      }
 	    }
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      container.nodeType !== DOC_NODE_TYPE,
 	      'You\'re trying to render a component to the document but ' +
 	        'you didn\'t use server rendering. We can\'t do this ' +
@@ -4297,13 +4317,12 @@
 
 	module.exports = ReactMount;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 17 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -4340,7 +4359,7 @@
 	   * @param {object<string>} methodNames
 	   */
 	  measureMethods: function(object, objectName, methodNames) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      for (var key in methodNames) {
 	        if (!methodNames.hasOwnProperty(key)) {
 	          continue;
@@ -4363,7 +4382,7 @@
 	   * @return {function}
 	   */
 	  measure: function(objName, fnName, func) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      var measuredFunc = null;
 	      var wrapper = function() {
 	        if (ReactPerf.enableMeasure) {
@@ -4404,10 +4423,9 @@
 
 	module.exports = ReactPerf;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 18 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4423,11 +4441,11 @@
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(10);
-	var ReactFragment = __webpack_require__(29);
-	var ReactPropTypeLocationNames = __webpack_require__(37);
+	var ReactElement = __webpack_require__(13);
+	var ReactFragment = __webpack_require__(31);
+	var ReactPropTypeLocationNames = __webpack_require__(39);
 
-	var emptyFunction = __webpack_require__(86);
+	var emptyFunction = __webpack_require__(88);
 
 	/**
 	 * Collection of methods that allow declaration and validation of props that are
@@ -4760,10 +4778,10 @@
 
 
 /***/ },
-/* 19 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -4776,8 +4794,8 @@
 
 	'use strict';
 
-	var ReactRef = __webpack_require__(87);
-	var ReactElementValidator = __webpack_require__(11);
+	var ReactRef = __webpack_require__(89);
+	var ReactElementValidator = __webpack_require__(14);
 
 	/**
 	 * Helper to call ReactRef.attachRefs with this composite component, split out
@@ -4801,7 +4819,7 @@
 	   */
 	  mountComponent: function(internalInstance, rootID, transaction, context) {
 	    var markup = internalInstance.mountComponent(rootID, transaction, context);
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      ReactElementValidator.checkAndWarnForMutatedProps(
 	        internalInstance._currentElement
 	      );
@@ -4846,7 +4864,7 @@
 	      return;
 	    }
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      ReactElementValidator.checkAndWarnForMutatedProps(nextElement);
 	    }
 
@@ -4884,13 +4902,12 @@
 
 	module.exports = ReactReconciler;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 20 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -4903,22 +4920,22 @@
 	 */
 	'use strict';
 
-	var ReactElement = __webpack_require__(10);
-	var ReactInstanceHandles = __webpack_require__(15);
-	var ReactMarkupChecksum = __webpack_require__(79);
+	var ReactElement = __webpack_require__(13);
+	var ReactInstanceHandles = __webpack_require__(18);
+	var ReactMarkupChecksum = __webpack_require__(81);
 	var ReactServerRenderingTransaction =
-	  __webpack_require__(88);
+	  __webpack_require__(90);
 
-	var emptyObject = __webpack_require__(40);
-	var instantiateReactComponent = __webpack_require__(83);
-	var invariant = __webpack_require__(27);
+	var emptyObject = __webpack_require__(42);
+	var instantiateReactComponent = __webpack_require__(85);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * @param {ReactElement} element
 	 * @return {string} the HTML markup
 	 */
 	function renderToString(element) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    ReactElement.isValidElement(element),
 	    'renderToString(): You must pass a valid ReactElement.'
 	  ) : invariant(ReactElement.isValidElement(element)));
@@ -4945,7 +4962,7 @@
 	 * (for generating static pages)
 	 */
 	function renderToStaticMarkup(element) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    ReactElement.isValidElement(element),
 	    'renderToStaticMarkup(): You must pass a valid ReactElement.'
 	  ) : invariant(ReactElement.isValidElement(element)));
@@ -4969,10 +4986,9 @@
 	  renderToStaticMarkup: renderToStaticMarkup
 	};
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 21 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5025,10 +5041,10 @@
 
 
 /***/ },
-/* 22 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -5042,13 +5058,13 @@
 
 	'use strict';
 
-	var ReactCurrentOwner = __webpack_require__(9);
-	var ReactInstanceMap = __webpack_require__(34);
-	var ReactMount = __webpack_require__(16);
+	var ReactCurrentOwner = __webpack_require__(12);
+	var ReactInstanceMap = __webpack_require__(36);
+	var ReactMount = __webpack_require__(19);
 
-	var invariant = __webpack_require__(27);
-	var isNode = __webpack_require__(89);
-	var warning = __webpack_require__(31);
+	var invariant = __webpack_require__(29);
+	var isNode = __webpack_require__(91);
+	var warning = __webpack_require__(33);
 
 	/**
 	 * Returns the DOM node rendered by this element.
@@ -5057,10 +5073,10 @@
 	 * @return {DOMElement} The root node of this element.
 	 */
 	function findDOMNode(componentOrElement) {
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    var owner = ReactCurrentOwner.current;
 	    if (owner !== null) {
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        owner._warnedAboutRefsInRender,
 	        '%s is accessing getDOMNode or findDOMNode inside its render(). ' +
 	        'render() should be a pure function of props and state. It should ' +
@@ -5081,7 +5097,7 @@
 	  if (ReactInstanceMap.has(componentOrElement)) {
 	    return ReactMount.getNodeFromInstance(componentOrElement);
 	  }
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    componentOrElement.render == null ||
 	    typeof componentOrElement.render !== 'function',
 	    'Component (with keys: %s) contains `render` method ' +
@@ -5089,7 +5105,7 @@
 	    Object.keys(componentOrElement)
 	  ) : invariant(componentOrElement.render == null ||
 	  typeof componentOrElement.render !== 'function'));
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    false,
 	    'Element appears to be neither ReactComponent nor DOMNode (keys: %s)',
 	    Object.keys(componentOrElement)
@@ -5098,13 +5114,12 @@
 
 	module.exports = findDOMNode;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 23 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -5116,9 +5131,9 @@
 	 */
 	'use strict';
 
-	var ReactElement = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Returns the first child in a collection of children and verifies that there
@@ -5132,7 +5147,7 @@
 	 * structure.
 	 */
 	function onlyChild(children) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    ReactElement.isValidElement(children),
 	    'onlyChild must be passed a children with exactly one child.'
 	  ) : invariant(ReactElement.isValidElement(children)));
@@ -5141,10 +5156,9 @@
 
 	module.exports = onlyChild;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 24 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5192,71 +5206,7 @@
 
 
 /***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// shim for using process in browser
-
-	var process = module.exports = {};
-	var queue = [];
-	var draining = false;
-
-	function drainQueue() {
-	    if (draining) {
-	        return;
-	    }
-	    draining = true;
-	    var currentQueue;
-	    var len = queue.length;
-	    while(len) {
-	        currentQueue = queue;
-	        queue = [];
-	        var i = -1;
-	        while (++i < len) {
-	            currentQueue[i]();
-	        }
-	        len = queue.length;
-	    }
-	    draining = false;
-	}
-	process.nextTick = function (fun) {
-	    queue.push(fun);
-	    if (!draining) {
-	        setTimeout(drainQueue, 0);
-	    }
-	};
-
-	process.title = 'browser';
-	process.browser = true;
-	process.env = {};
-	process.argv = [];
-	process.version = ''; // empty string to avoid regexp issues
-	process.versions = {};
-
-	function noop() {}
-
-	process.on = noop;
-	process.addListener = noop;
-	process.once = noop;
-	process.off = noop;
-	process.removeListener = noop;
-	process.removeAllListeners = noop;
-	process.emit = noop;
-
-	process.binding = function (name) {
-	    throw new Error('process.binding is not supported');
-	};
-
-	// TODO(shtylman)
-	process.cwd = function () { return '/' };
-	process.chdir = function (dir) {
-	    throw new Error('process.chdir is not supported');
-	};
-	process.umask = function() { return 0; };
-
-
-/***/ },
-/* 26 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5272,7 +5222,7 @@
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(38);
+	var keyMirror = __webpack_require__(40);
 
 	var PropagationPhases = keyMirror({bubbled: null, captured: null});
 
@@ -5332,10 +5282,10 @@
 
 
 /***/ },
-/* 27 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -5360,7 +5310,7 @@
 	 */
 
 	var invariant = function(condition, format, a, b, c, d, e, f) {
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    if (format === undefined) {
 	      throw new Error('invariant requires an error message argument');
 	    }
@@ -5389,13 +5339,12 @@
 
 	module.exports = invariant;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 28 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -5408,7 +5357,7 @@
 
 	'use strict';
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Static poolers. Several custom versions for each potential number of
@@ -5463,7 +5412,7 @@
 
 	var standardReleaser = function(instance) {
 	  var Klass = this;
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    instance instanceof Klass,
 	    'Trying to release an instance into a pool of a different type.'
 	  ) : invariant(instance instanceof Klass));
@@ -5508,13 +5457,12 @@
 
 	module.exports = PooledClass;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 29 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -5527,9 +5475,9 @@
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
 
-	var warning = __webpack_require__(31);
+	var warning = __webpack_require__(33);
 
 	/**
 	 * We used to allow keyed objects to serve as a collection of ReactElements,
@@ -5539,7 +5487,7 @@
 	 * create a keyed fragment. The resulting data structure is opaque, for now.
 	 */
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  var fragmentKey = '_reactFragment';
 	  var didWarnKey = '_reactDidWarn';
 	  var canWarnForReactFragment = false;
@@ -5571,7 +5519,7 @@
 	    Object.defineProperty(obj, key, {
 	      enumerable: true,
 	      get: function() {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          this[didWarnKey],
 	          'A ReactFragment is an opaque type. Accessing any of its ' +
 	          'properties is deprecated. Pass it to one of the React.Children ' +
@@ -5581,7 +5529,7 @@
 	        return this[fragmentKey][key];
 	      },
 	      set: function(value) {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          this[didWarnKey],
 	          'A ReactFragment is an immutable opaque type. Mutating its ' +
 	          'properties is deprecated.'
@@ -5611,9 +5559,9 @@
 	  // Wrap a keyed object in an opaque proxy that warns you if you access any
 	  // of its properties.
 	  create: function(object) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      if (typeof object !== 'object' || !object || Array.isArray(object)) {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          false,
 	          'React.addons.createFragment only accepts a single object.',
 	          object
@@ -5621,7 +5569,7 @@
 	        return object;
 	      }
 	      if (ReactElement.isValidElement(object)) {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          false,
 	          'React.addons.createFragment does not accept a ReactElement ' +
 	          'without a wrapper object.'
@@ -5651,10 +5599,10 @@
 	  // Extract the original keyed object from the fragment opaque type. Warn if
 	  // a plain object is passed here.
 	  extract: function(fragment) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      if (canWarnForReactFragment) {
 	        if (!fragment[fragmentKey]) {
-	          ("production" !== process.env.NODE_ENV ? warning(
+	          ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	            didWarnForFragment(fragment),
 	            'Any use of a keyed object should be wrapped in ' +
 	            'React.addons.createFragment(object) before being passed as a ' +
@@ -5671,7 +5619,7 @@
 	  // is a fragment-like object, warn that it should be wrapped. Ignore if we
 	  // can't determine what kind of object this is.
 	  extractIfFragment: function(fragment) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      if (canWarnForReactFragment) {
 	        // If it is the opaque type, return the keyed object.
 	        if (fragment[fragmentKey]) {
@@ -5696,13 +5644,12 @@
 
 	module.exports = ReactFragment;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 30 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -5715,13 +5662,13 @@
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(10);
-	var ReactFragment = __webpack_require__(29);
-	var ReactInstanceHandles = __webpack_require__(15);
+	var ReactElement = __webpack_require__(13);
+	var ReactFragment = __webpack_require__(31);
+	var ReactInstanceHandles = __webpack_require__(18);
 
-	var getIteratorFn = __webpack_require__(42);
-	var invariant = __webpack_require__(27);
-	var warning = __webpack_require__(31);
+	var getIteratorFn = __webpack_require__(44);
+	var invariant = __webpack_require__(29);
+	var warning = __webpack_require__(33);
 
 	var SEPARATOR = ReactInstanceHandles.SEPARATOR;
 	var SUBSEPARATOR = ':';
@@ -5865,8 +5812,8 @@
 	          );
 	        }
 	      } else {
-	        if ("production" !== process.env.NODE_ENV) {
-	          ("production" !== process.env.NODE_ENV ? warning(
+	        if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	          ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	            didWarnAboutMaps,
 	            'Using Maps as children is not yet fully supported. It is an ' +
 	            'experimental feature that might be removed. Convert it to a ' +
@@ -5896,7 +5843,7 @@
 	        }
 	      }
 	    } else if (type === 'object') {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        children.nodeType !== 1,
 	        'traverseAllChildren(...): Encountered an invalid child; DOM ' +
 	        'elements are not valid children of React components.'
@@ -5952,13 +5899,12 @@
 
 	module.exports = traverseAllChildren;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 31 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -5971,7 +5917,7 @@
 
 	"use strict";
 
-	var emptyFunction = __webpack_require__(86);
+	var emptyFunction = __webpack_require__(88);
 
 	/**
 	 * Similar to invariant but only logs a warning if the condition is not met.
@@ -5982,7 +5928,7 @@
 
 	var warning = emptyFunction;
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  warning = function(condition, format ) {for (var args=[],$__0=2,$__1=arguments.length;$__0<$__1;$__0++) args.push(arguments[$__0]);
 	    if (format === undefined) {
 	      throw new Error(
@@ -6018,13 +5964,12 @@
 
 	module.exports = warning;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 32 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -6037,15 +5982,15 @@
 
 	'use strict';
 
-	var ReactLifeCycle = __webpack_require__(35);
-	var ReactCurrentOwner = __webpack_require__(9);
-	var ReactElement = __webpack_require__(10);
-	var ReactInstanceMap = __webpack_require__(34);
-	var ReactUpdates = __webpack_require__(80);
+	var ReactLifeCycle = __webpack_require__(37);
+	var ReactCurrentOwner = __webpack_require__(12);
+	var ReactElement = __webpack_require__(13);
+	var ReactInstanceMap = __webpack_require__(36);
+	var ReactUpdates = __webpack_require__(82);
 
-	var assign = __webpack_require__(21);
-	var invariant = __webpack_require__(27);
-	var warning = __webpack_require__(31);
+	var assign = __webpack_require__(24);
+	var invariant = __webpack_require__(29);
+	var warning = __webpack_require__(33);
 
 	function enqueueUpdate(internalInstance) {
 	  if (internalInstance !== ReactLifeCycle.currentlyMountingInstance) {
@@ -6058,7 +6003,7 @@
 	}
 
 	function getInternalInstanceReadyForUpdate(publicInstance, callerName) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    ReactCurrentOwner.current == null,
 	    '%s(...): Cannot update during an existing state transition ' +
 	    '(such as within `render`). Render methods should be a pure function ' +
@@ -6068,11 +6013,11 @@
 
 	  var internalInstance = ReactInstanceMap.get(publicInstance);
 	  if (!internalInstance) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      // Only warn when we have a callerName. Otherwise we should be silent.
 	      // We're probably calling from enqueueCallback. We don't want to warn
 	      // there because we already warned for the corresponding lifecycle method.
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        !callerName,
 	        '%s(...): Can only update a mounted or mounting component. ' +
 	        'This usually means you called %s() on an unmounted ' +
@@ -6106,7 +6051,7 @@
 	   * @internal
 	   */
 	  enqueueCallback: function(publicInstance, callback) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      typeof callback === 'function',
 	      'enqueueCallback(...): You called `setProps`, `replaceProps`, ' +
 	      '`setState`, `replaceState`, or `forceUpdate` with a callback that ' +
@@ -6137,7 +6082,7 @@
 	  },
 
 	  enqueueCallbackInternal: function(internalInstance, callback) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      typeof callback === 'function',
 	      'enqueueCallback(...): You called `setProps`, `replaceProps`, ' +
 	      '`setState`, `replaceState`, or `forceUpdate` with a callback that ' +
@@ -6251,7 +6196,7 @@
 	      return;
 	    }
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      internalInstance._isTopLevel,
 	      'setProps(...): You called `setProps` on a ' +
 	      'component with a parent. This is an anti-pattern since props will ' +
@@ -6290,7 +6235,7 @@
 	      return;
 	    }
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      internalInstance._isTopLevel,
 	      'replaceProps(...): You called `replaceProps` on a ' +
 	      'component with a parent. This is an anti-pattern since props will ' +
@@ -6320,10 +6265,9 @@
 
 	module.exports = ReactUpdateQueue;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 33 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6359,7 +6303,7 @@
 
 
 /***/ },
-/* 34 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6412,7 +6356,7 @@
 
 
 /***/ },
-/* 35 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6453,7 +6397,7 @@
 
 
 /***/ },
-/* 36 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6469,7 +6413,7 @@
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(38);
+	var keyMirror = __webpack_require__(40);
 
 	var ReactPropTypeLocations = keyMirror({
 	  prop: null,
@@ -6481,10 +6425,10 @@
 
 
 /***/ },
-/* 37 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -6499,7 +6443,7 @@
 
 	var ReactPropTypeLocationNames = {};
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  ReactPropTypeLocationNames = {
 	    prop: 'prop',
 	    context: 'context',
@@ -6509,13 +6453,12 @@
 
 	module.exports = ReactPropTypeLocationNames;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 38 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -6529,7 +6472,7 @@
 
 	'use strict';
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Constructs an enumeration with keys equal to their value.
@@ -6552,7 +6495,7 @@
 	var keyMirror = function(obj) {
 	  var ret = {};
 	  var key;
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    obj instanceof Object && !Array.isArray(obj),
 	    'keyMirror(...): Argument must be an object.'
 	  ) : invariant(obj instanceof Object && !Array.isArray(obj)));
@@ -6567,10 +6510,9 @@
 
 	module.exports = keyMirror;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 39 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6610,10 +6552,10 @@
 
 
 /***/ },
-/* 40 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -6628,19 +6570,18 @@
 
 	var emptyObject = {};
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  Object.freeze(emptyObject);
 	}
 
 	module.exports = emptyObject;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 41 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -6653,8 +6594,8 @@
 
 	'use strict';
 
-	var assign = __webpack_require__(21);
-	var invariant = __webpack_require__(27);
+	var assign = __webpack_require__(24);
+	var invariant = __webpack_require__(29);
 
 	var autoGenerateWrapperClass = null;
 	var genericComponentClass = null;
@@ -6710,7 +6651,7 @@
 	 * @return {function} The internal class constructor function.
 	 */
 	function createInternalComponent(element) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    genericComponentClass,
 	    'There is no registered component for the tag %s',
 	    element.type
@@ -6744,10 +6685,9 @@
 
 	module.exports = ReactNativeComponent;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 42 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6795,7 +6735,7 @@
 
 
 /***/ },
-/* 43 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6852,10 +6792,10 @@
 
 
 /***/ },
-/* 44 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -6869,10 +6809,10 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(76);
+	var DOMProperty = __webpack_require__(78);
 
-	var quoteAttributeValueForBrowser = __webpack_require__(90);
-	var warning = __webpack_require__(31);
+	var quoteAttributeValueForBrowser = __webpack_require__(94);
+	var warning = __webpack_require__(33);
 
 	function shouldIgnoreValue(name, value) {
 	  return value == null ||
@@ -6882,7 +6822,7 @@
 	    (DOMProperty.hasOverloadedBooleanValue[name] && value === false);
 	}
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  var reactProps = {
 	    children: true,
 	    dangerouslySetInnerHTML: true,
@@ -6911,7 +6851,7 @@
 
 	    // For now, only warn when we have a suggested correction. This prevents
 	    // logging too much when using transferPropsTo.
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      standardName == null,
 	      'Unknown DOM property %s. Did you mean %s?',
 	      name,
@@ -6961,7 +6901,7 @@
 	        return '';
 	      }
 	      return name + '=' + quoteAttributeValueForBrowser(value);
-	    } else if ("production" !== process.env.NODE_ENV) {
+	    } else if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      warnUnknownProperty(name);
 	    }
 	    return null;
@@ -7003,7 +6943,7 @@
 	      } else {
 	        node.setAttribute(name, '' + value);
 	      }
-	    } else if ("production" !== process.env.NODE_ENV) {
+	    } else if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      warnUnknownProperty(name);
 	    }
 	  },
@@ -7035,7 +6975,7 @@
 	      }
 	    } else if (DOMProperty.isCustomAttribute(name)) {
 	      node.removeAttribute(name);
-	    } else if ("production" !== process.env.NODE_ENV) {
+	    } else if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      warnUnknownProperty(name);
 	    }
 	  }
@@ -7044,10 +6984,9 @@
 
 	module.exports = DOMPropertyOperations;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 45 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7065,8 +7004,8 @@
 
 	'use strict';
 
-	var ReactDOMIDOperations = __webpack_require__(60);
-	var ReactMount = __webpack_require__(16);
+	var ReactDOMIDOperations = __webpack_require__(62);
+	var ReactMount = __webpack_require__(19);
 
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -7098,10 +7037,10 @@
 
 
 /***/ },
-/* 46 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -7117,22 +7056,22 @@
 
 	'use strict';
 
-	var CSSPropertyOperations = __webpack_require__(91);
-	var DOMProperty = __webpack_require__(76);
-	var DOMPropertyOperations = __webpack_require__(44);
-	var ReactBrowserEventEmitter = __webpack_require__(77);
+	var CSSPropertyOperations = __webpack_require__(95);
+	var DOMProperty = __webpack_require__(78);
+	var DOMPropertyOperations = __webpack_require__(46);
+	var ReactBrowserEventEmitter = __webpack_require__(79);
 	var ReactComponentBrowserEnvironment =
-	  __webpack_require__(45);
-	var ReactMount = __webpack_require__(16);
-	var ReactMultiChild = __webpack_require__(92);
-	var ReactPerf = __webpack_require__(17);
+	  __webpack_require__(47);
+	var ReactMount = __webpack_require__(19);
+	var ReactMultiChild = __webpack_require__(96);
+	var ReactPerf = __webpack_require__(20);
 
-	var assign = __webpack_require__(21);
-	var escapeTextContentForBrowser = __webpack_require__(47);
-	var invariant = __webpack_require__(27);
-	var isEventSupported = __webpack_require__(93);
-	var keyOf = __webpack_require__(39);
-	var warning = __webpack_require__(31);
+	var assign = __webpack_require__(24);
+	var escapeTextContentForBrowser = __webpack_require__(49);
+	var invariant = __webpack_require__(29);
+	var isEventSupported = __webpack_require__(97);
+	var keyOf = __webpack_require__(41);
+	var warning = __webpack_require__(33);
 
 	var deleteListener = ReactBrowserEventEmitter.deleteListener;
 	var listenTo = ReactBrowserEventEmitter.listenTo;
@@ -7159,24 +7098,24 @@
 	  }
 	  // Note the use of `==` which checks for null or undefined.
 	  if (props.dangerouslySetInnerHTML != null) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      props.children == null,
 	      'Can only set one of `children` or `props.dangerouslySetInnerHTML`.'
 	    ) : invariant(props.children == null));
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      props.dangerouslySetInnerHTML.__html != null,
 	      '`props.dangerouslySetInnerHTML` must be in the form `{__html: ...}`. ' +
 	      'Please visit http://fb.me/react-invariant-dangerously-set-inner-html ' +
 	      'for more information.'
 	    ) : invariant(props.dangerouslySetInnerHTML.__html != null));
 	  }
-	  if ("production" !== process.env.NODE_ENV) {
-	    ("production" !== process.env.NODE_ENV ? warning(
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      props.innerHTML == null,
 	      'Directly setting property `innerHTML` is not permitted. ' +
 	      'For more information, lookup documentation on `dangerouslySetInnerHTML`.'
 	    ) : null);
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      !props.contentEditable || props.children == null,
 	      'A component is `contentEditable` and contains `children` managed by ' +
 	      'React. It is now your responsibility to guarantee that none of ' +
@@ -7184,7 +7123,7 @@
 	      'probably not intentional.'
 	    ) : null);
 	  }
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    props.style == null || typeof props.style === 'object',
 	    'The `style` prop expects a mapping from style properties to values, ' +
 	    'not a string. For example, style={{marginRight: spacing + \'em\'}} when ' +
@@ -7193,10 +7132,10 @@
 	}
 
 	function putListener(id, registrationName, listener, transaction) {
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    // IE8 has no API for event capturing and the `onScroll` event doesn't
 	    // bubble.
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      registrationName !== 'onScroll' || isEventSupported('scroll', true),
 	      'This browser doesn\'t support the `onScroll` event'
 	    ) : null);
@@ -7247,7 +7186,7 @@
 
 	function validateDangerousTag(tag) {
 	  if (!hasOwnProperty.call(validatedTagCache, tag)) {
-	    ("production" !== process.env.NODE_ENV ? invariant(VALID_TAG_REGEX.test(tag), 'Invalid tag: %s', tag) : invariant(VALID_TAG_REGEX.test(tag)));
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(VALID_TAG_REGEX.test(tag), 'Invalid tag: %s', tag) : invariant(VALID_TAG_REGEX.test(tag)));
 	    validatedTagCache[tag] = true;
 	  }
 	}
@@ -7606,10 +7545,9 @@
 
 	module.exports = ReactDOMComponent;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 47 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7653,7 +7591,7 @@
 
 
 /***/ },
-/* 48 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7670,14 +7608,14 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var EventPropagators = __webpack_require__(94);
-	var ExecutionEnvironment = __webpack_require__(24);
-	var FallbackCompositionState = __webpack_require__(95);
-	var SyntheticCompositionEvent = __webpack_require__(96);
-	var SyntheticInputEvent = __webpack_require__(97);
+	var EventConstants = __webpack_require__(28);
+	var EventPropagators = __webpack_require__(98);
+	var ExecutionEnvironment = __webpack_require__(27);
+	var FallbackCompositionState = __webpack_require__(99);
+	var SyntheticCompositionEvent = __webpack_require__(100);
+	var SyntheticInputEvent = __webpack_require__(101);
 
-	var keyOf = __webpack_require__(39);
+	var keyOf = __webpack_require__(41);
 
 	var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 	var START_KEYCODE = 229;
@@ -8152,7 +8090,7 @@
 
 
 /***/ },
-/* 49 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8168,16 +8106,16 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var EventPluginHub = __webpack_require__(98);
-	var EventPropagators = __webpack_require__(94);
-	var ExecutionEnvironment = __webpack_require__(24);
-	var ReactUpdates = __webpack_require__(80);
-	var SyntheticEvent = __webpack_require__(99);
+	var EventConstants = __webpack_require__(28);
+	var EventPluginHub = __webpack_require__(102);
+	var EventPropagators = __webpack_require__(98);
+	var ExecutionEnvironment = __webpack_require__(27);
+	var ReactUpdates = __webpack_require__(82);
+	var SyntheticEvent = __webpack_require__(103);
 
-	var isEventSupported = __webpack_require__(93);
-	var isTextInputElement = __webpack_require__(100);
-	var keyOf = __webpack_require__(39);
+	var isEventSupported = __webpack_require__(97);
+	var isTextInputElement = __webpack_require__(104);
+	var keyOf = __webpack_require__(41);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -8538,7 +8476,7 @@
 
 
 /***/ },
-/* 50 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8567,7 +8505,7 @@
 
 
 /***/ },
-/* 51 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8583,7 +8521,7 @@
 
 	'use strict';
 
-	var keyOf = __webpack_require__(39);
+	var keyOf = __webpack_require__(41);
 
 	/**
 	 * Module that is injectable into `EventPluginHub`, that specifies a
@@ -8610,7 +8548,7 @@
 
 
 /***/ },
-/* 52 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8627,12 +8565,12 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var EventPropagators = __webpack_require__(94);
-	var SyntheticMouseEvent = __webpack_require__(101);
+	var EventConstants = __webpack_require__(28);
+	var EventPropagators = __webpack_require__(98);
+	var SyntheticMouseEvent = __webpack_require__(105);
 
-	var ReactMount = __webpack_require__(16);
-	var keyOf = __webpack_require__(39);
+	var ReactMount = __webpack_require__(19);
+	var keyOf = __webpack_require__(41);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 	var getFirstReactDOM = ReactMount.getFirstReactDOM;
@@ -8754,7 +8692,7 @@
 
 
 /***/ },
-/* 53 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8772,8 +8710,8 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(76);
-	var ExecutionEnvironment = __webpack_require__(24);
+	var DOMProperty = __webpack_require__(78);
+	var ExecutionEnvironment = __webpack_require__(27);
 
 	var MUST_USE_ATTRIBUTE = DOMProperty.injection.MUST_USE_ATTRIBUTE;
 	var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
@@ -8969,7 +8907,7 @@
 
 
 /***/ },
-/* 54 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8986,9 +8924,9 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
+	var EventConstants = __webpack_require__(28);
 
-	var emptyFunction = __webpack_require__(86);
+	var emptyFunction = __webpack_require__(88);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -9031,7 +8969,7 @@
 
 
 /***/ },
-/* 55 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9047,7 +8985,7 @@
 
 	'use strict';
 
-	var findDOMNode = __webpack_require__(22);
+	var findDOMNode = __webpack_require__(25);
 
 	var ReactBrowserComponentMixin = {
 	  /**
@@ -9066,7 +9004,7 @@
 
 
 /***/ },
-/* 56 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9082,11 +9020,11 @@
 
 	'use strict';
 
-	var ReactUpdates = __webpack_require__(80);
-	var Transaction = __webpack_require__(102);
+	var ReactUpdates = __webpack_require__(82);
+	var Transaction = __webpack_require__(106);
 
-	var assign = __webpack_require__(21);
-	var emptyFunction = __webpack_require__(86);
+	var assign = __webpack_require__(24);
+	var emptyFunction = __webpack_require__(88);
 
 	var RESET_BATCHED_UPDATES = {
 	  initialize: emptyFunction,
@@ -9143,7 +9081,7 @@
 
 
 /***/ },
-/* 57 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9159,12 +9097,12 @@
 
 	'use strict';
 
-	var AutoFocusMixin = __webpack_require__(103);
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
+	var AutoFocusMixin = __webpack_require__(107);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
 
-	var keyMirror = __webpack_require__(38);
+	var keyMirror = __webpack_require__(40);
 
 	var button = ReactElement.createFactory('button');
 
@@ -9211,7 +9149,7 @@
 
 
 /***/ },
-/* 58 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9227,11 +9165,11 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var LocalEventTrapMixin = __webpack_require__(104);
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
+	var EventConstants = __webpack_require__(28);
+	var LocalEventTrapMixin = __webpack_require__(108);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
 
 	var form = ReactElement.createFactory('form');
 
@@ -9264,7 +9202,7 @@
 
 
 /***/ },
-/* 59 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9280,11 +9218,11 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var LocalEventTrapMixin = __webpack_require__(104);
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
+	var EventConstants = __webpack_require__(28);
+	var LocalEventTrapMixin = __webpack_require__(108);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
 
 	var img = ReactElement.createFactory('img');
 
@@ -9314,10 +9252,10 @@
 
 
 /***/ },
-/* 60 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -9333,14 +9271,14 @@
 
 	'use strict';
 
-	var CSSPropertyOperations = __webpack_require__(91);
-	var DOMChildrenOperations = __webpack_require__(105);
-	var DOMPropertyOperations = __webpack_require__(44);
-	var ReactMount = __webpack_require__(16);
-	var ReactPerf = __webpack_require__(17);
+	var CSSPropertyOperations = __webpack_require__(95);
+	var DOMChildrenOperations = __webpack_require__(109);
+	var DOMPropertyOperations = __webpack_require__(46);
+	var ReactMount = __webpack_require__(19);
+	var ReactPerf = __webpack_require__(20);
 
-	var invariant = __webpack_require__(27);
-	var setInnerHTML = __webpack_require__(84);
+	var invariant = __webpack_require__(29);
+	var setInnerHTML = __webpack_require__(86);
 
 	/**
 	 * Errors for properties that should not be updated with `updatePropertyById()`.
@@ -9371,7 +9309,7 @@
 	   */
 	  updatePropertyByID: function(id, name, value) {
 	    var node = ReactMount.getNode(id);
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      !INVALID_PROPERTY_ERRORS.hasOwnProperty(name),
 	      'updatePropertyByID(...): %s',
 	      INVALID_PROPERTY_ERRORS[name]
@@ -9397,7 +9335,7 @@
 	   */
 	  deletePropertyByID: function(id, name, value) {
 	    var node = ReactMount.getNode(id);
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      !INVALID_PROPERTY_ERRORS.hasOwnProperty(name),
 	      'updatePropertyByID(...): %s',
 	      INVALID_PROPERTY_ERRORS[name]
@@ -9482,10 +9420,9 @@
 
 	module.exports = ReactDOMIDOperations;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 61 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9501,11 +9438,11 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var LocalEventTrapMixin = __webpack_require__(104);
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
+	var EventConstants = __webpack_require__(28);
+	var LocalEventTrapMixin = __webpack_require__(108);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
 
 	var iframe = ReactElement.createFactory('iframe');
 
@@ -9534,10 +9471,10 @@
 
 
 /***/ },
-/* 62 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -9550,17 +9487,17 @@
 
 	'use strict';
 
-	var AutoFocusMixin = __webpack_require__(103);
-	var DOMPropertyOperations = __webpack_require__(44);
-	var LinkedValueUtils = __webpack_require__(106);
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
-	var ReactMount = __webpack_require__(16);
-	var ReactUpdates = __webpack_require__(80);
+	var AutoFocusMixin = __webpack_require__(107);
+	var DOMPropertyOperations = __webpack_require__(46);
+	var LinkedValueUtils = __webpack_require__(110);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
+	var ReactMount = __webpack_require__(19);
+	var ReactUpdates = __webpack_require__(82);
 
-	var assign = __webpack_require__(21);
-	var invariant = __webpack_require__(27);
+	var assign = __webpack_require__(24);
+	var invariant = __webpack_require__(29);
 
 	var input = ReactElement.createFactory('input');
 
@@ -9686,13 +9623,13 @@
 	          continue;
 	        }
 	        var otherID = ReactMount.getID(otherNode);
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          otherID,
 	          'ReactDOMInput: Mixing React and non-React radio inputs with the ' +
 	          'same `name` is not supported.'
 	        ) : invariant(otherID));
 	        var otherInstance = instancesByReactID[otherID];
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          otherInstance,
 	          'ReactDOMInput: Unknown radio button ID %s.',
 	          otherID
@@ -9711,13 +9648,12 @@
 
 	module.exports = ReactDOMInput;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 63 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -9730,11 +9666,11 @@
 
 	'use strict';
 
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
 
-	var warning = __webpack_require__(31);
+	var warning = __webpack_require__(33);
 
 	var option = ReactElement.createFactory('option');
 
@@ -9749,8 +9685,8 @@
 
 	  componentWillMount: function() {
 	    // TODO (yungsters): Remove support for `selected` in <option>.
-	    if ("production" !== process.env.NODE_ENV) {
-	      ("production" !== process.env.NODE_ENV ? warning(
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        this.props.selected == null,
 	        'Use the `defaultValue` or `value` props on <select> instead of ' +
 	        'setting `selected` on <option>.'
@@ -9766,10 +9702,9 @@
 
 	module.exports = ReactDOMOption;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 64 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9785,14 +9720,14 @@
 
 	'use strict';
 
-	var AutoFocusMixin = __webpack_require__(103);
-	var LinkedValueUtils = __webpack_require__(106);
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
-	var ReactUpdates = __webpack_require__(80);
+	var AutoFocusMixin = __webpack_require__(107);
+	var LinkedValueUtils = __webpack_require__(110);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
+	var ReactUpdates = __webpack_require__(82);
 
-	var assign = __webpack_require__(21);
+	var assign = __webpack_require__(24);
 
 	var select = ReactElement.createFactory('select');
 
@@ -9951,10 +9886,10 @@
 
 
 /***/ },
-/* 65 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -9967,18 +9902,18 @@
 
 	'use strict';
 
-	var AutoFocusMixin = __webpack_require__(103);
-	var DOMPropertyOperations = __webpack_require__(44);
-	var LinkedValueUtils = __webpack_require__(106);
-	var ReactBrowserComponentMixin = __webpack_require__(55);
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
-	var ReactUpdates = __webpack_require__(80);
+	var AutoFocusMixin = __webpack_require__(107);
+	var DOMPropertyOperations = __webpack_require__(46);
+	var LinkedValueUtils = __webpack_require__(110);
+	var ReactBrowserComponentMixin = __webpack_require__(57);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
+	var ReactUpdates = __webpack_require__(82);
 
-	var assign = __webpack_require__(21);
-	var invariant = __webpack_require__(27);
+	var assign = __webpack_require__(24);
+	var invariant = __webpack_require__(29);
 
-	var warning = __webpack_require__(31);
+	var warning = __webpack_require__(33);
 
 	var textarea = ReactElement.createFactory('textarea');
 
@@ -10015,19 +9950,19 @@
 	    // TODO (yungsters): Remove support for children content in <textarea>.
 	    var children = this.props.children;
 	    if (children != null) {
-	      if ("production" !== process.env.NODE_ENV) {
-	        ("production" !== process.env.NODE_ENV ? warning(
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	          false,
 	          'Use the `defaultValue` or `value` props instead of setting ' +
 	          'children on <textarea>.'
 	        ) : null);
 	      }
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        defaultValue == null,
 	        'If you supply `defaultValue` on a <textarea>, do not pass children.'
 	      ) : invariant(defaultValue == null));
 	      if (Array.isArray(children)) {
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          children.length <= 1,
 	          '<textarea> can only have at most one child.'
 	        ) : invariant(children.length <= 1));
@@ -10053,7 +9988,7 @@
 	    // Clone `this.props` so we don't mutate the input.
 	    var props = assign({}, this.props);
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      props.dangerouslySetInnerHTML == null,
 	      '`dangerouslySetInnerHTML` does not make sense on <textarea>.'
 	    ) : invariant(props.dangerouslySetInnerHTML == null));
@@ -10091,10 +10026,9 @@
 
 	module.exports = ReactDOMTextarea;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 66 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10111,16 +10045,16 @@
 
 	'use strict';
 
-	var EventListener = __webpack_require__(107);
-	var ExecutionEnvironment = __webpack_require__(24);
-	var PooledClass = __webpack_require__(28);
-	var ReactInstanceHandles = __webpack_require__(15);
-	var ReactMount = __webpack_require__(16);
-	var ReactUpdates = __webpack_require__(80);
+	var EventListener = __webpack_require__(111);
+	var ExecutionEnvironment = __webpack_require__(27);
+	var PooledClass = __webpack_require__(30);
+	var ReactInstanceHandles = __webpack_require__(18);
+	var ReactMount = __webpack_require__(19);
+	var ReactUpdates = __webpack_require__(82);
 
-	var assign = __webpack_require__(21);
-	var getEventTarget = __webpack_require__(108);
-	var getUnboundedScrollPosition = __webpack_require__(109);
+	var assign = __webpack_require__(24);
+	var getEventTarget = __webpack_require__(112);
+	var getUnboundedScrollPosition = __webpack_require__(113);
 
 	/**
 	 * Finds the parent React component of `node`.
@@ -10281,7 +10215,7 @@
 
 
 /***/ },
-/* 67 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10297,17 +10231,17 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(76);
-	var EventPluginHub = __webpack_require__(98);
-	var ReactComponentEnvironment = __webpack_require__(110);
-	var ReactClass = __webpack_require__(7);
-	var ReactEmptyComponent = __webpack_require__(78);
-	var ReactBrowserEventEmitter = __webpack_require__(77);
-	var ReactNativeComponent = __webpack_require__(41);
-	var ReactDOMComponent = __webpack_require__(46);
-	var ReactPerf = __webpack_require__(17);
-	var ReactRootIndex = __webpack_require__(75);
-	var ReactUpdates = __webpack_require__(80);
+	var DOMProperty = __webpack_require__(78);
+	var EventPluginHub = __webpack_require__(102);
+	var ReactComponentEnvironment = __webpack_require__(114);
+	var ReactClass = __webpack_require__(10);
+	var ReactEmptyComponent = __webpack_require__(80);
+	var ReactBrowserEventEmitter = __webpack_require__(79);
+	var ReactNativeComponent = __webpack_require__(43);
+	var ReactDOMComponent = __webpack_require__(48);
+	var ReactPerf = __webpack_require__(20);
+	var ReactRootIndex = __webpack_require__(77);
+	var ReactUpdates = __webpack_require__(82);
 
 	var ReactInjection = {
 	  Component: ReactComponentEnvironment.injection,
@@ -10327,7 +10261,7 @@
 
 
 /***/ },
-/* 68 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10344,14 +10278,14 @@
 
 	'use strict';
 
-	var CallbackQueue = __webpack_require__(111);
-	var PooledClass = __webpack_require__(28);
-	var ReactBrowserEventEmitter = __webpack_require__(77);
-	var ReactInputSelection = __webpack_require__(112);
-	var ReactPutListenerQueue = __webpack_require__(113);
-	var Transaction = __webpack_require__(102);
+	var CallbackQueue = __webpack_require__(115);
+	var PooledClass = __webpack_require__(30);
+	var ReactBrowserEventEmitter = __webpack_require__(79);
+	var ReactInputSelection = __webpack_require__(116);
+	var ReactPutListenerQueue = __webpack_require__(117);
+	var Transaction = __webpack_require__(106);
 
-	var assign = __webpack_require__(21);
+	var assign = __webpack_require__(24);
 
 	/**
 	 * Ensures that, when possible, the selection range (currently selected text
@@ -10507,7 +10441,7 @@
 
 
 /***/ },
-/* 69 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10523,15 +10457,15 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var EventPropagators = __webpack_require__(94);
-	var ReactInputSelection = __webpack_require__(112);
-	var SyntheticEvent = __webpack_require__(99);
+	var EventConstants = __webpack_require__(28);
+	var EventPropagators = __webpack_require__(98);
+	var ReactInputSelection = __webpack_require__(116);
+	var SyntheticEvent = __webpack_require__(103);
 
-	var getActiveElement = __webpack_require__(114);
-	var isTextInputElement = __webpack_require__(100);
-	var keyOf = __webpack_require__(39);
-	var shallowEqual = __webpack_require__(115);
+	var getActiveElement = __webpack_require__(118);
+	var isTextInputElement = __webpack_require__(104);
+	var keyOf = __webpack_require__(41);
+	var shallowEqual = __webpack_require__(119);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -10706,7 +10640,7 @@
 
 
 /***/ },
-/* 70 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10741,10 +10675,10 @@
 
 
 /***/ },
-/* 71 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -10757,24 +10691,24 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var EventPluginUtils = __webpack_require__(4);
-	var EventPropagators = __webpack_require__(94);
-	var SyntheticClipboardEvent = __webpack_require__(116);
-	var SyntheticEvent = __webpack_require__(99);
-	var SyntheticFocusEvent = __webpack_require__(117);
-	var SyntheticKeyboardEvent = __webpack_require__(118);
-	var SyntheticMouseEvent = __webpack_require__(101);
-	var SyntheticDragEvent = __webpack_require__(119);
-	var SyntheticTouchEvent = __webpack_require__(120);
-	var SyntheticUIEvent = __webpack_require__(121);
-	var SyntheticWheelEvent = __webpack_require__(122);
+	var EventConstants = __webpack_require__(28);
+	var EventPluginUtils = __webpack_require__(7);
+	var EventPropagators = __webpack_require__(98);
+	var SyntheticClipboardEvent = __webpack_require__(120);
+	var SyntheticEvent = __webpack_require__(103);
+	var SyntheticFocusEvent = __webpack_require__(121);
+	var SyntheticKeyboardEvent = __webpack_require__(122);
+	var SyntheticMouseEvent = __webpack_require__(105);
+	var SyntheticDragEvent = __webpack_require__(123);
+	var SyntheticTouchEvent = __webpack_require__(124);
+	var SyntheticUIEvent = __webpack_require__(125);
+	var SyntheticWheelEvent = __webpack_require__(126);
 
-	var getEventCharCode = __webpack_require__(123);
+	var getEventCharCode = __webpack_require__(127);
 
-	var invariant = __webpack_require__(27);
-	var keyOf = __webpack_require__(39);
-	var warning = __webpack_require__(31);
+	var invariant = __webpack_require__(29);
+	var keyOf = __webpack_require__(41);
+	var warning = __webpack_require__(33);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -11050,7 +10984,7 @@
 	  executeDispatch: function(event, listener, domID) {
 	    var returnValue = EventPluginUtils.executeDispatch(event, listener, domID);
 
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      typeof returnValue !== 'boolean',
 	      'Returning `false` from an event handler is deprecated and will be ' +
 	      'ignored in a future release. Instead, manually call ' +
@@ -11151,7 +11085,7 @@
 	        EventConstructor = SyntheticClipboardEvent;
 	        break;
 	    }
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      EventConstructor,
 	      'SimpleEventPlugin: Unhandled event type, `%s`.',
 	      topLevelType
@@ -11169,10 +11103,9 @@
 
 	module.exports = SimpleEventPlugin;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 72 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11190,7 +11123,7 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(76);
+	var DOMProperty = __webpack_require__(78);
 
 	var MUST_USE_ATTRIBUTE = DOMProperty.injection.MUST_USE_ATTRIBUTE;
 
@@ -11268,10 +11201,10 @@
 
 
 /***/ },
-/* 73 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -11286,10 +11219,10 @@
 	'use strict';
 
 	// Defeat circular references by requiring this directly.
-	var ReactClass = __webpack_require__(7);
-	var ReactElement = __webpack_require__(10);
+	var ReactClass = __webpack_require__(10);
+	var ReactElement = __webpack_require__(13);
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Create a component that will throw an exception when unmounted.
@@ -11310,7 +11243,7 @@
 	    displayName: 'ReactFullPageComponent' + tag,
 
 	    componentWillUnmount: function() {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        false,
 	        '%s tried to unmount. Because of cross-browser quirks it is ' +
 	        'impossible to unmount some top-level components (eg <html>, <head>, ' +
@@ -11330,10 +11263,9 @@
 
 	module.exports = createFullPageComponent;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 74 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11350,12 +11282,12 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(76);
-	var ReactDefaultPerfAnalysis = __webpack_require__(124);
-	var ReactMount = __webpack_require__(16);
-	var ReactPerf = __webpack_require__(17);
+	var DOMProperty = __webpack_require__(78);
+	var ReactDefaultPerfAnalysis = __webpack_require__(128);
+	var ReactMount = __webpack_require__(19);
+	var ReactPerf = __webpack_require__(20);
 
-	var performanceNow = __webpack_require__(125);
+	var performanceNow = __webpack_require__(129);
 
 	function roundFloat(val) {
 	  return Math.floor(val * 100) / 100;
@@ -11603,7 +11535,7 @@
 
 
 /***/ },
-/* 75 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11638,10 +11570,10 @@
 
 
 /***/ },
-/* 76 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -11657,7 +11589,7 @@
 
 	'use strict';
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	function checkMask(value, bitmask) {
 	  return (value & bitmask) === bitmask;
@@ -11714,7 +11646,7 @@
 	    }
 
 	    for (var propName in Properties) {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        !DOMProperty.isStandardName.hasOwnProperty(propName),
 	        'injectDOMPropertyConfig(...): You\'re trying to inject DOM property ' +
 	        '\'%s\' which has already been injected. You may be accidentally ' +
@@ -11763,21 +11695,21 @@
 	      DOMProperty.hasOverloadedBooleanValue[propName] =
 	        checkMask(propConfig, DOMPropertyInjection.HAS_OVERLOADED_BOOLEAN_VALUE);
 
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        !DOMProperty.mustUseAttribute[propName] ||
 	          !DOMProperty.mustUseProperty[propName],
 	        'DOMProperty: Cannot require using both attribute and property: %s',
 	        propName
 	      ) : invariant(!DOMProperty.mustUseAttribute[propName] ||
 	        !DOMProperty.mustUseProperty[propName]));
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        DOMProperty.mustUseProperty[propName] ||
 	          !DOMProperty.hasSideEffects[propName],
 	        'DOMProperty: Properties that have side effects must use property: %s',
 	        propName
 	      ) : invariant(DOMProperty.mustUseProperty[propName] ||
 	        !DOMProperty.hasSideEffects[propName]));
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        !!DOMProperty.hasBooleanValue[propName] +
 	          !!DOMProperty.hasNumericValue[propName] +
 	          !!DOMProperty.hasOverloadedBooleanValue[propName] <= 1,
@@ -11937,10 +11869,9 @@
 
 	module.exports = DOMProperty;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 77 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11957,14 +11888,14 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var EventPluginHub = __webpack_require__(98);
-	var EventPluginRegistry = __webpack_require__(126);
-	var ReactEventEmitterMixin = __webpack_require__(127);
-	var ViewportMetrics = __webpack_require__(128);
+	var EventConstants = __webpack_require__(28);
+	var EventPluginHub = __webpack_require__(102);
+	var EventPluginRegistry = __webpack_require__(130);
+	var ReactEventEmitterMixin = __webpack_require__(131);
+	var ViewportMetrics = __webpack_require__(132);
 
-	var assign = __webpack_require__(21);
-	var isEventSupported = __webpack_require__(93);
+	var assign = __webpack_require__(24);
+	var isEventSupported = __webpack_require__(97);
 
 	/**
 	 * Summary of `ReactBrowserEventEmitter` event handling:
@@ -12297,10 +12228,10 @@
 
 
 /***/ },
-/* 78 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -12313,10 +12244,10 @@
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(10);
-	var ReactInstanceMap = __webpack_require__(34);
+	var ReactElement = __webpack_require__(13);
+	var ReactInstanceMap = __webpack_require__(36);
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	var component;
 	// This registry keeps track of the React IDs of the components that rendered to
@@ -12350,7 +12281,7 @@
 	  deregisterNullComponentID(internalInstance._rootNodeID);
 	};
 	ReactEmptyComponentType.prototype.render = function() {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    component,
 	    'Trying to return null from a render, but no null placeholder component ' +
 	    'was injected.'
@@ -12392,10 +12323,9 @@
 
 	module.exports = ReactEmptyComponent;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 79 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12411,7 +12341,7 @@
 
 	'use strict';
 
-	var adler32 = __webpack_require__(129);
+	var adler32 = __webpack_require__(133);
 
 	var ReactMarkupChecksum = {
 	  CHECKSUM_ATTR_NAME: 'data-react-checksum',
@@ -12447,10 +12377,10 @@
 
 
 /***/ },
-/* 80 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -12463,16 +12393,16 @@
 
 	'use strict';
 
-	var CallbackQueue = __webpack_require__(111);
-	var PooledClass = __webpack_require__(28);
-	var ReactCurrentOwner = __webpack_require__(9);
-	var ReactPerf = __webpack_require__(17);
-	var ReactReconciler = __webpack_require__(19);
-	var Transaction = __webpack_require__(102);
+	var CallbackQueue = __webpack_require__(115);
+	var PooledClass = __webpack_require__(30);
+	var ReactCurrentOwner = __webpack_require__(12);
+	var ReactPerf = __webpack_require__(20);
+	var ReactReconciler = __webpack_require__(22);
+	var Transaction = __webpack_require__(106);
 
-	var assign = __webpack_require__(21);
-	var invariant = __webpack_require__(27);
-	var warning = __webpack_require__(31);
+	var assign = __webpack_require__(24);
+	var invariant = __webpack_require__(29);
+	var warning = __webpack_require__(33);
 
 	var dirtyComponents = [];
 	var asapCallbackQueue = CallbackQueue.getPooled();
@@ -12481,7 +12411,7 @@
 	var batchingStrategy = null;
 
 	function ensureInjected() {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    ReactUpdates.ReactReconcileTransaction && batchingStrategy,
 	    'ReactUpdates: must inject a reconcile transaction class and batching ' +
 	    'strategy'
@@ -12575,7 +12505,7 @@
 
 	function runBatchedUpdates(transaction) {
 	  var len = transaction.dirtyComponentsLength;
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    len === dirtyComponents.length,
 	    'Expected flush transaction\'s stored dirty-components length (%s) to ' +
 	    'match dirty-components array length (%s).',
@@ -12655,7 +12585,7 @@
 	  // verify that that's the case. (This is called by each top-level update
 	  // function, like setProps, setState, forceUpdate, etc.; creation and
 	  // destruction of top-level components is guarded in ReactMount.)
-	  ("production" !== process.env.NODE_ENV ? warning(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	    ReactCurrentOwner.current == null,
 	    'enqueueUpdate(): Render methods should be a pure function of props ' +
 	    'and state; triggering nested component updates from render is not ' +
@@ -12676,7 +12606,7 @@
 	 * if no updates are currently being performed.
 	 */
 	function asap(callback, context) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    batchingStrategy.isBatchingUpdates,
 	    'ReactUpdates.asap: Can\'t enqueue an asap callback in a context where' +
 	    'updates are not being batched.'
@@ -12687,7 +12617,7 @@
 
 	var ReactUpdatesInjection = {
 	  injectReconcileTransaction: function(ReconcileTransaction) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      ReconcileTransaction,
 	      'ReactUpdates: must provide a reconcile transaction class'
 	    ) : invariant(ReconcileTransaction));
@@ -12695,15 +12625,15 @@
 	  },
 
 	  injectBatchingStrategy: function(_batchingStrategy) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      _batchingStrategy,
 	      'ReactUpdates: must provide a batching strategy'
 	    ) : invariant(_batchingStrategy));
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      typeof _batchingStrategy.batchedUpdates === 'function',
 	      'ReactUpdates: must provide a batchedUpdates() function'
 	    ) : invariant(typeof _batchingStrategy.batchedUpdates === 'function'));
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      typeof _batchingStrategy.isBatchingUpdates === 'boolean',
 	      'ReactUpdates: must provide an isBatchingUpdates boolean attribute'
 	    ) : invariant(typeof _batchingStrategy.isBatchingUpdates === 'boolean'));
@@ -12729,10 +12659,9 @@
 
 	module.exports = ReactUpdates;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 81 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12747,7 +12676,7 @@
 	 * @typechecks
 	 */
 
-	var isTextNode = __webpack_require__(130);
+	var isTextNode = __webpack_require__(134);
 
 	/*jslint bitwise:true */
 
@@ -12780,7 +12709,7 @@
 
 
 /***/ },
-/* 82 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12819,10 +12748,10 @@
 
 
 /***/ },
-/* 83 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -12836,13 +12765,13 @@
 
 	'use strict';
 
-	var ReactCompositeComponent = __webpack_require__(131);
-	var ReactEmptyComponent = __webpack_require__(78);
-	var ReactNativeComponent = __webpack_require__(41);
+	var ReactCompositeComponent = __webpack_require__(135);
+	var ReactEmptyComponent = __webpack_require__(80);
+	var ReactNativeComponent = __webpack_require__(43);
 
-	var assign = __webpack_require__(21);
-	var invariant = __webpack_require__(27);
-	var warning = __webpack_require__(31);
+	var assign = __webpack_require__(24);
+	var invariant = __webpack_require__(29);
+	var warning = __webpack_require__(33);
 
 	// To avoid a cyclic dependency, we create the final class in this module
 	var ReactCompositeComponentWrapper = function() { };
@@ -12887,8 +12816,8 @@
 
 	  if (typeof node === 'object') {
 	    var element = node;
-	    if ("production" !== process.env.NODE_ENV) {
-	      ("production" !== process.env.NODE_ENV ? warning(
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        element && (typeof element.type === 'function' ||
 	                    typeof element.type === 'string'),
 	        'Only functions or strings can be mounted as React components.'
@@ -12913,15 +12842,15 @@
 	  } else if (typeof node === 'string' || typeof node === 'number') {
 	    instance = ReactNativeComponent.createInstanceForText(node);
 	  } else {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      false,
 	      'Encountered invalid React node of type %s',
 	      typeof node
 	    ) : invariant(false));
 	  }
 
-	  if ("production" !== process.env.NODE_ENV) {
-	    ("production" !== process.env.NODE_ENV ? warning(
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      typeof instance.construct === 'function' &&
 	      typeof instance.mountComponent === 'function' &&
 	      typeof instance.receiveComponent === 'function' &&
@@ -12939,14 +12868,14 @@
 	  instance._mountIndex = 0;
 	  instance._mountImage = null;
 
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    instance._isOwnerNecessary = false;
 	    instance._warnedAboutRefsInRender = false;
 	  }
 
 	  // Internal instances should fully constructed at this point, so they should
 	  // not get any new fields added to them at this point.
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    if (Object.preventExtensions) {
 	      Object.preventExtensions(instance);
 	    }
@@ -12957,10 +12886,9 @@
 
 	module.exports = instantiateReactComponent;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 84 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12978,7 +12906,7 @@
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(24);
+	var ExecutionEnvironment = __webpack_require__(27);
 
 	var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 	var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
@@ -13053,10 +12981,10 @@
 
 
 /***/ },
-/* 85 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -13070,7 +12998,7 @@
 
 	'use strict';
 
-	var warning = __webpack_require__(31);
+	var warning = __webpack_require__(33);
 
 	/**
 	 * Given a `prevElement` and `nextElement`, determines if the existing
@@ -13097,7 +13025,7 @@
 	        var prevName = null;
 	        var nextName = null;
 	        var nextDisplayName = null;
-	        if ("production" !== process.env.NODE_ENV) {
+	        if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	          if (!ownersMatch) {
 	            if (prevElement._owner != null &&
 	                prevElement._owner.getPublicInstance() != null &&
@@ -13131,7 +13059,7 @@
 	                if (nextElement._owner != null) {
 	                  nextElement._owner._isOwnerNecessary = true;
 	                }
-	                ("production" !== process.env.NODE_ENV ? warning(
+	                ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	                  false,
 	                  '<%s /> is being rendered by both %s and %s using the same ' +
 	                  'key (%s) in the same place. Currently, this means that ' +
@@ -13157,10 +13085,9 @@
 
 	module.exports = shouldUpdateReactComponent;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 86 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13198,7 +13125,7 @@
 
 
 /***/ },
-/* 87 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13214,7 +13141,7 @@
 
 	'use strict';
 
-	var ReactOwner = __webpack_require__(132);
+	var ReactOwner = __webpack_require__(136);
 
 	var ReactRef = {};
 
@@ -13273,7 +13200,7 @@
 
 
 /***/ },
-/* 88 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13290,13 +13217,13 @@
 
 	'use strict';
 
-	var PooledClass = __webpack_require__(28);
-	var CallbackQueue = __webpack_require__(111);
-	var ReactPutListenerQueue = __webpack_require__(113);
-	var Transaction = __webpack_require__(102);
+	var PooledClass = __webpack_require__(30);
+	var CallbackQueue = __webpack_require__(115);
+	var ReactPutListenerQueue = __webpack_require__(117);
+	var Transaction = __webpack_require__(106);
 
-	var assign = __webpack_require__(21);
-	var emptyFunction = __webpack_require__(86);
+	var assign = __webpack_require__(24);
+	var emptyFunction = __webpack_require__(88);
 
 	/**
 	 * Provides a `CallbackQueue` queue for collecting `onDOMReady` callbacks
@@ -13390,7 +13317,7 @@
 
 
 /***/ },
-/* 89 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13421,7 +13348,633 @@
 
 
 /***/ },
-/* 90 */
+/* 92 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(137);
+	__webpack_require__(138);
+	__webpack_require__(139);
+	__webpack_require__(140);
+	__webpack_require__(141);
+	__webpack_require__(142);
+	__webpack_require__(143);
+	__webpack_require__(144);
+	__webpack_require__(145);
+	__webpack_require__(146);
+	__webpack_require__(147);
+	__webpack_require__(148);
+	__webpack_require__(149);
+	__webpack_require__(150);
+	__webpack_require__(151);
+	__webpack_require__(152);
+	__webpack_require__(153);
+	__webpack_require__(154);
+	__webpack_require__(155);
+	__webpack_require__(156);
+	__webpack_require__(157);
+	__webpack_require__(158);
+	__webpack_require__(159);
+	__webpack_require__(160);
+	__webpack_require__(161);
+	__webpack_require__(162);
+	__webpack_require__(163);
+	__webpack_require__(164);
+	__webpack_require__(165);
+	__webpack_require__(166);
+	__webpack_require__(167);
+	__webpack_require__(168);
+	__webpack_require__(169);
+	__webpack_require__(170);
+	__webpack_require__(171);
+	__webpack_require__(172);
+	__webpack_require__(173);
+	__webpack_require__(174);
+	__webpack_require__(175);
+	__webpack_require__(176);
+	__webpack_require__(177);
+	__webpack_require__(178);
+	__webpack_require__(179);
+	__webpack_require__(180);
+	__webpack_require__(181);
+	__webpack_require__(182);
+	__webpack_require__(183);
+	__webpack_require__(184);
+	module.exports = __webpack_require__(185).core;
+
+
+/***/ },
+/* 93 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Copyright (c) 2014, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * https://raw.github.com/facebook/regenerator/master/LICENSE file. An
+	 * additional grant of patent rights can be found in the PATENTS file in
+	 * the same directory.
+	 */
+
+	!(function(global) {
+	  "use strict";
+
+	  var hasOwn = Object.prototype.hasOwnProperty;
+	  var undefined; // More compressible than void 0.
+	  var iteratorSymbol =
+	    typeof Symbol === "function" && Symbol.iterator || "@@iterator";
+
+	  var inModule = typeof module === "object";
+	  var runtime = global.regeneratorRuntime;
+	  if (runtime) {
+	    if (inModule) {
+	      // If regeneratorRuntime is defined globally and we're in a module,
+	      // make the exports object identical to regeneratorRuntime.
+	      module.exports = runtime;
+	    }
+	    // Don't bother evaluating the rest of this file if the runtime was
+	    // already defined globally.
+	    return;
+	  }
+
+	  // Define the runtime globally (as expected by generated code) as either
+	  // module.exports (if we're in a module) or a new, empty object.
+	  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
+
+	  function wrap(innerFn, outerFn, self, tryLocsList) {
+	    // If outerFn provided, then outerFn.prototype instanceof Generator.
+	    var generator = Object.create((outerFn || Generator).prototype);
+
+	    generator._invoke = makeInvokeMethod(
+	      innerFn, self || null,
+	      new Context(tryLocsList || [])
+	    );
+
+	    return generator;
+	  }
+	  runtime.wrap = wrap;
+
+	  // Try/catch helper to minimize deoptimizations. Returns a completion
+	  // record like context.tryEntries[i].completion. This interface could
+	  // have been (and was previously) designed to take a closure to be
+	  // invoked without arguments, but in all the cases we care about we
+	  // already have an existing method we want to call, so there's no need
+	  // to create a new function object. We can even get away with assuming
+	  // the method takes exactly one argument, since that happens to be true
+	  // in every case, so we don't have to touch the arguments object. The
+	  // only additional allocation required is the completion record, which
+	  // has a stable shape and so hopefully should be cheap to allocate.
+	  function tryCatch(fn, obj, arg) {
+	    try {
+	      return { type: "normal", arg: fn.call(obj, arg) };
+	    } catch (err) {
+	      return { type: "throw", arg: err };
+	    }
+	  }
+
+	  var GenStateSuspendedStart = "suspendedStart";
+	  var GenStateSuspendedYield = "suspendedYield";
+	  var GenStateExecuting = "executing";
+	  var GenStateCompleted = "completed";
+
+	  // Returning this object from the innerFn has the same effect as
+	  // breaking out of the dispatch switch statement.
+	  var ContinueSentinel = {};
+
+	  // Dummy constructor functions that we use as the .constructor and
+	  // .constructor.prototype properties for functions that return Generator
+	  // objects. For full spec compliance, you may wish to configure your
+	  // minifier not to mangle the names of these two functions.
+	  function Generator() {}
+	  function GeneratorFunction() {}
+	  function GeneratorFunctionPrototype() {}
+
+	  var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype;
+	  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+	  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+	  GeneratorFunction.displayName = "GeneratorFunction";
+
+	  runtime.isGeneratorFunction = function(genFun) {
+	    var ctor = typeof genFun === "function" && genFun.constructor;
+	    return ctor
+	      ? ctor === GeneratorFunction ||
+	        // For the native GeneratorFunction constructor, the best we can
+	        // do is to check its .name property.
+	        (ctor.displayName || ctor.name) === "GeneratorFunction"
+	      : false;
+	  };
+
+	  runtime.mark = function(genFun) {
+	    genFun.__proto__ = GeneratorFunctionPrototype;
+	    genFun.prototype = Object.create(Gp);
+	    return genFun;
+	  };
+
+	  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
+	    return new Promise(function(resolve, reject) {
+	      var generator = wrap(innerFn, outerFn, self, tryLocsList);
+	      var callNext = step.bind(generator, "next");
+	      var callThrow = step.bind(generator, "throw");
+
+	      function step(method, arg) {
+	        var record = tryCatch(generator[method], generator, arg);
+	        if (record.type === "throw") {
+	          reject(record.arg);
+	          return;
+	        }
+
+	        var info = record.arg;
+	        if (info.done) {
+	          resolve(info.value);
+	        } else {
+	          Promise.resolve(info.value).then(callNext, callThrow);
+	        }
+	      }
+
+	      callNext();
+	    });
+	  };
+
+	  function makeInvokeMethod(innerFn, self, context) {
+	    var state = GenStateSuspendedStart;
+
+	    return function invoke(method, arg) {
+	      if (state === GenStateExecuting) {
+	        throw new Error("Generator is already running");
+	      }
+
+	      if (state === GenStateCompleted) {
+	        // Be forgiving, per 25.3.3.3.3 of the spec:
+	        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+	        return doneResult();
+	      }
+
+	      while (true) {
+	        var delegate = context.delegate;
+	        if (delegate) {
+	          if (method === "return" ||
+	              (method === "throw" && delegate.iterator[method] === undefined)) {
+	            // A return or throw (when the delegate iterator has no throw
+	            // method) always terminates the yield* loop.
+	            context.delegate = null;
+
+	            // If the delegate iterator has a return method, give it a
+	            // chance to clean up.
+	            var returnMethod = delegate.iterator["return"];
+	            if (returnMethod) {
+	              var record = tryCatch(returnMethod, delegate.iterator, arg);
+	              if (record.type === "throw") {
+	                // If the return method threw an exception, let that
+	                // exception prevail over the original return or throw.
+	                method = "throw";
+	                arg = record.arg;
+	                continue;
+	              }
+	            }
+
+	            if (method === "return") {
+	              // Continue with the outer return, now that the delegate
+	              // iterator has been terminated.
+	              continue;
+	            }
+	          }
+
+	          var record = tryCatch(
+	            delegate.iterator[method],
+	            delegate.iterator,
+	            arg
+	          );
+
+	          if (record.type === "throw") {
+	            context.delegate = null;
+
+	            // Like returning generator.throw(uncaught), but without the
+	            // overhead of an extra function call.
+	            method = "throw";
+	            arg = record.arg;
+	            continue;
+	          }
+
+	          // Delegate generator ran and handled its own exceptions so
+	          // regardless of what the method was, we continue as if it is
+	          // "next" with an undefined arg.
+	          method = "next";
+	          arg = undefined;
+
+	          var info = record.arg;
+	          if (info.done) {
+	            context[delegate.resultName] = info.value;
+	            context.next = delegate.nextLoc;
+	          } else {
+	            state = GenStateSuspendedYield;
+	            return info;
+	          }
+
+	          context.delegate = null;
+	        }
+
+	        if (method === "next") {
+	          if (state === GenStateSuspendedYield) {
+	            context.sent = arg;
+	          } else {
+	            delete context.sent;
+	          }
+
+	        } else if (method === "throw") {
+	          if (state === GenStateSuspendedStart) {
+	            state = GenStateCompleted;
+	            throw arg;
+	          }
+
+	          if (context.dispatchException(arg)) {
+	            // If the dispatched exception was caught by a catch block,
+	            // then let that catch block handle the exception normally.
+	            method = "next";
+	            arg = undefined;
+	          }
+
+	        } else if (method === "return") {
+	          context.abrupt("return", arg);
+	        }
+
+	        state = GenStateExecuting;
+
+	        var record = tryCatch(innerFn, self, context);
+	        if (record.type === "normal") {
+	          // If an exception is thrown from innerFn, we leave state ===
+	          // GenStateExecuting and loop back for another invocation.
+	          state = context.done
+	            ? GenStateCompleted
+	            : GenStateSuspendedYield;
+
+	          var info = {
+	            value: record.arg,
+	            done: context.done
+	          };
+
+	          if (record.arg === ContinueSentinel) {
+	            if (context.delegate && method === "next") {
+	              // Deliberately forget the last sent value so that we don't
+	              // accidentally pass it on to the delegate.
+	              arg = undefined;
+	            }
+	          } else {
+	            return info;
+	          }
+
+	        } else if (record.type === "throw") {
+	          state = GenStateCompleted;
+	          // Dispatch the exception by looping back around to the
+	          // context.dispatchException(arg) call above.
+	          method = "throw";
+	          arg = record.arg;
+	        }
+	      }
+	    };
+	  }
+
+	  function defineGeneratorMethod(method) {
+	    Gp[method] = function(arg) {
+	      return this._invoke(method, arg);
+	    };
+	  }
+	  defineGeneratorMethod("next");
+	  defineGeneratorMethod("throw");
+	  defineGeneratorMethod("return");
+
+	  Gp[iteratorSymbol] = function() {
+	    return this;
+	  };
+
+	  Gp.toString = function() {
+	    return "[object Generator]";
+	  };
+
+	  function pushTryEntry(locs) {
+	    var entry = { tryLoc: locs[0] };
+
+	    if (1 in locs) {
+	      entry.catchLoc = locs[1];
+	    }
+
+	    if (2 in locs) {
+	      entry.finallyLoc = locs[2];
+	      entry.afterLoc = locs[3];
+	    }
+
+	    this.tryEntries.push(entry);
+	  }
+
+	  function resetTryEntry(entry) {
+	    var record = entry.completion || {};
+	    record.type = "normal";
+	    delete record.arg;
+	    entry.completion = record;
+	  }
+
+	  function Context(tryLocsList) {
+	    // The root entry object (effectively a try statement without a catch
+	    // or a finally block) gives us a place to store values thrown from
+	    // locations where there is no enclosing try statement.
+	    this.tryEntries = [{ tryLoc: "root" }];
+	    tryLocsList.forEach(pushTryEntry, this);
+	    this.reset();
+	  }
+
+	  runtime.keys = function(object) {
+	    var keys = [];
+	    for (var key in object) {
+	      keys.push(key);
+	    }
+	    keys.reverse();
+
+	    // Rather than returning an object with a next method, we keep
+	    // things simple and return the next function itself.
+	    return function next() {
+	      while (keys.length) {
+	        var key = keys.pop();
+	        if (key in object) {
+	          next.value = key;
+	          next.done = false;
+	          return next;
+	        }
+	      }
+
+	      // To avoid creating an additional object, we just hang the .value
+	      // and .done properties off the next function object itself. This
+	      // also ensures that the minifier will not anonymize the function.
+	      next.done = true;
+	      return next;
+	    };
+	  };
+
+	  function values(iterable) {
+	    if (iterable) {
+	      var iteratorMethod = iterable[iteratorSymbol];
+	      if (iteratorMethod) {
+	        return iteratorMethod.call(iterable);
+	      }
+
+	      if (typeof iterable.next === "function") {
+	        return iterable;
+	      }
+
+	      if (!isNaN(iterable.length)) {
+	        var i = -1, next = function next() {
+	          while (++i < iterable.length) {
+	            if (hasOwn.call(iterable, i)) {
+	              next.value = iterable[i];
+	              next.done = false;
+	              return next;
+	            }
+	          }
+
+	          next.value = undefined;
+	          next.done = true;
+
+	          return next;
+	        };
+
+	        return next.next = next;
+	      }
+	    }
+
+	    // Return an iterator with no values.
+	    return { next: doneResult };
+	  }
+	  runtime.values = values;
+
+	  function doneResult() {
+	    return { value: undefined, done: true };
+	  }
+
+	  Context.prototype = {
+	    constructor: Context,
+
+	    reset: function() {
+	      this.prev = 0;
+	      this.next = 0;
+	      this.sent = undefined;
+	      this.done = false;
+	      this.delegate = null;
+
+	      this.tryEntries.forEach(resetTryEntry);
+
+	      // Pre-initialize at least 20 temporary variables to enable hidden
+	      // class optimizations for simple generators.
+	      for (var tempIndex = 0, tempName;
+	           hasOwn.call(this, tempName = "t" + tempIndex) || tempIndex < 20;
+	           ++tempIndex) {
+	        this[tempName] = null;
+	      }
+	    },
+
+	    stop: function() {
+	      this.done = true;
+
+	      var rootEntry = this.tryEntries[0];
+	      var rootRecord = rootEntry.completion;
+	      if (rootRecord.type === "throw") {
+	        throw rootRecord.arg;
+	      }
+
+	      return this.rval;
+	    },
+
+	    dispatchException: function(exception) {
+	      if (this.done) {
+	        throw exception;
+	      }
+
+	      var context = this;
+	      function handle(loc, caught) {
+	        record.type = "throw";
+	        record.arg = exception;
+	        context.next = loc;
+	        return !!caught;
+	      }
+
+	      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+	        var entry = this.tryEntries[i];
+	        var record = entry.completion;
+
+	        if (entry.tryLoc === "root") {
+	          // Exception thrown outside of any try block that could handle
+	          // it, so set the completion value of the entire function to
+	          // throw the exception.
+	          return handle("end");
+	        }
+
+	        if (entry.tryLoc <= this.prev) {
+	          var hasCatch = hasOwn.call(entry, "catchLoc");
+	          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+	          if (hasCatch && hasFinally) {
+	            if (this.prev < entry.catchLoc) {
+	              return handle(entry.catchLoc, true);
+	            } else if (this.prev < entry.finallyLoc) {
+	              return handle(entry.finallyLoc);
+	            }
+
+	          } else if (hasCatch) {
+	            if (this.prev < entry.catchLoc) {
+	              return handle(entry.catchLoc, true);
+	            }
+
+	          } else if (hasFinally) {
+	            if (this.prev < entry.finallyLoc) {
+	              return handle(entry.finallyLoc);
+	            }
+
+	          } else {
+	            throw new Error("try statement without catch or finally");
+	          }
+	        }
+	      }
+	    },
+
+	    abrupt: function(type, arg) {
+	      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+	        var entry = this.tryEntries[i];
+	        if (entry.tryLoc <= this.prev &&
+	            hasOwn.call(entry, "finallyLoc") &&
+	            this.prev < entry.finallyLoc) {
+	          var finallyEntry = entry;
+	          break;
+	        }
+	      }
+
+	      if (finallyEntry &&
+	          (type === "break" ||
+	           type === "continue") &&
+	          finallyEntry.tryLoc <= arg &&
+	          arg <= finallyEntry.finallyLoc) {
+	        // Ignore the finally entry if control is not jumping to a
+	        // location outside the try/catch block.
+	        finallyEntry = null;
+	      }
+
+	      var record = finallyEntry ? finallyEntry.completion : {};
+	      record.type = type;
+	      record.arg = arg;
+
+	      if (finallyEntry) {
+	        this.next = finallyEntry.finallyLoc;
+	      } else {
+	        this.complete(record);
+	      }
+
+	      return ContinueSentinel;
+	    },
+
+	    complete: function(record, afterLoc) {
+	      if (record.type === "throw") {
+	        throw record.arg;
+	      }
+
+	      if (record.type === "break" ||
+	          record.type === "continue") {
+	        this.next = record.arg;
+	      } else if (record.type === "return") {
+	        this.rval = record.arg;
+	        this.next = "end";
+	      } else if (record.type === "normal" && afterLoc) {
+	        this.next = afterLoc;
+	      }
+
+	      return ContinueSentinel;
+	    },
+
+	    finish: function(finallyLoc) {
+	      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+	        var entry = this.tryEntries[i];
+	        if (entry.finallyLoc === finallyLoc) {
+	          return this.complete(entry.completion, entry.afterLoc);
+	        }
+	      }
+	    },
+
+	    "catch": function(tryLoc) {
+	      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+	        var entry = this.tryEntries[i];
+	        if (entry.tryLoc === tryLoc) {
+	          var record = entry.completion;
+	          if (record.type === "throw") {
+	            var thrown = record.arg;
+	            resetTryEntry(entry);
+	          }
+	          return thrown;
+	        }
+	      }
+
+	      // The context.catch method must only be called with a location
+	      // argument that corresponds to a known catch block.
+	      throw new Error("illegal catch attempt");
+	    },
+
+	    delegateYield: function(iterable, resultName, nextLoc) {
+	      this.delegate = {
+	        iterator: values(iterable),
+	        resultName: resultName,
+	        nextLoc: nextLoc
+	      };
+
+	      return ContinueSentinel;
+	    }
+	  };
+	})(
+	  // Among the various tricks for obtaining a reference to the global
+	  // object, this seems to be the most reliable technique that does not
+	  // use indirect eval (which violates Content Security Policy).
+	  typeof global === "object" ? global :
+	  typeof window === "object" ? window :
+	  typeof self === "object" ? self : this
+	);
+
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13437,7 +13990,7 @@
 
 	'use strict';
 
-	var escapeTextContentForBrowser = __webpack_require__(47);
+	var escapeTextContentForBrowser = __webpack_require__(49);
 
 	/**
 	 * Escapes attribute value to prevent scripting attacks.
@@ -13453,10 +14006,10 @@
 
 
 /***/ },
-/* 91 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -13470,14 +14023,14 @@
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(133);
-	var ExecutionEnvironment = __webpack_require__(24);
+	var CSSProperty = __webpack_require__(186);
+	var ExecutionEnvironment = __webpack_require__(27);
 
-	var camelizeStyleName = __webpack_require__(134);
-	var dangerousStyleValue = __webpack_require__(135);
-	var hyphenateStyleName = __webpack_require__(136);
-	var memoizeStringOnly = __webpack_require__(137);
-	var warning = __webpack_require__(31);
+	var camelizeStyleName = __webpack_require__(187);
+	var dangerousStyleValue = __webpack_require__(188);
+	var hyphenateStyleName = __webpack_require__(189);
+	var memoizeStringOnly = __webpack_require__(190);
+	var warning = __webpack_require__(33);
 
 	var processStyleName = memoizeStringOnly(function(styleName) {
 	  return hyphenateStyleName(styleName);
@@ -13491,7 +14044,7 @@
 	  }
 	}
 
-	if ("production" !== process.env.NODE_ENV) {
+	if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	  // 'msTransform' is correct, but the other prefixes should be capitalized
 	  var badVendoredStyleNamePattern = /^(?:webkit|moz|o)[A-Z]/;
 
@@ -13507,7 +14060,7 @@
 	    }
 
 	    warnedStyleNames[name] = true;
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      false,
 	      'Unsupported style property %s. Did you mean %s?',
 	      name,
@@ -13521,7 +14074,7 @@
 	    }
 
 	    warnedStyleNames[name] = true;
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      false,
 	      'Unsupported vendor-prefixed style property %s. Did you mean %s?',
 	      name,
@@ -13535,7 +14088,7 @@
 	    }
 
 	    warnedStyleValues[value] = true;
-	    ("production" !== process.env.NODE_ENV ? warning(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      false,
 	      'Style property values shouldn\'t contain a semicolon. ' +
 	      'Try "%s: %s" instead.',
@@ -13583,7 +14136,7 @@
 	        continue;
 	      }
 	      var styleValue = styles[styleName];
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        warnValidStyle(styleName, styleValue);
 	      }
 	      if (styleValue != null) {
@@ -13607,7 +14160,7 @@
 	      if (!styles.hasOwnProperty(styleName)) {
 	        continue;
 	      }
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        warnValidStyle(styleName, styles[styleName]);
 	      }
 	      var styleValue = dangerousStyleValue(styleName, styles[styleName]);
@@ -13635,10 +14188,9 @@
 
 	module.exports = CSSPropertyOperations;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 92 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13655,11 +14207,11 @@
 
 	'use strict';
 
-	var ReactComponentEnvironment = __webpack_require__(110);
-	var ReactMultiChildUpdateTypes = __webpack_require__(138);
+	var ReactComponentEnvironment = __webpack_require__(114);
+	var ReactMultiChildUpdateTypes = __webpack_require__(191);
 
-	var ReactReconciler = __webpack_require__(19);
-	var ReactChildReconciler = __webpack_require__(139);
+	var ReactReconciler = __webpack_require__(22);
+	var ReactChildReconciler = __webpack_require__(192);
 
 	/**
 	 * Updating children of a component may trigger recursive updates. The depth is
@@ -14072,7 +14624,7 @@
 
 
 /***/ },
-/* 93 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14088,7 +14640,7 @@
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(24);
+	var ExecutionEnvironment = __webpack_require__(27);
 
 	var useHasFeature;
 	if (ExecutionEnvironment.canUseDOM) {
@@ -14141,10 +14693,10 @@
 
 
 /***/ },
-/* 94 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -14157,11 +14709,11 @@
 
 	'use strict';
 
-	var EventConstants = __webpack_require__(26);
-	var EventPluginHub = __webpack_require__(98);
+	var EventConstants = __webpack_require__(28);
+	var EventPluginHub = __webpack_require__(102);
 
-	var accumulateInto = __webpack_require__(140);
-	var forEachAccumulated = __webpack_require__(141);
+	var accumulateInto = __webpack_require__(193);
+	var forEachAccumulated = __webpack_require__(194);
 
 	var PropagationPhases = EventConstants.PropagationPhases;
 	var getListener = EventPluginHub.getListener;
@@ -14183,7 +14735,7 @@
 	 * "dispatch" object that pairs the event with the listener.
 	 */
 	function accumulateDirectionalDispatches(domID, upwards, event) {
-	  if ("production" !== process.env.NODE_ENV) {
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	    if (!domID) {
 	      throw new Error('Dispatching id must not be null');
 	    }
@@ -14283,10 +14835,9 @@
 
 	module.exports = EventPropagators;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 95 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14303,10 +14854,10 @@
 
 	'use strict';
 
-	var PooledClass = __webpack_require__(28);
+	var PooledClass = __webpack_require__(30);
 
-	var assign = __webpack_require__(21);
-	var getTextContentAccessor = __webpack_require__(142);
+	var assign = __webpack_require__(24);
+	var getTextContentAccessor = __webpack_require__(195);
 
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -14381,7 +14932,7 @@
 
 
 /***/ },
-/* 96 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14398,7 +14949,7 @@
 
 	'use strict';
 
-	var SyntheticEvent = __webpack_require__(99);
+	var SyntheticEvent = __webpack_require__(103);
 
 	/**
 	 * @interface Event
@@ -14430,7 +14981,7 @@
 
 
 /***/ },
-/* 97 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14447,7 +14998,7 @@
 
 	'use strict';
 
-	var SyntheticEvent = __webpack_require__(99);
+	var SyntheticEvent = __webpack_require__(103);
 
 	/**
 	 * @interface Event
@@ -14480,10 +15031,10 @@
 
 
 /***/ },
-/* 98 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -14496,12 +15047,12 @@
 
 	'use strict';
 
-	var EventPluginRegistry = __webpack_require__(126);
-	var EventPluginUtils = __webpack_require__(4);
+	var EventPluginRegistry = __webpack_require__(130);
+	var EventPluginUtils = __webpack_require__(7);
 
-	var accumulateInto = __webpack_require__(140);
-	var forEachAccumulated = __webpack_require__(141);
-	var invariant = __webpack_require__(27);
+	var accumulateInto = __webpack_require__(193);
+	var forEachAccumulated = __webpack_require__(194);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Internal store for event listeners
@@ -14547,7 +15098,7 @@
 	    InstanceHandle &&
 	    InstanceHandle.traverseTwoPhase &&
 	    InstanceHandle.traverseEnterLeave;
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    valid,
 	    'InstanceHandle not injected before use!'
 	  ) : invariant(valid));
@@ -14594,13 +15145,13 @@
 	     */
 	    injectInstanceHandle: function(InjectedInstanceHandle) {
 	      InstanceHandle = InjectedInstanceHandle;
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        validateInstanceHandle();
 	      }
 	    },
 
 	    getInstanceHandle: function() {
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        validateInstanceHandle();
 	      }
 	      return InstanceHandle;
@@ -14631,7 +15182,7 @@
 	   * @param {?function} listener The callback to store.
 	   */
 	  putListener: function(id, registrationName, listener) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      !listener || typeof listener === 'function',
 	      'Expected %s listener to be a function, instead got type %s',
 	      registrationName, typeof listener
@@ -14736,7 +15287,7 @@
 	    var processingEventQueue = eventQueue;
 	    eventQueue = null;
 	    forEachAccumulated(processingEventQueue, executeDispatchesAndRelease);
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      !eventQueue,
 	      'processEventQueue(): Additional events were enqueued while processing ' +
 	      'an event queue. Support for this has not yet been implemented.'
@@ -14758,10 +15309,9 @@
 
 	module.exports = EventPluginHub;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 99 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14778,11 +15328,11 @@
 
 	'use strict';
 
-	var PooledClass = __webpack_require__(28);
+	var PooledClass = __webpack_require__(30);
 
-	var assign = __webpack_require__(21);
-	var emptyFunction = __webpack_require__(86);
-	var getEventTarget = __webpack_require__(108);
+	var assign = __webpack_require__(24);
+	var emptyFunction = __webpack_require__(88);
+	var getEventTarget = __webpack_require__(112);
 
 	/**
 	 * @interface Event
@@ -14931,7 +15481,7 @@
 
 
 /***/ },
-/* 100 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14978,7 +15528,7 @@
 
 
 /***/ },
-/* 101 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14995,10 +15545,10 @@
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(121);
-	var ViewportMetrics = __webpack_require__(128);
+	var SyntheticUIEvent = __webpack_require__(125);
+	var ViewportMetrics = __webpack_require__(132);
 
-	var getEventModifierState = __webpack_require__(143);
+	var getEventModifierState = __webpack_require__(196);
 
 	/**
 	 * @interface MouseEvent
@@ -15063,10 +15613,10 @@
 
 
 /***/ },
-/* 102 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -15079,7 +15629,7 @@
 
 	'use strict';
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * `Transaction` creates a black box that is able to wrap any method such that
@@ -15184,7 +15734,7 @@
 	   * @return Return value from `method`.
 	   */
 	  perform: function(method, scope, a, b, c, d, e, f) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      !this.isInTransaction(),
 	      'Transaction.perform(...): Cannot initialize a transaction when there ' +
 	      'is already an outstanding transaction.'
@@ -15256,7 +15806,7 @@
 	   * invoked).
 	   */
 	  closeAll: function(startIndex) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      this.isInTransaction(),
 	      'Transaction.closeAll(): Cannot close transaction when none are open.'
 	    ) : invariant(this.isInTransaction()));
@@ -15304,10 +15854,9 @@
 
 	module.exports = Transaction;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 103 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -15324,7 +15873,7 @@
 
 	'use strict';
 
-	var focusNode = __webpack_require__(144);
+	var focusNode = __webpack_require__(197);
 
 	var AutoFocusMixin = {
 	  componentDidMount: function() {
@@ -15338,10 +15887,10 @@
 
 
 /***/ },
-/* 104 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -15354,11 +15903,11 @@
 
 	'use strict';
 
-	var ReactBrowserEventEmitter = __webpack_require__(77);
+	var ReactBrowserEventEmitter = __webpack_require__(79);
 
-	var accumulateInto = __webpack_require__(140);
-	var forEachAccumulated = __webpack_require__(141);
-	var invariant = __webpack_require__(27);
+	var accumulateInto = __webpack_require__(193);
+	var forEachAccumulated = __webpack_require__(194);
+	var invariant = __webpack_require__(29);
 
 	function remove(event) {
 	  event.remove();
@@ -15366,11 +15915,11 @@
 
 	var LocalEventTrapMixin = {
 	  trapBubbledEvent:function(topLevelType, handlerBaseName) {
-	    ("production" !== process.env.NODE_ENV ? invariant(this.isMounted(), 'Must be mounted to trap events') : invariant(this.isMounted()));
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(this.isMounted(), 'Must be mounted to trap events') : invariant(this.isMounted()));
 	    // If a component renders to null or if another component fatals and causes
 	    // the state of the tree to be corrupted, `node` here can be null.
 	    var node = this.getDOMNode();
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      node,
 	      'LocalEventTrapMixin.trapBubbledEvent(...): Requires node to be rendered.'
 	    ) : invariant(node));
@@ -15395,13 +15944,12 @@
 
 	module.exports = LocalEventTrapMixin;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 105 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -15415,11 +15963,11 @@
 
 	'use strict';
 
-	var Danger = __webpack_require__(145);
-	var ReactMultiChildUpdateTypes = __webpack_require__(138);
+	var Danger = __webpack_require__(198);
+	var ReactMultiChildUpdateTypes = __webpack_require__(191);
 
-	var setTextContent = __webpack_require__(146);
-	var invariant = __webpack_require__(27);
+	var setTextContent = __webpack_require__(199);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Inserts `childNode` as a child of `parentNode` at the `index`.
@@ -15472,7 +16020,7 @@
 	        var updatedChild = update.parentNode.childNodes[updatedIndex];
 	        var parentID = update.parentID;
 
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          updatedChild,
 	          'processUpdates(): Unable to find child %s of element. This ' +
 	          'probably means the DOM was unexpectedly mutated (e.g., by the ' +
@@ -15536,13 +16084,12 @@
 
 	module.exports = DOMChildrenOperations;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 106 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -15556,9 +16103,9 @@
 
 	'use strict';
 
-	var ReactPropTypes = __webpack_require__(18);
+	var ReactPropTypes = __webpack_require__(21);
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	var hasReadOnlyValue = {
 	  'button': true,
@@ -15571,7 +16118,7 @@
 	};
 
 	function _assertSingleLink(input) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    input.props.checkedLink == null || input.props.valueLink == null,
 	    'Cannot provide a checkedLink and a valueLink. If you want to use ' +
 	    'checkedLink, you probably don\'t want to use valueLink and vice versa.'
@@ -15579,7 +16126,7 @@
 	}
 	function _assertValueLink(input) {
 	  _assertSingleLink(input);
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    input.props.value == null && input.props.onChange == null,
 	    'Cannot provide a valueLink and a value or onChange event. If you want ' +
 	    'to use value or onChange, you probably don\'t want to use valueLink.'
@@ -15588,7 +16135,7 @@
 
 	function _assertCheckedLink(input) {
 	  _assertSingleLink(input);
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    input.props.checked == null && input.props.onChange == null,
 	    'Cannot provide a checkedLink and a checked property or onChange event. ' +
 	    'If you want to use checked or onChange, you probably don\'t want to ' +
@@ -15695,13 +16242,12 @@
 
 	module.exports = LinkedValueUtils;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 107 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 *
 	 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15720,7 +16266,7 @@
 	 * @typechecks
 	 */
 
-	var emptyFunction = __webpack_require__(86);
+	var emptyFunction = __webpack_require__(88);
 
 	/**
 	 * Upstream version of event listener. Does not take into account specific
@@ -15763,7 +16309,7 @@
 	   */
 	  capture: function(target, eventType, callback) {
 	    if (!target.addEventListener) {
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        console.error(
 	          'Attempted to listen to events during the capture phase on a ' +
 	          'browser that does not support the capture phase. Your application ' +
@@ -15788,10 +16334,9 @@
 
 	module.exports = EventListener;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 108 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -15826,7 +16371,7 @@
 
 
 /***/ },
-/* 109 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -15870,10 +16415,10 @@
 
 
 /***/ },
-/* 110 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -15886,7 +16431,7 @@
 
 	'use strict';
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	var injected = false;
 
@@ -15913,7 +16458,7 @@
 
 	  injection: {
 	    injectEnvironment: function(environment) {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        !injected,
 	        'ReactCompositeComponent: injectEnvironment() can only be called once.'
 	      ) : invariant(!injected));
@@ -15931,13 +16476,12 @@
 
 	module.exports = ReactComponentEnvironment;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 111 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -15950,10 +16494,10 @@
 
 	'use strict';
 
-	var PooledClass = __webpack_require__(28);
+	var PooledClass = __webpack_require__(30);
 
-	var assign = __webpack_require__(21);
-	var invariant = __webpack_require__(27);
+	var assign = __webpack_require__(24);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * A specialized pseudo-event module to help keep track of components waiting to
@@ -15997,7 +16541,7 @@
 	    var callbacks = this._callbacks;
 	    var contexts = this._contexts;
 	    if (callbacks) {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        callbacks.length === contexts.length,
 	        'Mismatched list of contexts in callback queue'
 	      ) : invariant(callbacks.length === contexts.length));
@@ -16034,10 +16578,9 @@
 
 	module.exports = CallbackQueue;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 112 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16053,11 +16596,11 @@
 
 	'use strict';
 
-	var ReactDOMSelection = __webpack_require__(147);
+	var ReactDOMSelection = __webpack_require__(200);
 
-	var containsNode = __webpack_require__(81);
-	var focusNode = __webpack_require__(144);
-	var getActiveElement = __webpack_require__(114);
+	var containsNode = __webpack_require__(83);
+	var focusNode = __webpack_require__(197);
+	var getActiveElement = __webpack_require__(118);
 
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -16176,7 +16719,7 @@
 
 
 /***/ },
-/* 113 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16192,10 +16735,10 @@
 
 	'use strict';
 
-	var PooledClass = __webpack_require__(28);
-	var ReactBrowserEventEmitter = __webpack_require__(77);
+	var PooledClass = __webpack_require__(30);
+	var ReactBrowserEventEmitter = __webpack_require__(79);
 
-	var assign = __webpack_require__(21);
+	var assign = __webpack_require__(24);
 
 	function ReactPutListenerQueue() {
 	  this.listenersToPut = [];
@@ -16236,7 +16779,7 @@
 
 
 /***/ },
-/* 114 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16269,7 +16812,7 @@
 
 
 /***/ },
-/* 115 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16317,7 +16860,7 @@
 
 
 /***/ },
-/* 116 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16334,7 +16877,7 @@
 
 	'use strict';
 
-	var SyntheticEvent = __webpack_require__(99);
+	var SyntheticEvent = __webpack_require__(103);
 
 	/**
 	 * @interface Event
@@ -16366,7 +16909,7 @@
 
 
 /***/ },
-/* 117 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16383,7 +16926,7 @@
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(121);
+	var SyntheticUIEvent = __webpack_require__(125);
 
 	/**
 	 * @interface FocusEvent
@@ -16409,7 +16952,7 @@
 
 
 /***/ },
-/* 118 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16426,11 +16969,11 @@
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(121);
+	var SyntheticUIEvent = __webpack_require__(125);
 
-	var getEventCharCode = __webpack_require__(123);
-	var getEventKey = __webpack_require__(148);
-	var getEventModifierState = __webpack_require__(143);
+	var getEventCharCode = __webpack_require__(127);
+	var getEventKey = __webpack_require__(201);
+	var getEventModifierState = __webpack_require__(196);
 
 	/**
 	 * @interface KeyboardEvent
@@ -16500,7 +17043,7 @@
 
 
 /***/ },
-/* 119 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16517,7 +17060,7 @@
 
 	'use strict';
 
-	var SyntheticMouseEvent = __webpack_require__(101);
+	var SyntheticMouseEvent = __webpack_require__(105);
 
 	/**
 	 * @interface DragEvent
@@ -16543,7 +17086,7 @@
 
 
 /***/ },
-/* 120 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16560,9 +17103,9 @@
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(121);
+	var SyntheticUIEvent = __webpack_require__(125);
 
-	var getEventModifierState = __webpack_require__(143);
+	var getEventModifierState = __webpack_require__(196);
 
 	/**
 	 * @interface TouchEvent
@@ -16595,7 +17138,7 @@
 
 
 /***/ },
-/* 121 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16612,9 +17155,9 @@
 
 	'use strict';
 
-	var SyntheticEvent = __webpack_require__(99);
+	var SyntheticEvent = __webpack_require__(103);
 
-	var getEventTarget = __webpack_require__(108);
+	var getEventTarget = __webpack_require__(112);
 
 	/**
 	 * @interface UIEvent
@@ -16661,7 +17204,7 @@
 
 
 /***/ },
-/* 122 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16678,7 +17221,7 @@
 
 	'use strict';
 
-	var SyntheticMouseEvent = __webpack_require__(101);
+	var SyntheticMouseEvent = __webpack_require__(105);
 
 	/**
 	 * @interface WheelEvent
@@ -16726,7 +17269,7 @@
 
 
 /***/ },
-/* 123 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16782,7 +17325,7 @@
 
 
 /***/ },
-/* 124 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16796,7 +17339,7 @@
 	 * @providesModule ReactDefaultPerfAnalysis
 	 */
 
-	var assign = __webpack_require__(21);
+	var assign = __webpack_require__(24);
 
 	// Don't try to save users less than 1.2ms (a number I made up)
 	var DONT_CARE_THRESHOLD = 1.2;
@@ -16992,7 +17535,7 @@
 
 
 /***/ },
-/* 125 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17007,7 +17550,7 @@
 	 * @typechecks
 	 */
 
-	var performance = __webpack_require__(149);
+	var performance = __webpack_require__(202);
 
 	/**
 	 * Detect if we can use `window.performance.now()` and gracefully fallback to
@@ -17024,10 +17567,10 @@
 
 
 /***/ },
-/* 126 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -17041,7 +17584,7 @@
 
 	'use strict';
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Injectable ordering of event plugins.
@@ -17066,7 +17609,7 @@
 	  for (var pluginName in namesToPlugins) {
 	    var PluginModule = namesToPlugins[pluginName];
 	    var pluginIndex = EventPluginOrder.indexOf(pluginName);
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      pluginIndex > -1,
 	      'EventPluginRegistry: Cannot inject event plugins that do not exist in ' +
 	      'the plugin ordering, `%s`.',
@@ -17075,7 +17618,7 @@
 	    if (EventPluginRegistry.plugins[pluginIndex]) {
 	      continue;
 	    }
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      PluginModule.extractEvents,
 	      'EventPluginRegistry: Event plugins must implement an `extractEvents` ' +
 	      'method, but `%s` does not.',
@@ -17084,7 +17627,7 @@
 	    EventPluginRegistry.plugins[pluginIndex] = PluginModule;
 	    var publishedEvents = PluginModule.eventTypes;
 	    for (var eventName in publishedEvents) {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        publishEventForPlugin(
 	          publishedEvents[eventName],
 	          PluginModule,
@@ -17111,7 +17654,7 @@
 	 * @private
 	 */
 	function publishEventForPlugin(dispatchConfig, PluginModule, eventName) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    !EventPluginRegistry.eventNameDispatchConfigs.hasOwnProperty(eventName),
 	    'EventPluginHub: More than one plugin attempted to publish the same ' +
 	    'event name, `%s`.',
@@ -17152,7 +17695,7 @@
 	 * @private
 	 */
 	function publishRegistrationName(registrationName, PluginModule, eventName) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    !EventPluginRegistry.registrationNameModules[registrationName],
 	    'EventPluginHub: More than one plugin attempted to publish the same ' +
 	    'registration name, `%s`.',
@@ -17200,7 +17743,7 @@
 	   * @see {EventPluginHub.injection.injectEventPluginOrder}
 	   */
 	  injectEventPluginOrder: function(InjectedEventPluginOrder) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      !EventPluginOrder,
 	      'EventPluginRegistry: Cannot inject event plugin ordering more than ' +
 	      'once. You are likely trying to load more than one copy of React.'
@@ -17229,7 +17772,7 @@
 	      var PluginModule = injectedNamesToPlugins[pluginName];
 	      if (!namesToPlugins.hasOwnProperty(pluginName) ||
 	          namesToPlugins[pluginName] !== PluginModule) {
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          !namesToPlugins[pluginName],
 	          'EventPluginRegistry: Cannot inject two different event plugins ' +
 	          'using the same name, `%s`.',
@@ -17304,10 +17847,9 @@
 
 	module.exports = EventPluginRegistry;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 127 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17323,7 +17865,7 @@
 
 	'use strict';
 
-	var EventPluginHub = __webpack_require__(98);
+	var EventPluginHub = __webpack_require__(102);
 
 	function runEventQueueInBatch(events) {
 	  EventPluginHub.enqueueEvents(events);
@@ -17361,7 +17903,7 @@
 
 
 /***/ },
-/* 128 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17394,7 +17936,7 @@
 
 
 /***/ },
-/* 129 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17432,7 +17974,7 @@
 
 
 /***/ },
-/* 130 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17447,7 +17989,7 @@
 	 * @typechecks
 	 */
 
-	var isNode = __webpack_require__(89);
+	var isNode = __webpack_require__(91);
 
 	/**
 	 * @param {*} object The object to check.
@@ -17461,10 +18003,10 @@
 
 
 /***/ },
-/* 131 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -17477,25 +18019,25 @@
 
 	'use strict';
 
-	var ReactComponentEnvironment = __webpack_require__(110);
-	var ReactContext = __webpack_require__(8);
-	var ReactCurrentOwner = __webpack_require__(9);
-	var ReactElement = __webpack_require__(10);
-	var ReactElementValidator = __webpack_require__(11);
-	var ReactInstanceMap = __webpack_require__(34);
-	var ReactLifeCycle = __webpack_require__(35);
-	var ReactNativeComponent = __webpack_require__(41);
-	var ReactPerf = __webpack_require__(17);
-	var ReactPropTypeLocations = __webpack_require__(36);
-	var ReactPropTypeLocationNames = __webpack_require__(37);
-	var ReactReconciler = __webpack_require__(19);
-	var ReactUpdates = __webpack_require__(80);
+	var ReactComponentEnvironment = __webpack_require__(114);
+	var ReactContext = __webpack_require__(11);
+	var ReactCurrentOwner = __webpack_require__(12);
+	var ReactElement = __webpack_require__(13);
+	var ReactElementValidator = __webpack_require__(14);
+	var ReactInstanceMap = __webpack_require__(36);
+	var ReactLifeCycle = __webpack_require__(37);
+	var ReactNativeComponent = __webpack_require__(43);
+	var ReactPerf = __webpack_require__(20);
+	var ReactPropTypeLocations = __webpack_require__(38);
+	var ReactPropTypeLocationNames = __webpack_require__(39);
+	var ReactReconciler = __webpack_require__(22);
+	var ReactUpdates = __webpack_require__(82);
 
-	var assign = __webpack_require__(21);
-	var emptyObject = __webpack_require__(40);
-	var invariant = __webpack_require__(27);
-	var shouldUpdateReactComponent = __webpack_require__(85);
-	var warning = __webpack_require__(31);
+	var assign = __webpack_require__(24);
+	var emptyObject = __webpack_require__(42);
+	var invariant = __webpack_require__(29);
+	var shouldUpdateReactComponent = __webpack_require__(87);
+	var warning = __webpack_require__(33);
 
 	function getDeclarationErrorAddendum(component) {
 	  var owner = component._currentElement._owner || null;
@@ -17600,10 +18142,10 @@
 	    // Initialize the public class
 	    var inst = new Component(publicProps, publicContext);
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      // This will throw later in _renderValidatedComponent, but add an early
 	      // warning now to help debugging
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        inst.render != null,
 	        '%s(...): No `render` method found on the returned component ' +
 	        'instance: you may have forgotten to define `render` in your ' +
@@ -17624,15 +18166,15 @@
 	    // Store a reference from the instance back to the internal representation
 	    ReactInstanceMap.set(inst, this);
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      this._warnIfContextsDiffer(this._currentElement._context, context);
 	    }
 
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      // Since plain JS classes are defined without any special initialization
 	      // logic, we can not catch common errors early. Therefore, we have to
 	      // catch them here, at initialization time, instead.
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        !inst.getInitialState ||
 	        inst.getInitialState.isReactClassApproved,
 	        'getInitialState was defined on %s, a plain JavaScript class. ' +
@@ -17640,7 +18182,7 @@
 	        'Did you mean to define a state property instead?',
 	        this.getName() || 'a component'
 	      ) : null);
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        !inst.getDefaultProps ||
 	        inst.getDefaultProps.isReactClassApproved,
 	        'getDefaultProps was defined on %s, a plain JavaScript class. ' +
@@ -17648,19 +18190,19 @@
 	        'Use a static property to define defaultProps instead.',
 	        this.getName() || 'a component'
 	      ) : null);
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        !inst.propTypes,
 	        'propTypes was defined as an instance property on %s. Use a static ' +
 	        'property to define propTypes instead.',
 	        this.getName() || 'a component'
 	      ) : null);
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        !inst.contextTypes,
 	        'contextTypes was defined as an instance property on %s. Use a ' +
 	        'static property to define contextTypes instead.',
 	        this.getName() || 'a component'
 	      ) : null);
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        typeof inst.componentShouldUpdate !== 'function',
 	        '%s has a method called ' +
 	        'componentShouldUpdate(). Did you mean shouldComponentUpdate()? ' +
@@ -17674,7 +18216,7 @@
 	    if (initialState === undefined) {
 	      inst.state = initialState = null;
 	    }
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      typeof initialState === 'object' && !Array.isArray(initialState),
 	      '%s.state: must be set to an object or null',
 	      this.getName() || 'ReactCompositeComponent'
@@ -17822,7 +18364,7 @@
 	   */
 	  _processContext: function(context) {
 	    var maskedContext = this._maskContext(context);
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      var Component = ReactNativeComponent.getComponentClassForElement(
 	        this._currentElement
 	      );
@@ -17846,13 +18388,13 @@
 	    var inst = this._instance;
 	    var childContext = inst.getChildContext && inst.getChildContext();
 	    if (childContext) {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        typeof inst.constructor.childContextTypes === 'object',
 	        '%s.getChildContext(): childContextTypes must be defined in order to ' +
 	        'use getChildContext().',
 	        this.getName() || 'ReactCompositeComponent'
 	      ) : invariant(typeof inst.constructor.childContextTypes === 'object'));
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        this._checkPropTypes(
 	          inst.constructor.childContextTypes,
 	          childContext,
@@ -17860,7 +18402,7 @@
 	        );
 	      }
 	      for (var name in childContext) {
-	        ("production" !== process.env.NODE_ENV ? invariant(
+	        ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	          name in inst.constructor.childContextTypes,
 	          '%s.getChildContext(): key "%s" is not defined in childContextTypes.',
 	          this.getName() || 'ReactCompositeComponent',
@@ -17882,7 +18424,7 @@
 	   * @private
 	   */
 	  _processProps: function(newProps) {
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      var Component = ReactNativeComponent.getComponentClassForElement(
 	        this._currentElement
 	      );
@@ -17915,7 +18457,7 @@
 	        try {
 	          // This is intentionally an invariant that gets caught. It's the same
 	          // behavior as without this statement except with a better message.
-	          ("production" !== process.env.NODE_ENV ? invariant(
+	          ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	            typeof propTypes[propName] === 'function',
 	            '%s: %s type `%s` is invalid; it must be a function, usually ' +
 	            'from React.PropTypes.',
@@ -17935,14 +18477,14 @@
 
 	          if (location === ReactPropTypeLocations.prop) {
 	            // Preface gives us something to blacklist in warning module
-	            ("production" !== process.env.NODE_ENV ? warning(
+	            ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	              false,
 	              'Failed Composite propType: %s%s',
 	              error.message,
 	              addendum
 	            ) : null);
 	          } else {
-	            ("production" !== process.env.NODE_ENV ? warning(
+	            ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	              false,
 	              'Failed Context Types: %s%s',
 	              error.message,
@@ -17987,7 +18529,7 @@
 	    }
 
 	    if (this._pendingStateQueue !== null || this._pendingForceUpdate) {
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        ReactElementValidator.checkAndWarnForMutatedProps(
 	          this._currentElement
 	        );
@@ -18014,7 +18556,7 @@
 	    var displayName = this.getName() || 'ReactCompositeComponent';
 	    for (var i = 0; i < parentKeys.length; i++) {
 	      var key = parentKeys[i];
-	      ("production" !== process.env.NODE_ENV ? warning(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        ownerBasedContext[key] === parentBasedContext[key],
 	        'owner-based and parent-based contexts differ '  +
 	        '(values: `%s` vs `%s`) for key (%s) while mounting %s ' +
@@ -18059,7 +18601,7 @@
 	      nextContext = this._processContext(nextParentElement._context);
 	      nextProps = this._processProps(nextParentElement.props);
 
-	      if ("production" !== process.env.NODE_ENV) {
+	      if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	        if (nextUnmaskedContext != null) {
 	          this._warnIfContextsDiffer(
 	            nextParentElement._context,
@@ -18084,8 +18626,8 @@
 	      !inst.shouldComponentUpdate ||
 	      inst.shouldComponentUpdate(nextProps, nextState, nextContext);
 
-	    if ("production" !== process.env.NODE_ENV) {
-	      ("production" !== process.env.NODE_ENV ? warning(
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	        typeof shouldUpdate !== 'undefined',
 	        '%s.shouldComponentUpdate(): Returned undefined instead of a ' +
 	        'boolean value. Make sure to return true or false.',
@@ -18239,7 +18781,7 @@
 	  _renderValidatedComponentWithoutOwnerOrContext: function() {
 	    var inst = this._instance;
 	    var renderedComponent = inst.render();
-	    if ("production" !== process.env.NODE_ENV) {
+	    if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	      // We allow auto-mocks to proceed as if they're returning null.
 	      if (typeof renderedComponent === 'undefined' &&
 	          inst.render._isMockFunction) {
@@ -18269,7 +18811,7 @@
 	      ReactContext.current = previousContext;
 	      ReactCurrentOwner.current = null;
 	    }
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      // TODO: An `isValidNode` function would probably be more appropriate
 	      renderedComponent === null || renderedComponent === false ||
 	      ReactElement.isValidElement(renderedComponent),
@@ -18359,13 +18901,12 @@
 
 	module.exports = ReactCompositeComponent;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 132 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -18378,7 +18919,7 @@
 
 	'use strict';
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * ReactOwners are capable of storing references to owned components.
@@ -18434,7 +18975,7 @@
 	   * @internal
 	   */
 	  addComponentAsRefTo: function(component, ref, owner) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      ReactOwner.isValidOwner(owner),
 	      'addComponentAsRefTo(...): Only a ReactOwner can have refs. This ' +
 	      'usually means that you\'re trying to add a ref to a component that ' +
@@ -18455,7 +18996,7 @@
 	   * @internal
 	   */
 	  removeComponentAsRefFrom: function(component, ref, owner) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      ReactOwner.isValidOwner(owner),
 	      'removeComponentAsRefFrom(...): Only a ReactOwner can have refs. This ' +
 	      'usually means that you\'re trying to remove a ref to a component that ' +
@@ -18474,10 +19015,2011 @@
 
 	module.exports = ReactOwner;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 133 */
+/* 137 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $                = __webpack_require__(185)
+	  , cel              = __webpack_require__(203)
+	  , cof              = __webpack_require__(204)
+	  , $def             = __webpack_require__(205)
+	  , invoke           = __webpack_require__(206)
+	  , arrayMethod      = __webpack_require__(207)
+	  , IE_PROTO         = __webpack_require__(208).safe('__proto__')
+	  , assert           = __webpack_require__(209)
+	  , assertObject     = assert.obj
+	  , ObjectProto      = Object.prototype
+	  , html             = $.html
+	  , A                = []
+	  , _slice           = A.slice
+	  , _join            = A.join
+	  , indexOf          = A.indexOf
+	  , classof          = cof.classof
+	  , has              = $.has
+	  , defineProperty   = $.setDesc
+	  , getOwnDescriptor = $.getDesc
+	  , defineProperties = $.setDescs
+	  , isFunction       = $.isFunction
+	  , toObject         = $.toObject
+	  , toLength         = $.toLength
+	  , toIndex          = $.toIndex
+	  , IE8_DOM_DEFINE   = false
+	  , $indexOf         = __webpack_require__(210)(false)
+	  , $forEach         = arrayMethod(0)
+	  , $map             = arrayMethod(1)
+	  , $filter          = arrayMethod(2)
+	  , $some            = arrayMethod(3)
+	  , $every           = arrayMethod(4);
+
+	if(!$.DESC){
+	  try {
+	    IE8_DOM_DEFINE = defineProperty(cel('div'), 'x',
+	      {get: function(){ return 8; }}
+	    ).x == 8;
+	  } catch(e){ /* empty */ }
+	  $.setDesc = function(O, P, Attributes){
+	    if(IE8_DOM_DEFINE)try {
+	      return defineProperty(O, P, Attributes);
+	    } catch(e){ /* empty */ }
+	    if('get' in Attributes || 'set' in Attributes)throw TypeError('Accessors not supported!');
+	    if('value' in Attributes)assertObject(O)[P] = Attributes.value;
+	    return O;
+	  };
+	  $.getDesc = function(O, P){
+	    if(IE8_DOM_DEFINE)try {
+	      return getOwnDescriptor(O, P);
+	    } catch(e){ /* empty */ }
+	    if(has(O, P))return $.desc(!ObjectProto.propertyIsEnumerable.call(O, P), O[P]);
+	  };
+	  $.setDescs = defineProperties = function(O, Properties){
+	    assertObject(O);
+	    var keys   = $.getKeys(Properties)
+	      , length = keys.length
+	      , i = 0
+	      , P;
+	    while(length > i)$.setDesc(O, P = keys[i++], Properties[P]);
+	    return O;
+	  };
+	}
+	$def($def.S + $def.F * !$.DESC, 'Object', {
+	  // 19.1.2.6 / 15.2.3.3 Object.getOwnPropertyDescriptor(O, P)
+	  getOwnPropertyDescriptor: $.getDesc,
+	  // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
+	  defineProperty: $.setDesc,
+	  // 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+	  defineProperties: defineProperties
+	});
+
+	  // IE 8- don't enum bug keys
+	var keys1 = ('constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,' +
+	            'toLocaleString,toString,valueOf').split(',')
+	  // Additional keys for getOwnPropertyNames
+	  , keys2 = keys1.concat('length', 'prototype')
+	  , keysLen1 = keys1.length;
+
+	// Create object with `null` prototype: use iframe Object with cleared prototype
+	var createDict = function(){
+	  // Thrash, waste and sodomy: IE GC bug
+	  var iframe = cel('iframe')
+	    , i      = keysLen1
+	    , gt     = '>'
+	    , iframeDocument;
+	  iframe.style.display = 'none';
+	  html.appendChild(iframe);
+	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
+	  // createDict = iframe.contentWindow.Object;
+	  // html.removeChild(iframe);
+	  iframeDocument = iframe.contentWindow.document;
+	  iframeDocument.open();
+	  iframeDocument.write('<script>document.F=Object</script' + gt);
+	  iframeDocument.close();
+	  createDict = iframeDocument.F;
+	  while(i--)delete createDict.prototype[keys1[i]];
+	  return createDict();
+	};
+	function createGetKeys(names, length){
+	  return function(object){
+	    var O      = toObject(object)
+	      , i      = 0
+	      , result = []
+	      , key;
+	    for(key in O)if(key != IE_PROTO)has(O, key) && result.push(key);
+	    // Don't enum bug & hidden keys
+	    while(length > i)if(has(O, key = names[i++])){
+	      ~indexOf.call(result, key) || result.push(key);
+	    }
+	    return result;
+	  };
+	}
+	function isPrimitive(it){ return !$.isObject(it); }
+	function Empty(){}
+	$def($def.S, 'Object', {
+	  // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
+	  getPrototypeOf: $.getProto = $.getProto || function(O){
+	    O = Object(assert.def(O));
+	    if(has(O, IE_PROTO))return O[IE_PROTO];
+	    if(isFunction(O.constructor) && O instanceof O.constructor){
+	      return O.constructor.prototype;
+	    } return O instanceof Object ? ObjectProto : null;
+	  },
+	  // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+	  getOwnPropertyNames: $.getNames = $.getNames || createGetKeys(keys2, keys2.length, true),
+	  // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+	  create: $.create = $.create || function(O, /*?*/Properties){
+	    var result;
+	    if(O !== null){
+	      Empty.prototype = assertObject(O);
+	      result = new Empty();
+	      Empty.prototype = null;
+	      // add "__proto__" for Object.getPrototypeOf shim
+	      result[IE_PROTO] = O;
+	    } else result = createDict();
+	    return Properties === undefined ? result : defineProperties(result, Properties);
+	  },
+	  // 19.1.2.14 / 15.2.3.14 Object.keys(O)
+	  keys: $.getKeys = $.getKeys || createGetKeys(keys1, keysLen1, false),
+	  // 19.1.2.17 / 15.2.3.8 Object.seal(O)
+	  seal: $.it, // <- cap
+	  // 19.1.2.5 / 15.2.3.9 Object.freeze(O)
+	  freeze: $.it, // <- cap
+	  // 19.1.2.15 / 15.2.3.10 Object.preventExtensions(O)
+	  preventExtensions: $.it, // <- cap
+	  // 19.1.2.13 / 15.2.3.11 Object.isSealed(O)
+	  isSealed: isPrimitive, // <- cap
+	  // 19.1.2.12 / 15.2.3.12 Object.isFrozen(O)
+	  isFrozen: isPrimitive, // <- cap
+	  // 19.1.2.11 / 15.2.3.13 Object.isExtensible(O)
+	  isExtensible: $.isObject // <- cap
+	});
+
+	// 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
+	$def($def.P, 'Function', {
+	  bind: function(that /*, args... */){
+	    var fn       = assert.fn(this)
+	      , partArgs = _slice.call(arguments, 1);
+	    function bound(/* args... */){
+	      var args = partArgs.concat(_slice.call(arguments));
+	      return invoke(fn, args, this instanceof bound ? $.create(fn.prototype) : that);
+	    }
+	    if(fn.prototype)bound.prototype = fn.prototype;
+	    return bound;
+	  }
+	});
+
+	// Fix for not array-like ES3 string and DOM objects
+	if(!(0 in Object('z') && 'z'[0] == 'z')){
+	  $.ES5Object = function(it){
+	    return cof(it) == 'String' ? it.split('') : Object(it);
+	  };
+	}
+
+	var buggySlice = true;
+	try {
+	  if(html)_slice.call(html);
+	  buggySlice = false;
+	} catch(e){ /* empty */ }
+
+	$def($def.P + $def.F * buggySlice, 'Array', {
+	  slice: function slice(begin, end){
+	    var len   = toLength(this.length)
+	      , klass = cof(this);
+	    end = end === undefined ? len : end;
+	    if(klass == 'Array')return _slice.call(this, begin, end);
+	    var start  = toIndex(begin, len)
+	      , upTo   = toIndex(end, len)
+	      , size   = toLength(upTo - start)
+	      , cloned = Array(size)
+	      , i      = 0;
+	    for(; i < size; i++)cloned[i] = klass == 'String'
+	      ? this.charAt(start + i)
+	      : this[start + i];
+	    return cloned;
+	  }
+	});
+
+	$def($def.P + $def.F * ($.ES5Object != Object), 'Array', {
+	  join: function join(){
+	    return _join.apply($.ES5Object(this), arguments);
+	  }
+	});
+
+	// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
+	$def($def.S, 'Array', {
+	  isArray: function(arg){
+	    return cof(arg) == 'Array';
+	  }
+	});
+	function createArrayReduce(isRight){
+	  return function(callbackfn, memo){
+	    assert.fn(callbackfn);
+	    var O      = toObject(this)
+	      , length = toLength(O.length)
+	      , index  = isRight ? length - 1 : 0
+	      , i      = isRight ? -1 : 1;
+	    if(arguments.length < 2)for(;;){
+	      if(index in O){
+	        memo = O[index];
+	        index += i;
+	        break;
+	      }
+	      index += i;
+	      assert(isRight ? index >= 0 : length > index, 'Reduce of empty array with no initial value');
+	    }
+	    for(;isRight ? index >= 0 : length > index; index += i)if(index in O){
+	      memo = callbackfn(memo, O[index], index, this);
+	    }
+	    return memo;
+	  };
+	}
+	$def($def.P, 'Array', {
+	  // 22.1.3.10 / 15.4.4.18 Array.prototype.forEach(callbackfn [, thisArg])
+	  forEach: $.each = $.each || function forEach(callbackfn/*, that = undefined */){
+	    return $forEach(this, callbackfn, arguments[1]);
+	  },
+	  // 22.1.3.15 / 15.4.4.19 Array.prototype.map(callbackfn [, thisArg])
+	  map: function map(callbackfn/*, that = undefined */){
+	    return $map(this, callbackfn, arguments[1]);
+	  },
+	  // 22.1.3.7 / 15.4.4.20 Array.prototype.filter(callbackfn [, thisArg])
+	  filter: function filter(callbackfn/*, that = undefined */){
+	    return $filter(this, callbackfn, arguments[1]);
+	  },
+	  // 22.1.3.23 / 15.4.4.17 Array.prototype.some(callbackfn [, thisArg])
+	  some: function some(callbackfn/*, that = undefined */){
+	    return $some(this, callbackfn, arguments[1]);
+	  },
+	  // 22.1.3.5 / 15.4.4.16 Array.prototype.every(callbackfn [, thisArg])
+	  every: function every(callbackfn/*, that = undefined */){
+	    return $every(this, callbackfn, arguments[1]);
+	  },
+	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
+	  reduce: createArrayReduce(false),
+	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
+	  reduceRight: createArrayReduce(true),
+	  // 22.1.3.11 / 15.4.4.14 Array.prototype.indexOf(searchElement [, fromIndex])
+	  indexOf: indexOf = indexOf || function indexOf(el /*, fromIndex = 0 */){
+	    return $indexOf(this, el, arguments[1]);
+	  },
+	  // 22.1.3.14 / 15.4.4.15 Array.prototype.lastIndexOf(searchElement [, fromIndex])
+	  lastIndexOf: function(el, fromIndex /* = @[*-1] */){
+	    var O      = toObject(this)
+	      , length = toLength(O.length)
+	      , index  = length - 1;
+	    if(arguments.length > 1)index = Math.min(index, $.toInteger(fromIndex));
+	    if(index < 0)index = toLength(length + index);
+	    for(;index >= 0; index--)if(index in O)if(O[index] === el)return index;
+	    return -1;
+	  }
+	});
+
+	// 21.1.3.25 / 15.5.4.20 String.prototype.trim()
+	$def($def.P, 'String', {trim: __webpack_require__(211)(/^\s*([\s\S]*\S)?\s*$/, '$1')});
+
+	// 20.3.3.1 / 15.9.4.4 Date.now()
+	$def($def.S, 'Date', {now: function(){
+	  return +new Date;
+	}});
+
+	function lz(num){
+	  return num > 9 ? num : '0' + num;
+	}
+
+	// 20.3.4.36 / 15.9.5.43 Date.prototype.toISOString()
+	// PhantomJS and old webkit had a broken Date implementation.
+	var date       = new Date(-5e13 - 1)
+	  , brokenDate = !(date.toISOString && date.toISOString() == '0385-07-25T07:06:39.999Z'
+	      && __webpack_require__(212)(function(){ new Date(NaN).toISOString(); }));
+	$def($def.P + $def.F * brokenDate, 'Date', {toISOString: function(){
+	  if(!isFinite(this))throw RangeError('Invalid time value');
+	  var d = this
+	    , y = d.getUTCFullYear()
+	    , m = d.getUTCMilliseconds()
+	    , s = y < 0 ? '-' : y > 9999 ? '+' : '';
+	  return s + ('00000' + Math.abs(y)).slice(s ? -6 : -4) +
+	    '-' + lz(d.getUTCMonth() + 1) + '-' + lz(d.getUTCDate()) +
+	    'T' + lz(d.getUTCHours()) + ':' + lz(d.getUTCMinutes()) +
+	    ':' + lz(d.getUTCSeconds()) + '.' + (m > 99 ? m : '0' + lz(m)) + 'Z';
+	}});
+
+	if(classof(function(){ return arguments; }()) == 'Object')cof.classof = function(it){
+	  var tag = classof(it);
+	  return tag == 'Object' && isFunction(it.callee) ? 'Arguments' : tag;
+	};
+
+/***/ },
+/* 138 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	// ECMAScript 6 symbols shim
+	var $        = __webpack_require__(185)
+	  , setTag   = __webpack_require__(204).set
+	  , uid      = __webpack_require__(208)
+	  , $def     = __webpack_require__(205)
+	  , keyOf    = __webpack_require__(214)
+	  , enumKeys = __webpack_require__(215)
+	  , assertObject = __webpack_require__(209).obj
+	  , has      = $.has
+	  , $create  = $.create
+	  , getDesc  = $.getDesc
+	  , setDesc  = $.setDesc
+	  , desc     = $.desc
+	  , getNames = $.getNames
+	  , toObject = $.toObject
+	  , $Symbol  = $.g.Symbol
+	  , setter   = false
+	  , TAG      = uid('tag')
+	  , HIDDEN   = uid('hidden')
+	  , SymbolRegistry = {}
+	  , AllSymbols = {}
+	  , useNative = $.isFunction($Symbol);
+
+	function wrap(tag){
+	  var sym = AllSymbols[tag] = $.set($create($Symbol.prototype), TAG, tag);
+	  $.DESC && setter && setDesc(Object.prototype, tag, {
+	    configurable: true,
+	    set: function(value){
+	      if(has(this, HIDDEN) && has(this[HIDDEN], tag))this[HIDDEN][tag] = false;
+	      setDesc(this, tag, desc(1, value));
+	    }
+	  });
+	  return sym;
+	}
+
+	function defineProperty(it, key, D){
+	  if(D && has(AllSymbols, key)){
+	    if(!D.enumerable){
+	      if(!has(it, HIDDEN))setDesc(it, HIDDEN, desc(1, {}));
+	      it[HIDDEN][key] = true;
+	    } else {
+	      if(has(it, HIDDEN) && it[HIDDEN][key])it[HIDDEN][key] = false;
+	      D.enumerable = false;
+	    }
+	  } return setDesc(it, key, D);
+	}
+	function defineProperties(it, P){
+	  assertObject(it);
+	  var keys = enumKeys(P = toObject(P))
+	    , i    = 0
+	    , l = keys.length
+	    , key;
+	  while(l > i)defineProperty(it, key = keys[i++], P[key]);
+	  return it;
+	}
+	function create(it, P){
+	  return P === undefined ? $create(it) : defineProperties($create(it), P);
+	}
+	function getOwnPropertyDescriptor(it, key){
+	  var D = getDesc(it = toObject(it), key);
+	  if(D && has(AllSymbols, key) && !(has(it, HIDDEN) && it[HIDDEN][key]))D.enumerable = true;
+	  return D;
+	}
+	function getOwnPropertyNames(it){
+	  var names  = getNames(toObject(it))
+	    , result = []
+	    , i      = 0
+	    , key;
+	  while(names.length > i)if(!has(AllSymbols, key = names[i++]) && key != HIDDEN)result.push(key);
+	  return result;
+	}
+	function getOwnPropertySymbols(it){
+	  var names  = getNames(toObject(it))
+	    , result = []
+	    , i      = 0
+	    , key;
+	  while(names.length > i)if(has(AllSymbols, key = names[i++]))result.push(AllSymbols[key]);
+	  return result;
+	}
+
+	// 19.4.1.1 Symbol([description])
+	if(!useNative){
+	  $Symbol = function Symbol(description){
+	    if(this instanceof $Symbol)throw TypeError('Symbol is not a constructor');
+	    return wrap(uid(description));
+	  };
+	  $.hide($Symbol.prototype, 'toString', function(){
+	    return this[TAG];
+	  });
+
+	  $.create     = create;
+	  $.setDesc    = defineProperty;
+	  $.getDesc    = getOwnPropertyDescriptor;
+	  $.setDescs   = defineProperties;
+	  $.getNames   = getOwnPropertyNames;
+	  $.getSymbols = getOwnPropertySymbols;
+	}
+
+	var symbolStatics = {
+	  // 19.4.2.1 Symbol.for(key)
+	  'for': function(key){
+	    return has(SymbolRegistry, key += '')
+	      ? SymbolRegistry[key]
+	      : SymbolRegistry[key] = $Symbol(key);
+	  },
+	  // 19.4.2.5 Symbol.keyFor(sym)
+	  keyFor: function keyFor(key){
+	    return keyOf(SymbolRegistry, key);
+	  },
+	  useSetter: function(){ setter = true; },
+	  useSimple: function(){ setter = false; }
+	};
+	// 19.4.2.2 Symbol.hasInstance
+	// 19.4.2.3 Symbol.isConcatSpreadable
+	// 19.4.2.4 Symbol.iterator
+	// 19.4.2.6 Symbol.match
+	// 19.4.2.8 Symbol.replace
+	// 19.4.2.9 Symbol.search
+	// 19.4.2.10 Symbol.species
+	// 19.4.2.11 Symbol.split
+	// 19.4.2.12 Symbol.toPrimitive
+	// 19.4.2.13 Symbol.toStringTag
+	// 19.4.2.14 Symbol.unscopables
+	$.each.call((
+	    'hasInstance,isConcatSpreadable,iterator,match,replace,search,' +
+	    'species,split,toPrimitive,toStringTag,unscopables'
+	  ).split(','), function(it){
+	    var sym = __webpack_require__(216)(it);
+	    symbolStatics[it] = useNative ? sym : wrap(sym);
+	  }
+	);
+
+	setter = true;
+
+	$def($def.G + $def.W, {Symbol: $Symbol});
+
+	$def($def.S, 'Symbol', symbolStatics);
+
+	$def($def.S + $def.F * !useNative, 'Object', {
+	  // 19.1.2.2 Object.create(O [, Properties])
+	  create: create,
+	  // 19.1.2.4 Object.defineProperty(O, P, Attributes)
+	  defineProperty: defineProperty,
+	  // 19.1.2.3 Object.defineProperties(O, Properties)
+	  defineProperties: defineProperties,
+	  // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
+	  getOwnPropertyDescriptor: getOwnPropertyDescriptor,
+	  // 19.1.2.7 Object.getOwnPropertyNames(O)
+	  getOwnPropertyNames: getOwnPropertyNames,
+	  // 19.1.2.8 Object.getOwnPropertySymbols(O)
+	  getOwnPropertySymbols: getOwnPropertySymbols
+	});
+
+	// 19.4.3.5 Symbol.prototype[@@toStringTag]
+	setTag($Symbol, 'Symbol');
+	// 20.2.1.9 Math[@@toStringTag]
+	setTag(Math, 'Math', true);
+	// 24.3.3 JSON[@@toStringTag]
+	setTag($.g.JSON, 'JSON', true);
+
+/***/ },
+/* 139 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.3.1 Object.assign(target, source)
+	var $def = __webpack_require__(205);
+	$def($def.S, 'Object', {assign: __webpack_require__(217)});
+
+/***/ },
+/* 140 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.3.10 Object.is(value1, value2)
+	var $def = __webpack_require__(205);
+	$def($def.S, 'Object', {
+	  is: function is(x, y){
+	    return x === y ? x !== 0 || 1 / x === 1 / y : x != x && y != y;
+	  }
+	});
+
+/***/ },
+/* 141 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.3.19 Object.setPrototypeOf(O, proto)
+	var $def = __webpack_require__(205);
+	$def($def.S, 'Object', {setPrototypeOf: __webpack_require__(213).set});
+
+/***/ },
+/* 142 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	// 19.1.3.6 Object.prototype.toString()
+	var $   = __webpack_require__(185)
+	  , cof = __webpack_require__(204)
+	  , tmp = {};
+	tmp[__webpack_require__(216)('toStringTag')] = 'z';
+	if($.FW && cof(tmp) != 'z')$.hide(Object.prototype, 'toString', function toString(){
+	  return '[object ' + cof.classof(this) + ']';
+	});
+
+/***/ },
+/* 143 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $        = __webpack_require__(185)
+	  , $def     = __webpack_require__(205)
+	  , isObject = $.isObject
+	  , toObject = $.toObject;
+	function wrapObjectMethod(METHOD, MODE){
+	  var fn  = ($.core.Object || {})[METHOD] || Object[METHOD]
+	    , f   = 0
+	    , o   = {};
+	  o[METHOD] = MODE == 1 ? function(it){
+	    return isObject(it) ? fn(it) : it;
+	  } : MODE == 2 ? function(it){
+	    return isObject(it) ? fn(it) : true;
+	  } : MODE == 3 ? function(it){
+	    return isObject(it) ? fn(it) : false;
+	  } : MODE == 4 ? function getOwnPropertyDescriptor(it, key){
+	    return fn(toObject(it), key);
+	  } : MODE == 5 ? function getPrototypeOf(it){
+	    return fn(Object($.assertDefined(it)));
+	  } : function(it){
+	    return fn(toObject(it));
+	  };
+	  try {
+	    fn('z');
+	  } catch(e){
+	    f = 1;
+	  }
+	  $def($def.S + $def.F * f, 'Object', o);
+	}
+	wrapObjectMethod('freeze', 1);
+	wrapObjectMethod('seal', 1);
+	wrapObjectMethod('preventExtensions', 1);
+	wrapObjectMethod('isFrozen', 2);
+	wrapObjectMethod('isSealed', 2);
+	wrapObjectMethod('isExtensible', 3);
+	wrapObjectMethod('getOwnPropertyDescriptor', 4);
+	wrapObjectMethod('getPrototypeOf', 5);
+	wrapObjectMethod('keys');
+	wrapObjectMethod('getOwnPropertyNames');
+
+/***/ },
+/* 144 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $    = __webpack_require__(185)
+	  , NAME = 'name'
+	  , setDesc = $.setDesc
+	  , FunctionProto = Function.prototype;
+	// 19.2.4.2 name
+	NAME in FunctionProto || $.FW && $.DESC && setDesc(FunctionProto, NAME, {
+	  configurable: true,
+	  get: function(){
+	    var match = String(this).match(/^\s*function ([^ (]*)/)
+	      , name  = match ? match[1] : '';
+	    $.has(this, NAME) || setDesc(this, NAME, $.desc(5, name));
+	    return name;
+	  },
+	  set: function(value){
+	    $.has(this, NAME) || setDesc(this, NAME, $.desc(0, value));
+	  }
+	});
+
+/***/ },
+/* 145 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $             = __webpack_require__(185)
+	  , HAS_INSTANCE  = __webpack_require__(216)('hasInstance')
+	  , FunctionProto = Function.prototype;
+	// 19.2.3.6 Function.prototype[@@hasInstance](V)
+	if(!(HAS_INSTANCE in FunctionProto))$.setDesc(FunctionProto, HAS_INSTANCE, {value: function(O){
+	  if(!$.isFunction(this) || !$.isObject(O))return false;
+	  if(!$.isObject(this.prototype))return O instanceof this;
+	  // for environment w/o native `@@hasInstance` logic enough `instanceof`, but add this:
+	  while(O = $.getProto(O))if(this.prototype === O)return true;
+	  return false;
+	}});
+
+/***/ },
+/* 146 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $          = __webpack_require__(185)
+	  , isObject   = $.isObject
+	  , isFunction = $.isFunction
+	  , NUMBER     = 'Number'
+	  , $Number    = $.g[NUMBER]
+	  , Base       = $Number
+	  , proto      = $Number.prototype;
+	function toPrimitive(it){
+	  var fn, val;
+	  if(isFunction(fn = it.valueOf) && !isObject(val = fn.call(it)))return val;
+	  if(isFunction(fn = it.toString) && !isObject(val = fn.call(it)))return val;
+	  throw TypeError("Can't convert object to number");
+	}
+	function toNumber(it){
+	  if(isObject(it))it = toPrimitive(it);
+	  if(typeof it == 'string' && it.length > 2 && it.charCodeAt(0) == 48){
+	    var binary = false;
+	    switch(it.charCodeAt(1)){
+	      case 66 : case 98  : binary = true;
+	      case 79 : case 111 : return parseInt(it.slice(2), binary ? 2 : 8);
+	    }
+	  } return +it;
+	}
+	if($.FW && !($Number('0o1') && $Number('0b1'))){
+	  $Number = function Number(it){
+	    return this instanceof $Number ? new Base(toNumber(it)) : toNumber(it);
+	  };
+	  $.each.call($.DESC ? $.getNames(Base) : (
+	      // ES3:
+	      'MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,' +
+	      // ES6 (in case, if modules with ES6 Number statics required before):
+	      'EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,' +
+	      'MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger'
+	    ).split(','), function(key){
+	      if($.has(Base, key) && !$.has($Number, key)){
+	        $.setDesc($Number, key, $.getDesc(Base, key));
+	      }
+	    }
+	  );
+	  $Number.prototype = proto;
+	  proto.constructor = $Number;
+	  $.hide($.g, NUMBER, $Number);
+	}
+
+/***/ },
+/* 147 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $     = __webpack_require__(185)
+	  , $def  = __webpack_require__(205)
+	  , abs   = Math.abs
+	  , floor = Math.floor
+	  , _isFinite = $.g.isFinite
+	  , MAX_SAFE_INTEGER = 0x1fffffffffffff; // pow(2, 53) - 1 == 9007199254740991;
+	function isInteger(it){
+	  return !$.isObject(it) && _isFinite(it) && floor(it) === it;
+	}
+	$def($def.S, 'Number', {
+	  // 20.1.2.1 Number.EPSILON
+	  EPSILON: Math.pow(2, -52),
+	  // 20.1.2.2 Number.isFinite(number)
+	  isFinite: function isFinite(it){
+	    return typeof it == 'number' && _isFinite(it);
+	  },
+	  // 20.1.2.3 Number.isInteger(number)
+	  isInteger: isInteger,
+	  // 20.1.2.4 Number.isNaN(number)
+	  isNaN: function isNaN(number){
+	    return number != number;
+	  },
+	  // 20.1.2.5 Number.isSafeInteger(number)
+	  isSafeInteger: function isSafeInteger(number){
+	    return isInteger(number) && abs(number) <= MAX_SAFE_INTEGER;
+	  },
+	  // 20.1.2.6 Number.MAX_SAFE_INTEGER
+	  MAX_SAFE_INTEGER: MAX_SAFE_INTEGER,
+	  // 20.1.2.10 Number.MIN_SAFE_INTEGER
+	  MIN_SAFE_INTEGER: -MAX_SAFE_INTEGER,
+	  // 20.1.2.12 Number.parseFloat(string)
+	  parseFloat: parseFloat,
+	  // 20.1.2.13 Number.parseInt(string, radix)
+	  parseInt: parseInt
+	});
+
+/***/ },
+/* 148 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Infinity = 1 / 0
+	  , $def  = __webpack_require__(205)
+	  , E     = Math.E
+	  , pow   = Math.pow
+	  , abs   = Math.abs
+	  , exp   = Math.exp
+	  , log   = Math.log
+	  , sqrt  = Math.sqrt
+	  , ceil  = Math.ceil
+	  , floor = Math.floor
+	  , EPSILON   = pow(2, -52)
+	  , EPSILON32 = pow(2, -23)
+	  , MAX32     = pow(2, 127) * (2 - EPSILON32)
+	  , MIN32     = pow(2, -126);
+	function roundTiesToEven(n){
+	  return n + 1 / EPSILON - 1 / EPSILON;
+	}
+
+	// 20.2.2.28 Math.sign(x)
+	function sign(x){
+	  return (x = +x) == 0 || x != x ? x : x < 0 ? -1 : 1;
+	}
+	// 20.2.2.5 Math.asinh(x)
+	function asinh(x){
+	  return !isFinite(x = +x) || x == 0 ? x : x < 0 ? -asinh(-x) : log(x + sqrt(x * x + 1));
+	}
+	// 20.2.2.14 Math.expm1(x)
+	function expm1(x){
+	  return (x = +x) == 0 ? x : x > -1e-6 && x < 1e-6 ? x + x * x / 2 : exp(x) - 1;
+	}
+
+	$def($def.S, 'Math', {
+	  // 20.2.2.3 Math.acosh(x)
+	  acosh: function acosh(x){
+	    return (x = +x) < 1 ? NaN : isFinite(x) ? log(x / E + sqrt(x + 1) * sqrt(x - 1) / E) + 1 : x;
+	  },
+	  // 20.2.2.5 Math.asinh(x)
+	  asinh: asinh,
+	  // 20.2.2.7 Math.atanh(x)
+	  atanh: function atanh(x){
+	    return (x = +x) == 0 ? x : log((1 + x) / (1 - x)) / 2;
+	  },
+	  // 20.2.2.9 Math.cbrt(x)
+	  cbrt: function cbrt(x){
+	    return sign(x = +x) * pow(abs(x), 1 / 3);
+	  },
+	  // 20.2.2.11 Math.clz32(x)
+	  clz32: function clz32(x){
+	    return (x >>>= 0) ? 31 - floor(log(x + 0.5) * Math.LOG2E) : 32;
+	  },
+	  // 20.2.2.12 Math.cosh(x)
+	  cosh: function cosh(x){
+	    return (exp(x = +x) + exp(-x)) / 2;
+	  },
+	  // 20.2.2.14 Math.expm1(x)
+	  expm1: expm1,
+	  // 20.2.2.16 Math.fround(x)
+	  fround: function fround(x){
+	    var $abs  = abs(x)
+	      , $sign = sign(x)
+	      , a, result;
+	    if($abs < MIN32)return $sign * roundTiesToEven($abs / MIN32 / EPSILON32) * MIN32 * EPSILON32;
+	    a = (1 + EPSILON32 / EPSILON) * $abs;
+	    result = a - (a - $abs);
+	    if(result > MAX32 || result != result)return $sign * Infinity;
+	    return $sign * result;
+	  },
+	  // 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
+	  hypot: function hypot(value1, value2){ // eslint-disable-line no-unused-vars
+	    var sum  = 0
+	      , len1 = arguments.length
+	      , len2 = len1
+	      , args = Array(len1)
+	      , larg = -Infinity
+	      , arg;
+	    while(len1--){
+	      arg = args[len1] = +arguments[len1];
+	      if(arg == Infinity || arg == -Infinity)return Infinity;
+	      if(arg > larg)larg = arg;
+	    }
+	    larg = arg || 1;
+	    while(len2--)sum += pow(args[len2] / larg, 2);
+	    return larg * sqrt(sum);
+	  },
+	  // 20.2.2.18 Math.imul(x, y)
+	  imul: function imul(x, y){
+	    var UInt16 = 0xffff
+	      , xn = +x
+	      , yn = +y
+	      , xl = UInt16 & xn
+	      , yl = UInt16 & yn;
+	    return 0 | xl * yl + ((UInt16 & xn >>> 16) * yl + xl * (UInt16 & yn >>> 16) << 16 >>> 0);
+	  },
+	  // 20.2.2.20 Math.log1p(x)
+	  log1p: function log1p(x){
+	    return (x = +x) > -1e-8 && x < 1e-8 ? x - x * x / 2 : log(1 + x);
+	  },
+	  // 20.2.2.21 Math.log10(x)
+	  log10: function log10(x){
+	    return log(x) / Math.LN10;
+	  },
+	  // 20.2.2.22 Math.log2(x)
+	  log2: function log2(x){
+	    return log(x) / Math.LN2;
+	  },
+	  // 20.2.2.28 Math.sign(x)
+	  sign: sign,
+	  // 20.2.2.30 Math.sinh(x)
+	  sinh: function sinh(x){
+	    return abs(x = +x) < 1 ? (expm1(x) - expm1(-x)) / 2 : (exp(x - 1) - exp(-x - 1)) * (E / 2);
+	  },
+	  // 20.2.2.33 Math.tanh(x)
+	  tanh: function tanh(x){
+	    var a = expm1(x = +x)
+	      , b = expm1(-x);
+	    return a == Infinity ? 1 : b == Infinity ? -1 : (a - b) / (exp(x) + exp(-x));
+	  },
+	  // 20.2.2.34 Math.trunc(x)
+	  trunc: function trunc(it){
+	    return (it > 0 ? floor : ceil)(it);
+	  }
+	});
+
+/***/ },
+/* 149 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $def    = __webpack_require__(205)
+	  , toIndex = __webpack_require__(185).toIndex
+	  , fromCharCode = String.fromCharCode
+	  , $fromCodePoint = String.fromCodePoint;
+
+	// length should be 1, old FF problem
+	$def($def.S + $def.F * (!!$fromCodePoint && $fromCodePoint.length != 1), 'String', {
+	  // 21.1.2.2 String.fromCodePoint(...codePoints)
+	  fromCodePoint: function fromCodePoint(x){ // eslint-disable-line no-unused-vars
+	    var res = []
+	      , len = arguments.length
+	      , i   = 0
+	      , code;
+	    while(len > i){
+	      code = +arguments[i++];
+	      if(toIndex(code, 0x10ffff) !== code)throw RangeError(code + ' is not a valid code point');
+	      res.push(code < 0x10000
+	        ? fromCharCode(code)
+	        : fromCharCode(((code -= 0x10000) >> 10) + 0xd800, code % 0x400 + 0xdc00)
+	      );
+	    } return res.join('');
+	  }
+	});
+
+/***/ },
+/* 150 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $    = __webpack_require__(185)
+	  , $def = __webpack_require__(205);
+
+	$def($def.S, 'String', {
+	  // 21.1.2.4 String.raw(callSite, ...substitutions)
+	  raw: function raw(callSite){
+	    var tpl = $.toObject(callSite.raw)
+	      , len = $.toLength(tpl.length)
+	      , sln = arguments.length
+	      , res = []
+	      , i   = 0;
+	    while(len > i){
+	      res.push(String(tpl[i++]));
+	      if(i < sln)res.push(String(arguments[i]));
+	    } return res.join('');
+	  }
+	});
+
+/***/ },
+/* 151 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var set   = __webpack_require__(185).set
+	  , $at   = __webpack_require__(218)(true)
+	  , ITER  = __webpack_require__(208).safe('iter')
+	  , $iter = __webpack_require__(219)
+	  , step  = $iter.step;
+
+	// 21.1.3.27 String.prototype[@@iterator]()
+	__webpack_require__(220)(String, 'String', function(iterated){
+	  set(this, ITER, {o: String(iterated), i: 0});
+	// 21.1.5.2.1 %StringIteratorPrototype%.next()
+	}, function(){
+	  var iter  = this[ITER]
+	    , O     = iter.o
+	    , index = iter.i
+	    , point;
+	  if(index >= O.length)return step(1);
+	  point = $at(O, index);
+	  iter.i += point.length;
+	  return step(0, point);
+	});
+
+/***/ },
+/* 152 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $def = __webpack_require__(205)
+	  , $at  = __webpack_require__(218)(false);
+	$def($def.P, 'String', {
+	  // 21.1.3.3 String.prototype.codePointAt(pos)
+	  codePointAt: function codePointAt(pos){
+	    return $at(this, pos);
+	  }
+	});
+
+/***/ },
+/* 153 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $    = __webpack_require__(185)
+	  , cof  = __webpack_require__(204)
+	  , $def = __webpack_require__(205)
+	  , toLength = $.toLength;
+
+	// should throw error on regex
+	$def($def.P + $def.F * !__webpack_require__(212)(function(){ 'q'.endsWith(/./); }), 'String', {
+	  // 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
+	  endsWith: function endsWith(searchString /*, endPosition = @length */){
+	    if(cof(searchString) == 'RegExp')throw TypeError();
+	    var that = String($.assertDefined(this))
+	      , endPosition = arguments[1]
+	      , len = toLength(that.length)
+	      , end = endPosition === undefined ? len : Math.min(toLength(endPosition), len);
+	    searchString += '';
+	    return that.slice(end - searchString.length, end) === searchString;
+	  }
+	});
+
+/***/ },
+/* 154 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $    = __webpack_require__(185)
+	  , cof  = __webpack_require__(204)
+	  , $def = __webpack_require__(205);
+
+	$def($def.P, 'String', {
+	  // 21.1.3.7 String.prototype.includes(searchString, position = 0)
+	  includes: function includes(searchString /*, position = 0 */){
+	    if(cof(searchString) == 'RegExp')throw TypeError();
+	    return !!~String($.assertDefined(this)).indexOf(searchString, arguments[1]);
+	  }
+	});
+
+/***/ },
+/* 155 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $def = __webpack_require__(205);
+
+	$def($def.P, 'String', {
+	  // 21.1.3.13 String.prototype.repeat(count)
+	  repeat: __webpack_require__(221)
+	});
+
+/***/ },
+/* 156 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $    = __webpack_require__(185)
+	  , cof  = __webpack_require__(204)
+	  , $def = __webpack_require__(205);
+
+	// should throw error on regex
+	$def($def.P + $def.F * !__webpack_require__(212)(function(){ 'q'.startsWith(/./); }), 'String', {
+	  // 21.1.3.18 String.prototype.startsWith(searchString [, position ])
+	  startsWith: function startsWith(searchString /*, position = 0 */){
+	    if(cof(searchString) == 'RegExp')throw TypeError();
+	    var that  = String($.assertDefined(this))
+	      , index = $.toLength(Math.min(arguments[1], that.length));
+	    searchString += '';
+	    return that.slice(index, index + searchString.length) === searchString;
+	  }
+	});
+
+/***/ },
+/* 157 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $     = __webpack_require__(185)
+	  , ctx   = __webpack_require__(223)
+	  , $def  = __webpack_require__(205)
+	  , $iter = __webpack_require__(219)
+	  , call  = __webpack_require__(224);
+	$def($def.S + $def.F * !__webpack_require__(225)(function(iter){ Array.from(iter); }), 'Array', {
+	  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
+	  from: function from(arrayLike/*, mapfn = undefined, thisArg = undefined*/){
+	    var O       = Object($.assertDefined(arrayLike))
+	      , mapfn   = arguments[1]
+	      , mapping = mapfn !== undefined
+	      , f       = mapping ? ctx(mapfn, arguments[2], 2) : undefined
+	      , index   = 0
+	      , length, result, step, iterator;
+	    if($iter.is(O)){
+	      iterator = $iter.get(O);
+	      // strange IE quirks mode bug -> use typeof instead of isFunction
+	      result   = new (typeof this == 'function' ? this : Array);
+	      for(; !(step = iterator.next()).done; index++){
+	        result[index] = mapping ? call(iterator, f, [step.value, index], true) : step.value;
+	      }
+	    } else {
+	      // strange IE quirks mode bug -> use typeof instead of isFunction
+	      result = new (typeof this == 'function' ? this : Array)(length = $.toLength(O.length));
+	      for(; length > index; index++){
+	        result[index] = mapping ? f(O[index], index) : O[index];
+	      }
+	    }
+	    result.length = index;
+	    return result;
+	  }
+	});
+
+/***/ },
+/* 158 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $def = __webpack_require__(205);
+	$def($def.S, 'Array', {
+	  // 22.1.2.3 Array.of( ...items)
+	  of: function of(/* ...args */){
+	    var index  = 0
+	      , length = arguments.length
+	      // strange IE quirks mode bug -> use typeof instead of isFunction
+	      , result = new (typeof this == 'function' ? this : Array)(length);
+	    while(length > index)result[index] = arguments[index++];
+	    result.length = length;
+	    return result;
+	  }
+	});
+
+/***/ },
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $          = __webpack_require__(185)
+	  , setUnscope = __webpack_require__(222)
+	  , ITER       = __webpack_require__(208).safe('iter')
+	  , $iter      = __webpack_require__(219)
+	  , step       = $iter.step
+	  , Iterators  = $iter.Iterators;
+
+	// 22.1.3.4 Array.prototype.entries()
+	// 22.1.3.13 Array.prototype.keys()
+	// 22.1.3.29 Array.prototype.values()
+	// 22.1.3.30 Array.prototype[@@iterator]()
+	__webpack_require__(220)(Array, 'Array', function(iterated, kind){
+	  $.set(this, ITER, {o: $.toObject(iterated), i: 0, k: kind});
+	// 22.1.5.2.1 %ArrayIteratorPrototype%.next()
+	}, function(){
+	  var iter  = this[ITER]
+	    , O     = iter.o
+	    , kind  = iter.k
+	    , index = iter.i++;
+	  if(!O || index >= O.length){
+	    iter.o = undefined;
+	    return step(1);
+	  }
+	  if(kind == 'keys'  )return step(0, index);
+	  if(kind == 'values')return step(0, O[index]);
+	  return step(0, [index, O[index]]);
+	}, 'values');
+
+	// argumentsList[@@iterator] is %ArrayProto_values% (9.4.4.6, 9.4.4.7)
+	Iterators.Arguments = Iterators.Array;
+
+	setUnscope('keys');
+	setUnscope('values');
+	setUnscope('entries');
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(226)(Array);
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $       = __webpack_require__(185)
+	  , $def    = __webpack_require__(205)
+	  , toIndex = $.toIndex;
+	$def($def.P, 'Array', {
+	  // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
+	  copyWithin: function copyWithin(target/* = 0 */, start /* = 0, end = @length */){
+	    var O     = Object($.assertDefined(this))
+	      , len   = $.toLength(O.length)
+	      , to    = toIndex(target, len)
+	      , from  = toIndex(start, len)
+	      , end   = arguments[2]
+	      , fin   = end === undefined ? len : toIndex(end, len)
+	      , count = Math.min(fin - from, len - to)
+	      , inc   = 1;
+	    if(from < to && to < from + count){
+	      inc  = -1;
+	      from = from + count - 1;
+	      to   = to   + count - 1;
+	    }
+	    while(count-- > 0){
+	      if(from in O)O[to] = O[from];
+	      else delete O[to];
+	      to   += inc;
+	      from += inc;
+	    } return O;
+	  }
+	});
+	__webpack_require__(222)('copyWithin');
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $       = __webpack_require__(185)
+	  , $def    = __webpack_require__(205)
+	  , toIndex = $.toIndex;
+	$def($def.P, 'Array', {
+	  // 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
+	  fill: function fill(value /*, start = 0, end = @length */){
+	    var O      = Object($.assertDefined(this))
+	      , length = $.toLength(O.length)
+	      , index  = toIndex(arguments[1], length)
+	      , end    = arguments[2]
+	      , endPos = end === undefined ? length : toIndex(end, length);
+	    while(endPos > index)O[index++] = value;
+	    return O;
+	  }
+	});
+	__webpack_require__(222)('fill');
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	// 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
+	var KEY    = 'find'
+	  , $def   = __webpack_require__(205)
+	  , forced = true
+	  , $find  = __webpack_require__(207)(5);
+	// Shouldn't skip holes
+	if(KEY in [])Array(1)[KEY](function(){ forced = false; });
+	$def($def.P + $def.F * forced, 'Array', {
+	  find: function find(callbackfn/*, that = undefined */){
+	    return $find(this, callbackfn, arguments[1]);
+	  }
+	});
+	__webpack_require__(222)(KEY);
+
+/***/ },
+/* 164 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	// 22.1.3.9 Array.prototype.findIndex(predicate, thisArg = undefined)
+	var KEY    = 'findIndex'
+	  , $def   = __webpack_require__(205)
+	  , forced = true
+	  , $find  = __webpack_require__(207)(6);
+	// Shouldn't skip holes
+	if(KEY in [])Array(1)[KEY](function(){ forced = false; });
+	$def($def.P + $def.F * forced, 'Array', {
+	  findIndex: function findIndex(callbackfn/*, that = undefined */){
+	    return $find(this, callbackfn, arguments[1]);
+	  }
+	});
+	__webpack_require__(222)(KEY);
+
+/***/ },
+/* 165 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $       = __webpack_require__(185)
+	  , cof     = __webpack_require__(204)
+	  , $RegExp = $.g.RegExp
+	  , Base    = $RegExp
+	  , proto   = $RegExp.prototype
+	  , re      = /a/g
+	  // "new" creates a new object
+	  , CORRECT_NEW = new $RegExp(re) !== re
+	  // RegExp allows a regex with flags as the pattern
+	  , ALLOWS_RE_WITH_FLAGS = function(){
+	    try {
+	      return $RegExp(re, 'i') == '/a/i';
+	    } catch(e){ /* empty */ }
+	  }();
+	if($.FW && $.DESC){
+	  if(!CORRECT_NEW || !ALLOWS_RE_WITH_FLAGS){
+	    $RegExp = function RegExp(pattern, flags){
+	      var patternIsRegExp  = cof(pattern) == 'RegExp'
+	        , flagsIsUndefined = flags === undefined;
+	      if(!(this instanceof $RegExp) && patternIsRegExp && flagsIsUndefined)return pattern;
+	      return CORRECT_NEW
+	        ? new Base(patternIsRegExp && !flagsIsUndefined ? pattern.source : pattern, flags)
+	        : new Base(patternIsRegExp ? pattern.source : pattern
+	          , patternIsRegExp && flagsIsUndefined ? pattern.flags : flags);
+	    };
+	    $.each.call($.getNames(Base), function(key){
+	      key in $RegExp || $.setDesc($RegExp, key, {
+	        configurable: true,
+	        get: function(){ return Base[key]; },
+	        set: function(it){ Base[key] = it; }
+	      });
+	    });
+	    proto.constructor = $RegExp;
+	    $RegExp.prototype = proto;
+	    $.hide($.g, 'RegExp', $RegExp);
+	  }
+	  // 21.2.5.3 get RegExp.prototype.flags()
+	  if(/./g.flags != 'g')$.setDesc(proto, 'flags', {
+	    configurable: true,
+	    get: __webpack_require__(211)(/^.*\/(\w*)$/, '$1')
+	  });
+	}
+	__webpack_require__(226)($RegExp);
+
+/***/ },
+/* 166 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $        = __webpack_require__(185)
+	  , ctx      = __webpack_require__(223)
+	  , cof      = __webpack_require__(204)
+	  , $def     = __webpack_require__(205)
+	  , assert   = __webpack_require__(209)
+	  , forOf    = __webpack_require__(227)
+	  , setProto = __webpack_require__(213).set
+	  , species  = __webpack_require__(226)
+	  , SPECIES  = __webpack_require__(216)('species')
+	  , RECORD   = __webpack_require__(208).safe('record')
+	  , PROMISE  = 'Promise'
+	  , global   = $.g
+	  , process  = global.process
+	  , asap     = process && process.nextTick || __webpack_require__(228).set
+	  , P        = global[PROMISE]
+	  , isFunction     = $.isFunction
+	  , isObject       = $.isObject
+	  , assertFunction = assert.fn
+	  , assertObject   = assert.obj;
+
+	var useNative = function(){
+	  var test, works = false;
+	  function P2(x){
+	    var self = new P(x);
+	    setProto(self, P2.prototype);
+	    return self;
+	  }
+	  try {
+	    works = isFunction(P) && isFunction(P.resolve) && P.resolve(test = new P(function(){})) == test;
+	    setProto(P2, P);
+	    P2.prototype = $.create(P.prototype, {constructor: {value: P2}});
+	    // actual Firefox has broken subclass support, test that
+	    if(!(P2.resolve(5).then(function(){}) instanceof P2)){
+	      works = false;
+	    }
+	  } catch(e){ works = false; }
+	  return works;
+	}();
+
+	// helpers
+	function getConstructor(C){
+	  var S = assertObject(C)[SPECIES];
+	  return S != undefined ? S : C;
+	}
+	function isThenable(it){
+	  var then;
+	  if(isObject(it))then = it.then;
+	  return isFunction(then) ? then : false;
+	}
+	function notify(record){
+	  var chain = record.c;
+	  if(chain.length)asap(function(){
+	    var value = record.v
+	      , ok    = record.s == 1
+	      , i     = 0;
+	    function run(react){
+	      var cb = ok ? react.ok : react.fail
+	        , ret, then;
+	      try {
+	        if(cb){
+	          if(!ok)record.h = true;
+	          ret = cb === true ? value : cb(value);
+	          if(ret === react.P){
+	            react.rej(TypeError('Promise-chain cycle'));
+	          } else if(then = isThenable(ret)){
+	            then.call(ret, react.res, react.rej);
+	          } else react.res(ret);
+	        } else react.rej(value);
+	      } catch(err){
+	        react.rej(err);
+	      }
+	    }
+	    while(chain.length > i)run(chain[i++]); // variable length - can't use forEach
+	    chain.length = 0;
+	  });
+	}
+	function isUnhandled(promise){
+	  var record = promise[RECORD]
+	    , chain  = record.a || record.c
+	    , i      = 0
+	    , react;
+	  if(record.h)return false;
+	  while(chain.length > i){
+	    react = chain[i++];
+	    if(react.fail || !isUnhandled(react.P))return false;
+	  } return true;
+	}
+	function $reject(value){
+	  var record = this
+	    , promise;
+	  if(record.d)return;
+	  record.d = true;
+	  record = record.r || record; // unwrap
+	  record.v = value;
+	  record.s = 2;
+	  record.a = record.c.slice();
+	  setTimeout(function(){
+	    asap(function(){
+	      if(isUnhandled(promise = record.p)){
+	        if(cof(process) == 'process'){
+	          process.emit('unhandledRejection', value, promise);
+	        } else if(global.console && isFunction(console.error)){
+	          console.error('Unhandled promise rejection', value);
+	        }
+	      }
+	      record.a = undefined;
+	    });
+	  }, 1);
+	  notify(record);
+	}
+	function $resolve(value){
+	  var record = this
+	    , then, wrapper;
+	  if(record.d)return;
+	  record.d = true;
+	  record = record.r || record; // unwrap
+	  try {
+	    if(then = isThenable(value)){
+	      wrapper = {r: record, d: false}; // wrap
+	      then.call(value, ctx($resolve, wrapper, 1), ctx($reject, wrapper, 1));
+	    } else {
+	      record.v = value;
+	      record.s = 1;
+	      notify(record);
+	    }
+	  } catch(err){
+	    $reject.call(wrapper || {r: record, d: false}, err); // wrap
+	  }
+	}
+
+	// constructor polyfill
+	if(!useNative){
+	  // 25.4.3.1 Promise(executor)
+	  P = function Promise(executor){
+	    assertFunction(executor);
+	    var record = {
+	      p: assert.inst(this, P, PROMISE),       // <- promise
+	      c: [],                                  // <- awaiting reactions
+	      a: undefined,                           // <- checked in isUnhandled reactions
+	      s: 0,                                   // <- state
+	      d: false,                               // <- done
+	      v: undefined,                           // <- value
+	      h: false                                // <- handled rejection
+	    };
+	    $.hide(this, RECORD, record);
+	    try {
+	      executor(ctx($resolve, record, 1), ctx($reject, record, 1));
+	    } catch(err){
+	      $reject.call(record, err);
+	    }
+	  };
+	  $.mix(P.prototype, {
+	    // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
+	    then: function then(onFulfilled, onRejected){
+	      var S = assertObject(assertObject(this).constructor)[SPECIES];
+	      var react = {
+	        ok:   isFunction(onFulfilled) ? onFulfilled : true,
+	        fail: isFunction(onRejected)  ? onRejected  : false
+	      };
+	      var promise = react.P = new (S != undefined ? S : P)(function(res, rej){
+	        react.res = assertFunction(res);
+	        react.rej = assertFunction(rej);
+	      });
+	      var record = this[RECORD];
+	      record.c.push(react);
+	      if(record.a)record.a.push(react);
+	      record.s && notify(record);
+	      return promise;
+	    },
+	    // 25.4.5.1 Promise.prototype.catch(onRejected)
+	    'catch': function(onRejected){
+	      return this.then(undefined, onRejected);
+	    }
+	  });
+	}
+
+	// export
+	$def($def.G + $def.W + $def.F * !useNative, {Promise: P});
+	cof.set(P, PROMISE);
+	species(P);
+	species($.core[PROMISE]); // for wrapper
+
+	// statics
+	$def($def.S + $def.F * !useNative, PROMISE, {
+	  // 25.4.4.5 Promise.reject(r)
+	  reject: function reject(r){
+	    return new (getConstructor(this))(function(res, rej){
+	      rej(r);
+	    });
+	  },
+	  // 25.4.4.6 Promise.resolve(x)
+	  resolve: function resolve(x){
+	    return isObject(x) && RECORD in x && $.getProto(x) === this.prototype
+	      ? x : new (getConstructor(this))(function(res){
+	        res(x);
+	      });
+	  }
+	});
+	$def($def.S + $def.F * !(useNative && __webpack_require__(225)(function(iter){
+	  P.all(iter)['catch'](function(){});
+	})), PROMISE, {
+	  // 25.4.4.1 Promise.all(iterable)
+	  all: function all(iterable){
+	    var C      = getConstructor(this)
+	      , values = [];
+	    return new C(function(res, rej){
+	      forOf(iterable, false, values.push, values);
+	      var remaining = values.length
+	        , results   = Array(remaining);
+	      if(remaining)$.each.call(values, function(promise, index){
+	        C.resolve(promise).then(function(value){
+	          results[index] = value;
+	          --remaining || res(results);
+	        }, rej);
+	      });
+	      else res(results);
+	    });
+	  },
+	  // 25.4.4.4 Promise.race(iterable)
+	  race: function race(iterable){
+	    var C = getConstructor(this);
+	    return new C(function(res, rej){
+	      forOf(iterable, false, function(promise){
+	        C.resolve(promise).then(res, rej);
+	      });
+	    });
+	  }
+	});
+
+/***/ },
+/* 167 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strong = __webpack_require__(229);
+
+	// 23.1 Map Objects
+	__webpack_require__(230)('Map', {
+	  // 23.1.3.6 Map.prototype.get(key)
+	  get: function get(key){
+	    var entry = strong.getEntry(this, key);
+	    return entry && entry.v;
+	  },
+	  // 23.1.3.9 Map.prototype.set(key, value)
+	  set: function set(key, value){
+	    return strong.def(this, key === 0 ? 0 : key, value);
+	  }
+	}, strong, true);
+
+/***/ },
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strong = __webpack_require__(229);
+
+	// 23.2 Set Objects
+	__webpack_require__(230)('Set', {
+	  // 23.2.3.1 Set.prototype.add(value)
+	  add: function add(value){
+	    return strong.def(this, value = value === 0 ? 0 : value, value);
+	  }
+	}, strong);
+
+/***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $         = __webpack_require__(185)
+	  , weak      = __webpack_require__(231)
+	  , leakStore = weak.leakStore
+	  , ID        = weak.ID
+	  , WEAK      = weak.WEAK
+	  , has       = $.has
+	  , isObject  = $.isObject
+	  , isFrozen  = Object.isFrozen || $.core.Object.isFrozen
+	  , tmp       = {};
+
+	// 23.3 WeakMap Objects
+	var WeakMap = __webpack_require__(230)('WeakMap', {
+	  // 23.3.3.3 WeakMap.prototype.get(key)
+	  get: function get(key){
+	    if(isObject(key)){
+	      if(isFrozen(key))return leakStore(this).get(key);
+	      if(has(key, WEAK))return key[WEAK][this[ID]];
+	    }
+	  },
+	  // 23.3.3.5 WeakMap.prototype.set(key, value)
+	  set: function set(key, value){
+	    return weak.def(this, key, value);
+	  }
+	}, weak, true, true);
+
+	// IE11 WeakMap frozen keys fix
+	if($.FW && new WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7){
+	  $.each.call(['delete', 'has', 'get', 'set'], function(key){
+	    var method = WeakMap.prototype[key];
+	    WeakMap.prototype[key] = function(a, b){
+	      // store frozen objects on leaky map
+	      if(isObject(a) && isFrozen(a)){
+	        var result = leakStore(this)[key](a, b);
+	        return key == 'set' ? this : result;
+	      // store all the rest on native weakmap
+	      } return method.call(this, a, b);
+	    };
+	  });
+	}
+
+/***/ },
+/* 170 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var weak = __webpack_require__(231);
+
+	// 23.4 WeakSet Objects
+	__webpack_require__(230)('WeakSet', {
+	  // 23.4.3.1 WeakSet.prototype.add(value)
+	  add: function add(value){
+	    return weak.def(this, value, true);
+	  }
+	}, weak, false, true);
+
+/***/ },
+/* 171 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $         = __webpack_require__(185)
+	  , $def      = __webpack_require__(205)
+	  , setProto  = __webpack_require__(213)
+	  , $iter     = __webpack_require__(219)
+	  , ITERATOR  = __webpack_require__(216)('iterator')
+	  , ITER      = __webpack_require__(208).safe('iter')
+	  , step      = $iter.step
+	  , assert    = __webpack_require__(209)
+	  , isObject  = $.isObject
+	  , getProto  = $.getProto
+	  , $Reflect  = $.g.Reflect
+	  , _apply    = Function.apply
+	  , assertObject = assert.obj
+	  , _isExtensible = Object.isExtensible || $.isObject
+	  , _preventExtensions = Object.preventExtensions || $.it
+	  // IE TP has broken Reflect.enumerate
+	  , buggyEnumerate = !($Reflect && $Reflect.enumerate && ITERATOR in $Reflect.enumerate({}));
+
+	function Enumerate(iterated){
+	  $.set(this, ITER, {o: iterated, k: undefined, i: 0});
+	}
+	$iter.create(Enumerate, 'Object', function(){
+	  var iter = this[ITER]
+	    , keys = iter.k
+	    , key;
+	  if(keys == undefined){
+	    iter.k = keys = [];
+	    for(key in iter.o)keys.push(key);
+	  }
+	  do {
+	    if(iter.i >= keys.length)return step(1);
+	  } while(!((key = keys[iter.i++]) in iter.o));
+	  return step(0, key);
+	});
+
+	var reflect = {
+	  // 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
+	  apply: function apply(target, thisArgument, argumentsList){
+	    return _apply.call(target, thisArgument, argumentsList);
+	  },
+	  // 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
+	  construct: function construct(target, argumentsList /*, newTarget*/){
+	    var proto    = assert.fn(arguments.length < 3 ? target : arguments[2]).prototype
+	      , instance = $.create(isObject(proto) ? proto : Object.prototype)
+	      , result   = _apply.call(target, instance, argumentsList);
+	    return isObject(result) ? result : instance;
+	  },
+	  // 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
+	  defineProperty: function defineProperty(target, propertyKey, attributes){
+	    assertObject(target);
+	    try {
+	      $.setDesc(target, propertyKey, attributes);
+	      return true;
+	    } catch(e){
+	      return false;
+	    }
+	  },
+	  // 26.1.4 Reflect.deleteProperty(target, propertyKey)
+	  deleteProperty: function deleteProperty(target, propertyKey){
+	    var desc = $.getDesc(assertObject(target), propertyKey);
+	    return desc && !desc.configurable ? false : delete target[propertyKey];
+	  },
+	  // 26.1.6 Reflect.get(target, propertyKey [, receiver])
+	  get: function get(target, propertyKey/*, receiver*/){
+	    var receiver = arguments.length < 3 ? target : arguments[2]
+	      , desc = $.getDesc(assertObject(target), propertyKey), proto;
+	    if(desc)return $.has(desc, 'value')
+	      ? desc.value
+	      : desc.get === undefined
+	        ? undefined
+	        : desc.get.call(receiver);
+	    return isObject(proto = getProto(target))
+	      ? get(proto, propertyKey, receiver)
+	      : undefined;
+	  },
+	  // 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
+	  getOwnPropertyDescriptor: function getOwnPropertyDescriptor(target, propertyKey){
+	    return $.getDesc(assertObject(target), propertyKey);
+	  },
+	  // 26.1.8 Reflect.getPrototypeOf(target)
+	  getPrototypeOf: function getPrototypeOf(target){
+	    return getProto(assertObject(target));
+	  },
+	  // 26.1.9 Reflect.has(target, propertyKey)
+	  has: function has(target, propertyKey){
+	    return propertyKey in target;
+	  },
+	  // 26.1.10 Reflect.isExtensible(target)
+	  isExtensible: function isExtensible(target){
+	    return _isExtensible(assertObject(target));
+	  },
+	  // 26.1.11 Reflect.ownKeys(target)
+	  ownKeys: __webpack_require__(232),
+	  // 26.1.12 Reflect.preventExtensions(target)
+	  preventExtensions: function preventExtensions(target){
+	    assertObject(target);
+	    try {
+	      _preventExtensions(target);
+	      return true;
+	    } catch(e){
+	      return false;
+	    }
+	  },
+	  // 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
+	  set: function set(target, propertyKey, V/*, receiver*/){
+	    var receiver = arguments.length < 4 ? target : arguments[3]
+	      , ownDesc  = $.getDesc(assertObject(target), propertyKey)
+	      , existingDescriptor, proto;
+	    if(!ownDesc){
+	      if(isObject(proto = getProto(target))){
+	        return set(proto, propertyKey, V, receiver);
+	      }
+	      ownDesc = $.desc(0);
+	    }
+	    if($.has(ownDesc, 'value')){
+	      if(ownDesc.writable === false || !isObject(receiver))return false;
+	      existingDescriptor = $.getDesc(receiver, propertyKey) || $.desc(0);
+	      existingDescriptor.value = V;
+	      $.setDesc(receiver, propertyKey, existingDescriptor);
+	      return true;
+	    }
+	    return ownDesc.set === undefined ? false : (ownDesc.set.call(receiver, V), true);
+	  }
+	};
+	// 26.1.14 Reflect.setPrototypeOf(target, proto)
+	if(setProto)reflect.setPrototypeOf = function setPrototypeOf(target, proto){
+	  setProto.check(target, proto);
+	  try {
+	    setProto.set(target, proto);
+	    return true;
+	  } catch(e){
+	    return false;
+	  }
+	};
+
+	$def($def.G, {Reflect: {}});
+
+	$def($def.S + $def.F * buggyEnumerate, 'Reflect', {
+	  // 26.1.5 Reflect.enumerate(target)
+	  enumerate: function enumerate(target){
+	    return new Enumerate(assertObject(target));
+	  }
+	});
+
+	$def($def.S, 'Reflect', reflect);
+
+/***/ },
+/* 172 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// https://github.com/domenic/Array.prototype.includes
+	var $def      = __webpack_require__(205)
+	  , $includes = __webpack_require__(210)(true);
+	$def($def.P, 'Array', {
+	  includes: function includes(el /*, fromIndex = 0 */){
+	    return $includes(this, el, arguments[1]);
+	  }
+	});
+	__webpack_require__(222)('includes');
+
+/***/ },
+/* 173 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// https://github.com/mathiasbynens/String.prototype.at
+	'use strict';
+	var $def = __webpack_require__(205)
+	  , $at  = __webpack_require__(218)(true);
+	$def($def.P, 'String', {
+	  at: function at(pos){
+	    return $at(this, pos);
+	  }
+	});
+
+/***/ },
+/* 174 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $def = __webpack_require__(205)
+	  , $pad = __webpack_require__(233);
+	$def($def.P, 'String', {
+	  lpad: function lpad(n){
+	    return $pad(this, n, arguments[1], true);
+	  }
+	});
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $def = __webpack_require__(205)
+	  , $pad = __webpack_require__(233);
+	$def($def.P, 'String', {
+	  rpad: function rpad(n){
+	    return $pad(this, n, arguments[1], false);
+	  }
+	});
+
+/***/ },
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// https://gist.github.com/kangax/9698100
+	var $def = __webpack_require__(205);
+	$def($def.S, 'RegExp', {
+	  escape: __webpack_require__(211)(/([\\\-[\]{}()*+?.,^$|])/g, '\\$1', true)
+	});
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// https://gist.github.com/WebReflection/9353781
+	var $       = __webpack_require__(185)
+	  , $def    = __webpack_require__(205)
+	  , ownKeys = __webpack_require__(232);
+
+	$def($def.S, 'Object', {
+	  getOwnPropertyDescriptors: function getOwnPropertyDescriptors(object){
+	    var O      = $.toObject(object)
+	      , result = {};
+	    $.each.call(ownKeys(O), function(key){
+	      $.setDesc(result, key, $.desc(0, $.getDesc(O, key)));
+	    });
+	    return result;
+	  }
+	});
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// http://goo.gl/XkBrjD
+	var $    = __webpack_require__(185)
+	  , $def = __webpack_require__(205);
+	function createObjectToArray(isEntries){
+	  return function(object){
+	    var O      = $.toObject(object)
+	      , keys   = $.getKeys(O)
+	      , length = keys.length
+	      , i      = 0
+	      , result = Array(length)
+	      , key;
+	    if(isEntries)while(length > i)result[i] = [key = keys[i++], O[key]];
+	    else while(length > i)result[i] = O[keys[i++]];
+	    return result;
+	  };
+	}
+	$def($def.S, 'Object', {
+	  values:  createObjectToArray(false),
+	  entries: createObjectToArray(true)
+	});
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+	__webpack_require__(234)('Map');
+
+/***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+	__webpack_require__(234)('Set');
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// JavaScript 1.6 / Strawman array statics shim
+	var $       = __webpack_require__(185)
+	  , $def    = __webpack_require__(205)
+	  , $Array  = $.core.Array || Array
+	  , statics = {};
+	function setStatics(keys, length){
+	  $.each.call(keys.split(','), function(key){
+	    if(length == undefined && key in $Array)statics[key] = $Array[key];
+	    else if(key in [])statics[key] = __webpack_require__(223)(Function.call, [][key], length);
+	  });
+	}
+	setStatics('pop,reverse,shift,keys,values,entries', 1);
+	setStatics('indexOf,every,some,forEach,map,filter,find,findIndex,includes', 3);
+	setStatics('join,slice,concat,push,splice,unshift,sort,lastIndexOf,' +
+	           'reduce,reduceRight,copyWithin,fill,turn');
+	$def($def.S, 'Array', statics);
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// ie9- setTimeout & setInterval additional parameters fix
+	var $         = __webpack_require__(185)
+	  , $def      = __webpack_require__(205)
+	  , invoke    = __webpack_require__(206)
+	  , partial   = __webpack_require__(236)
+	  , navigator = $.g.navigator
+	  , MSIE      = !!navigator && /MSIE .\./.test(navigator.userAgent); // <- dirty ie9- check
+	function wrap(set){
+	  return MSIE ? function(fn, time /*, ...args */){
+	    return set(invoke(
+	      partial,
+	      [].slice.call(arguments, 2),
+	      $.isFunction(fn) ? fn : Function(fn)
+	    ), time);
+	  } : set;
+	}
+	$def($def.G + $def.B + $def.F * MSIE, {
+	  setTimeout:  wrap($.g.setTimeout),
+	  setInterval: wrap($.g.setInterval)
+	});
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $def  = __webpack_require__(205)
+	  , $task = __webpack_require__(228);
+	$def($def.G + $def.B, {
+	  setImmediate:   $task.set,
+	  clearImmediate: $task.clear
+	});
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(159);
+	var $           = __webpack_require__(185)
+	  , Iterators   = __webpack_require__(219).Iterators
+	  , ITERATOR    = __webpack_require__(216)('iterator')
+	  , ArrayValues = Iterators.Array
+	  , NodeList    = $.g.NodeList;
+	if($.FW && NodeList && !(ITERATOR in NodeList.prototype)){
+	  $.hide(NodeList.prototype, ITERATOR, ArrayValues);
+	}
+	Iterators.NodeList = ArrayValues;
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var global = typeof self != 'undefined' ? self : Function('return this')()
+	  , core   = {}
+	  , defineProperty = Object.defineProperty
+	  , hasOwnProperty = {}.hasOwnProperty
+	  , ceil  = Math.ceil
+	  , floor = Math.floor
+	  , max   = Math.max
+	  , min   = Math.min;
+	// The engine works fine with descriptors? Thank's IE8 for his funny defineProperty.
+	var DESC = !!function(){
+	  try {
+	    return defineProperty({}, 'a', {get: function(){ return 2; }}).a == 2;
+	  } catch(e){ /* empty */ }
+	}();
+	var hide = createDefiner(1);
+	// 7.1.4 ToInteger
+	function toInteger(it){
+	  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+	}
+	function desc(bitmap, value){
+	  return {
+	    enumerable  : !(bitmap & 1),
+	    configurable: !(bitmap & 2),
+	    writable    : !(bitmap & 4),
+	    value       : value
+	  };
+	}
+	function simpleSet(object, key, value){
+	  object[key] = value;
+	  return object;
+	}
+	function createDefiner(bitmap){
+	  return DESC ? function(object, key, value){
+	    return $.setDesc(object, key, desc(bitmap, value));
+	  } : simpleSet;
+	}
+
+	function isObject(it){
+	  return it !== null && (typeof it == 'object' || typeof it == 'function');
+	}
+	function isFunction(it){
+	  return typeof it == 'function';
+	}
+	function assertDefined(it){
+	  if(it == undefined)throw TypeError("Can't call method on  " + it);
+	  return it;
+	}
+
+	var $ = module.exports = __webpack_require__(235)({
+	  g: global,
+	  core: core,
+	  html: global.document && document.documentElement,
+	  // http://jsperf.com/core-js-isobject
+	  isObject:   isObject,
+	  isFunction: isFunction,
+	  it: function(it){
+	    return it;
+	  },
+	  that: function(){
+	    return this;
+	  },
+	  // 7.1.4 ToInteger
+	  toInteger: toInteger,
+	  // 7.1.15 ToLength
+	  toLength: function(it){
+	    return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
+	  },
+	  toIndex: function(index, length){
+	    index = toInteger(index);
+	    return index < 0 ? max(index + length, 0) : min(index, length);
+	  },
+	  has: function(it, key){
+	    return hasOwnProperty.call(it, key);
+	  },
+	  create:     Object.create,
+	  getProto:   Object.getPrototypeOf,
+	  DESC:       DESC,
+	  desc:       desc,
+	  getDesc:    Object.getOwnPropertyDescriptor,
+	  setDesc:    defineProperty,
+	  setDescs:   Object.defineProperties,
+	  getKeys:    Object.keys,
+	  getNames:   Object.getOwnPropertyNames,
+	  getSymbols: Object.getOwnPropertySymbols,
+	  assertDefined: assertDefined,
+	  // Dummy, fix for not array-like ES3 string in es5 module
+	  ES5Object: Object,
+	  toObject: function(it){
+	    return $.ES5Object(assertDefined(it));
+	  },
+	  hide: hide,
+	  def: createDefiner(0),
+	  set: global.Symbol ? simpleSet : hide,
+	  mix: function(target, src){
+	    for(var key in src)hide(target, key, src[key]);
+	    return target;
+	  },
+	  each: [].forEach
+	});
+	/* eslint-disable no-undef */
+	if(typeof __e != 'undefined')__e = core;
+	if(typeof __g != 'undefined')__g = global;
+
+/***/ },
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18606,7 +21148,7 @@
 
 
 /***/ },
-/* 134 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18623,7 +21165,7 @@
 
 	"use strict";
 
-	var camelize = __webpack_require__(150);
+	var camelize = __webpack_require__(237);
 
 	var msPattern = /^-ms-/;
 
@@ -18652,7 +21194,7 @@
 
 
 /***/ },
-/* 135 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18669,7 +21211,7 @@
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(133);
+	var CSSProperty = __webpack_require__(186);
 
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
 
@@ -18714,7 +21256,7 @@
 
 
 /***/ },
-/* 136 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18731,7 +21273,7 @@
 
 	"use strict";
 
-	var hyphenate = __webpack_require__(151);
+	var hyphenate = __webpack_require__(238);
 
 	var msPattern = /^ms-/;
 
@@ -18759,7 +21301,7 @@
 
 
 /***/ },
-/* 137 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18796,7 +21338,7 @@
 
 
 /***/ },
-/* 138 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18812,7 +21354,7 @@
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(38);
+	var keyMirror = __webpack_require__(40);
 
 	/**
 	 * When a component's children are updated, a series of update configuration
@@ -18833,7 +21375,7 @@
 
 
 /***/ },
-/* 139 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18850,11 +21392,11 @@
 
 	'use strict';
 
-	var ReactReconciler = __webpack_require__(19);
+	var ReactReconciler = __webpack_require__(22);
 
-	var flattenChildren = __webpack_require__(152);
-	var instantiateReactComponent = __webpack_require__(83);
-	var shouldUpdateReactComponent = __webpack_require__(85);
+	var flattenChildren = __webpack_require__(239);
+	var instantiateReactComponent = __webpack_require__(85);
+	var shouldUpdateReactComponent = __webpack_require__(87);
 
 	/**
 	 * ReactChildReconciler provides helpers for initializing or updating a set of
@@ -18964,10 +21506,10 @@
 
 
 /***/ },
-/* 140 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -18980,7 +21522,7 @@
 
 	'use strict';
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 *
@@ -18997,7 +21539,7 @@
 	 */
 
 	function accumulateInto(current, next) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    next != null,
 	    'accumulateInto(...): Accumulated items must not be null or undefined.'
 	  ) : invariant(next != null));
@@ -19030,10 +21572,9 @@
 
 	module.exports = accumulateInto;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 141 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19068,7 +21609,7 @@
 
 
 /***/ },
-/* 142 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19084,7 +21625,7 @@
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(24);
+	var ExecutionEnvironment = __webpack_require__(27);
 
 	var contentKey = null;
 
@@ -19109,7 +21650,7 @@
 
 
 /***/ },
-/* 143 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19160,7 +21701,7 @@
 
 
 /***/ },
-/* 144 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19193,10 +21734,10 @@
 
 
 /***/ },
-/* 145 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -19212,12 +21753,12 @@
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(24);
+	var ExecutionEnvironment = __webpack_require__(27);
 
-	var createNodesFromMarkup = __webpack_require__(153);
-	var emptyFunction = __webpack_require__(86);
-	var getMarkupWrap = __webpack_require__(154);
-	var invariant = __webpack_require__(27);
+	var createNodesFromMarkup = __webpack_require__(240);
+	var emptyFunction = __webpack_require__(88);
+	var getMarkupWrap = __webpack_require__(241);
+	var invariant = __webpack_require__(29);
 
 	var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
 	var RESULT_INDEX_ATTR = 'data-danger-index';
@@ -19249,7 +21790,7 @@
 	   * @internal
 	   */
 	  dangerouslyRenderMarkup: function(markupList) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      ExecutionEnvironment.canUseDOM,
 	      'dangerouslyRenderMarkup(...): Cannot render markup in a worker ' +
 	      'thread. Make sure `window` and `document` are available globally ' +
@@ -19260,7 +21801,7 @@
 	    var markupByNodeName = {};
 	    // Group markup by `nodeName` if a wrap is necessary, else by '*'.
 	    for (var i = 0; i < markupList.length; i++) {
-	      ("production" !== process.env.NODE_ENV ? invariant(
+	      ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	        markupList[i],
 	        'dangerouslyRenderMarkup(...): Missing markup.'
 	      ) : invariant(markupList[i]));
@@ -19310,7 +21851,7 @@
 	          resultIndex = +renderNode.getAttribute(RESULT_INDEX_ATTR);
 	          renderNode.removeAttribute(RESULT_INDEX_ATTR);
 
-	          ("production" !== process.env.NODE_ENV ? invariant(
+	          ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	            !resultList.hasOwnProperty(resultIndex),
 	            'Danger: Assigning to an already-occupied result index.'
 	          ) : invariant(!resultList.hasOwnProperty(resultIndex)));
@@ -19321,7 +21862,7 @@
 	          // we're done.
 	          resultListAssignmentCount += 1;
 
-	        } else if ("production" !== process.env.NODE_ENV) {
+	        } else if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
 	          console.error(
 	            'Danger: Discarding unexpected node:',
 	            renderNode
@@ -19332,12 +21873,12 @@
 
 	    // Although resultList was populated out of order, it should now be a dense
 	    // array.
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      resultListAssignmentCount === resultList.length,
 	      'Danger: Did not assign to every index of resultList.'
 	    ) : invariant(resultListAssignmentCount === resultList.length));
 
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      resultList.length === markupList.length,
 	      'Danger: Expected markup to render %s nodes, but rendered %s.',
 	      markupList.length,
@@ -19356,15 +21897,15 @@
 	   * @internal
 	   */
 	  dangerouslyReplaceNodeWithMarkup: function(oldChild, markup) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      ExecutionEnvironment.canUseDOM,
 	      'dangerouslyReplaceNodeWithMarkup(...): Cannot render markup in a ' +
 	      'worker thread. Make sure `window` and `document` are available ' +
 	      'globally before requiring React when unit testing or use ' +
 	      'React.renderToString for server rendering.'
 	    ) : invariant(ExecutionEnvironment.canUseDOM));
-	    ("production" !== process.env.NODE_ENV ? invariant(markup, 'dangerouslyReplaceNodeWithMarkup(...): Missing markup.') : invariant(markup));
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(markup, 'dangerouslyReplaceNodeWithMarkup(...): Missing markup.') : invariant(markup));
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      oldChild.tagName.toLowerCase() !== 'html',
 	      'dangerouslyReplaceNodeWithMarkup(...): Cannot replace markup of the ' +
 	      '<html> node. This is because browser quirks make this unreliable ' +
@@ -19380,10 +21921,9 @@
 
 	module.exports = Danger;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 146 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19399,9 +21939,9 @@
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(24);
-	var escapeTextContentForBrowser = __webpack_require__(47);
-	var setInnerHTML = __webpack_require__(84);
+	var ExecutionEnvironment = __webpack_require__(27);
+	var escapeTextContentForBrowser = __webpack_require__(49);
+	var setInnerHTML = __webpack_require__(86);
 
 	/**
 	 * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -19429,7 +21969,7 @@
 
 
 /***/ },
-/* 147 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19445,10 +21985,10 @@
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(24);
+	var ExecutionEnvironment = __webpack_require__(27);
 
-	var getNodeForCharacterOffset = __webpack_require__(155);
-	var getTextContentAccessor = __webpack_require__(142);
+	var getNodeForCharacterOffset = __webpack_require__(242);
+	var getTextContentAccessor = __webpack_require__(195);
 
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -19646,7 +22186,7 @@
 
 
 /***/ },
-/* 148 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19663,7 +22203,7 @@
 
 	'use strict';
 
-	var getEventCharCode = __webpack_require__(123);
+	var getEventCharCode = __webpack_require__(127);
 
 	/**
 	 * Normalization of deprecated HTML5 `key` values
@@ -19755,7 +22295,7 @@
 
 
 /***/ },
-/* 149 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19772,7 +22312,7 @@
 
 	"use strict";
 
-	var ExecutionEnvironment = __webpack_require__(24);
+	var ExecutionEnvironment = __webpack_require__(27);
 
 	var performance;
 
@@ -19787,7 +22327,1093 @@
 
 
 /***/ },
-/* 150 */
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $        = __webpack_require__(185)
+	  , document = $.g.document
+	  , isObject = $.isObject
+	  // in old IE typeof document.createElement is 'object'
+	  , is = isObject(document) && isObject(document.createElement);
+	module.exports = function(it){
+	  return is ? document.createElement(it) : {};
+	};
+
+/***/ },
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $        = __webpack_require__(185)
+	  , TAG      = __webpack_require__(216)('toStringTag')
+	  , toString = {}.toString;
+	function cof(it){
+	  return toString.call(it).slice(8, -1);
+	}
+	cof.classof = function(it){
+	  var O, T;
+	  return it == undefined ? it === undefined ? 'Undefined' : 'Null'
+	    : typeof (T = (O = Object(it))[TAG]) == 'string' ? T : cof(O);
+	};
+	cof.set = function(it, tag, stat){
+	  if(it && !$.has(it = stat ? it : it.prototype, TAG))$.hide(it, TAG, tag);
+	};
+	module.exports = cof;
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $          = __webpack_require__(185)
+	  , global     = $.g
+	  , core       = $.core
+	  , isFunction = $.isFunction;
+	function ctx(fn, that){
+	  return function(){
+	    return fn.apply(that, arguments);
+	  };
+	}
+	global.core = core;
+	// type bitmap
+	$def.F = 1;  // forced
+	$def.G = 2;  // global
+	$def.S = 4;  // static
+	$def.P = 8;  // proto
+	$def.B = 16; // bind
+	$def.W = 32; // wrap
+	function $def(type, name, source){
+	  var key, own, out, exp
+	    , isGlobal = type & $def.G
+	    , target   = isGlobal ? global : type & $def.S
+	        ? global[name] : (global[name] || {}).prototype
+	    , exports  = isGlobal ? core : core[name] || (core[name] = {});
+	  if(isGlobal)source = name;
+	  for(key in source){
+	    // contains in native
+	    own = !(type & $def.F) && target && key in target;
+	    // export native or passed
+	    out = (own ? target : source)[key];
+	    // bind timers to global for call from export context
+	    if(type & $def.B && own)exp = ctx(out, global);
+	    else exp = type & $def.P && isFunction(out) ? ctx(Function.call, out) : out;
+	    // extend global
+	    if(target && !own){
+	      if(isGlobal)target[key] = out;
+	      else delete target[key] && $.hide(target, key, out);
+	    }
+	    // export
+	    if(exports[key] != out)$.hide(exports, key, exp);
+	  }
+	}
+	module.exports = $def;
+
+/***/ },
+/* 206 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Fast apply
+	// http://jsperf.lnkit.com/fast-apply/5
+	module.exports = function(fn, args, that){
+	  var un = that === undefined;
+	  switch(args.length){
+	    case 0: return un ? fn()
+	                      : fn.call(that);
+	    case 1: return un ? fn(args[0])
+	                      : fn.call(that, args[0]);
+	    case 2: return un ? fn(args[0], args[1])
+	                      : fn.call(that, args[0], args[1]);
+	    case 3: return un ? fn(args[0], args[1], args[2])
+	                      : fn.call(that, args[0], args[1], args[2]);
+	    case 4: return un ? fn(args[0], args[1], args[2], args[3])
+	                      : fn.call(that, args[0], args[1], args[2], args[3]);
+	    case 5: return un ? fn(args[0], args[1], args[2], args[3], args[4])
+	                      : fn.call(that, args[0], args[1], args[2], args[3], args[4]);
+	  } return              fn.apply(that, args);
+	};
+
+/***/ },
+/* 207 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 0 -> Array#forEach
+	// 1 -> Array#map
+	// 2 -> Array#filter
+	// 3 -> Array#some
+	// 4 -> Array#every
+	// 5 -> Array#find
+	// 6 -> Array#findIndex
+	var $   = __webpack_require__(185)
+	  , ctx = __webpack_require__(223);
+	module.exports = function(TYPE){
+	  var IS_MAP        = TYPE == 1
+	    , IS_FILTER     = TYPE == 2
+	    , IS_SOME       = TYPE == 3
+	    , IS_EVERY      = TYPE == 4
+	    , IS_FIND_INDEX = TYPE == 6
+	    , NO_HOLES      = TYPE == 5 || IS_FIND_INDEX;
+	  return function($this, callbackfn, that){
+	    var O      = Object($.assertDefined($this))
+	      , self   = $.ES5Object(O)
+	      , f      = ctx(callbackfn, that, 3)
+	      , length = $.toLength(self.length)
+	      , index  = 0
+	      , result = IS_MAP ? Array(length) : IS_FILTER ? [] : undefined
+	      , val, res;
+	    for(;length > index; index++)if(NO_HOLES || index in self){
+	      val = self[index];
+	      res = f(val, index, O);
+	      if(TYPE){
+	        if(IS_MAP)result[index] = res;            // map
+	        else if(res)switch(TYPE){
+	          case 3: return true;                    // some
+	          case 5: return val;                     // find
+	          case 6: return index;                   // findIndex
+	          case 2: result.push(val);               // filter
+	        } else if(IS_EVERY)return false;          // every
+	      }
+	    }
+	    return IS_FIND_INDEX ? -1 : IS_SOME || IS_EVERY ? IS_EVERY : result;
+	  };
+	};
+
+/***/ },
+/* 208 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var sid = 0;
+	function uid(key){
+	  return 'Symbol(' + key + ')_' + (++sid + Math.random()).toString(36);
+	}
+	uid.safe = __webpack_require__(185).g.Symbol || uid;
+	module.exports = uid;
+
+/***/ },
+/* 209 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(185);
+	function assert(condition, msg1, msg2){
+	  if(!condition)throw TypeError(msg2 ? msg1 + msg2 : msg1);
+	}
+	assert.def = $.assertDefined;
+	assert.fn = function(it){
+	  if(!$.isFunction(it))throw TypeError(it + ' is not a function!');
+	  return it;
+	};
+	assert.obj = function(it){
+	  if(!$.isObject(it))throw TypeError(it + ' is not an object!');
+	  return it;
+	};
+	assert.inst = function(it, Constructor, name){
+	  if(!(it instanceof Constructor))throw TypeError(name + ": use the 'new' operator!");
+	  return it;
+	};
+	module.exports = assert;
+
+/***/ },
+/* 210 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// false -> Array#indexOf
+	// true  -> Array#includes
+	var $ = __webpack_require__(185);
+	module.exports = function(IS_INCLUDES){
+	  return function($this, el, fromIndex){
+	    var O      = $.toObject($this)
+	      , length = $.toLength(O.length)
+	      , index  = $.toIndex(fromIndex, length)
+	      , value;
+	    if(IS_INCLUDES && el != el)while(length > index){
+	      value = O[index++];
+	      if(value != value)return true;
+	    } else for(;length > index; index++)if(IS_INCLUDES || index in O){
+	      if(O[index] === el)return IS_INCLUDES || index;
+	    } return !IS_INCLUDES && -1;
+	  };
+	};
+
+/***/ },
+/* 211 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	module.exports = function(regExp, replace, isStatic){
+	  var replacer = replace === Object(replace) ? function(part){
+	    return replace[part];
+	  } : replace;
+	  return function(it){
+	    return String(isStatic ? it : this).replace(regExp, replacer);
+	  };
+	};
+
+/***/ },
+/* 212 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(exec){
+	  try {
+	    exec();
+	    return false;
+	  } catch(e){
+	    return true;
+	  }
+	};
+
+/***/ },
+/* 213 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Works with __proto__ only. Old v8 can't work with null proto objects.
+	/* eslint-disable no-proto */
+	var $      = __webpack_require__(185)
+	  , assert = __webpack_require__(209);
+	function check(O, proto){
+	  assert.obj(O);
+	  assert(proto === null || $.isObject(proto), proto, ": can't set as prototype!");
+	}
+	module.exports = {
+	  set: Object.setPrototypeOf || ('__proto__' in {} // eslint-disable-line
+	    ? function(buggy, set){
+	        try {
+	          set = __webpack_require__(223)(Function.call, $.getDesc(Object.prototype, '__proto__').set, 2);
+	          set({}, []);
+	        } catch(e){ buggy = true; }
+	        return function setPrototypeOf(O, proto){
+	          check(O, proto);
+	          if(buggy)O.__proto__ = proto;
+	          else set(O, proto);
+	          return O;
+	        };
+	      }()
+	    : undefined),
+	  check: check
+	};
+
+/***/ },
+/* 214 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(185);
+	module.exports = function(object, el){
+	  var O      = $.toObject(object)
+	    , keys   = $.getKeys(O)
+	    , length = keys.length
+	    , index  = 0
+	    , key;
+	  while(length > index)if(O[key = keys[index++]] === el)return key;
+	};
+
+/***/ },
+/* 215 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(185);
+	module.exports = function(it){
+	  var keys       = $.getKeys(it)
+	    , getDesc    = $.getDesc
+	    , getSymbols = $.getSymbols;
+	  if(getSymbols)$.each.call(getSymbols(it), function(key){
+	    if(getDesc(it, key).enumerable)keys.push(key);
+	  });
+	  return keys;
+	};
+
+/***/ },
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global = __webpack_require__(185).g
+	  , store  = {};
+	module.exports = function(name){
+	  return store[name] || (store[name] =
+	    global.Symbol && global.Symbol[name] || __webpack_require__(208).safe('Symbol.' + name));
+	};
+
+/***/ },
+/* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $        = __webpack_require__(185)
+	  , enumKeys = __webpack_require__(215);
+	// 19.1.2.1 Object.assign(target, source, ...)
+	/* eslint-disable no-unused-vars */
+	module.exports = Object.assign || function assign(target, source){
+	/* eslint-enable no-unused-vars */
+	  var T = Object($.assertDefined(target))
+	    , l = arguments.length
+	    , i = 1;
+	  while(l > i){
+	    var S      = $.ES5Object(arguments[i++])
+	      , keys   = enumKeys(S)
+	      , length = keys.length
+	      , j      = 0
+	      , key;
+	    while(length > j)T[key = keys[j++]] = S[key];
+	  }
+	  return T;
+	};
+
+/***/ },
+/* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// true  -> String#at
+	// false -> String#codePointAt
+	var $ = __webpack_require__(185);
+	module.exports = function(TO_STRING){
+	  return function(that, pos){
+	    var s = String($.assertDefined(that))
+	      , i = $.toInteger(pos)
+	      , l = s.length
+	      , a, b;
+	    if(i < 0 || i >= l)return TO_STRING ? '' : undefined;
+	    a = s.charCodeAt(i);
+	    return a < 0xd800 || a > 0xdbff || i + 1 === l
+	      || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
+	        ? TO_STRING ? s.charAt(i) : a
+	        : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
+	  };
+	};
+
+/***/ },
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $                 = __webpack_require__(185)
+	  , cof               = __webpack_require__(204)
+	  , assertObject      = __webpack_require__(209).obj
+	  , SYMBOL_ITERATOR   = __webpack_require__(216)('iterator')
+	  , FF_ITERATOR       = '@@iterator'
+	  , Iterators         = {}
+	  , IteratorPrototype = {};
+	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
+	setIterator(IteratorPrototype, $.that);
+	function setIterator(O, value){
+	  $.hide(O, SYMBOL_ITERATOR, value);
+	  // Add iterator for FF iterator protocol
+	  if(FF_ITERATOR in [])$.hide(O, FF_ITERATOR, value);
+	}
+
+	module.exports = {
+	  // Safari has buggy iterators w/o `next`
+	  BUGGY: 'keys' in [] && !('next' in [].keys()),
+	  Iterators: Iterators,
+	  step: function(done, value){
+	    return {value: value, done: !!done};
+	  },
+	  is: function(it){
+	    var O      = Object(it)
+	      , Symbol = $.g.Symbol
+	      , SYM    = Symbol && Symbol.iterator || FF_ITERATOR;
+	    return SYM in O || SYMBOL_ITERATOR in O || $.has(Iterators, cof.classof(O));
+	  },
+	  get: function(it){
+	    var Symbol  = $.g.Symbol
+	      , ext     = it[Symbol && Symbol.iterator || FF_ITERATOR]
+	      , getIter = ext || it[SYMBOL_ITERATOR] || Iterators[cof.classof(it)];
+	    return assertObject(getIter.call(it));
+	  },
+	  set: setIterator,
+	  create: function(Constructor, NAME, next, proto){
+	    Constructor.prototype = $.create(proto || IteratorPrototype, {next: $.desc(1, next)});
+	    cof.set(Constructor, NAME + ' Iterator');
+	  }
+	};
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $def            = __webpack_require__(205)
+	  , $               = __webpack_require__(185)
+	  , cof             = __webpack_require__(204)
+	  , $iter           = __webpack_require__(219)
+	  , SYMBOL_ITERATOR = __webpack_require__(216)('iterator')
+	  , FF_ITERATOR     = '@@iterator'
+	  , KEYS            = 'keys'
+	  , VALUES          = 'values'
+	  , Iterators       = $iter.Iterators;
+	module.exports = function(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE){
+	  $iter.create(Constructor, NAME, next);
+	  function createMethod(kind){
+	    function $$(that){
+	      return new Constructor(that, kind);
+	    }
+	    switch(kind){
+	      case KEYS: return function keys(){ return $$(this); };
+	      case VALUES: return function values(){ return $$(this); };
+	    } return function entries(){ return $$(this); };
+	  }
+	  var TAG      = NAME + ' Iterator'
+	    , proto    = Base.prototype
+	    , _native  = proto[SYMBOL_ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT]
+	    , _default = _native || createMethod(DEFAULT)
+	    , methods, key;
+	  // Fix native
+	  if(_native){
+	    var IteratorPrototype = $.getProto(_default.call(new Base));
+	    // Set @@toStringTag to native iterators
+	    cof.set(IteratorPrototype, TAG, true);
+	    // FF fix
+	    if($.FW && $.has(proto, FF_ITERATOR))$iter.set(IteratorPrototype, $.that);
+	  }
+	  // Define iterator
+	  if($.FW)$iter.set(proto, _default);
+	  // Plug for library
+	  Iterators[NAME] = _default;
+	  Iterators[TAG]  = $.that;
+	  if(DEFAULT){
+	    methods = {
+	      keys:    IS_SET            ? _default : createMethod(KEYS),
+	      values:  DEFAULT == VALUES ? _default : createMethod(VALUES),
+	      entries: DEFAULT != VALUES ? _default : createMethod('entries')
+	    };
+	    if(FORCE)for(key in methods){
+	      if(!(key in proto))$.hide(proto, key, methods[key]);
+	    } else $def($def.P + $def.F * $iter.BUGGY, NAME, methods);
+	  }
+	};
+
+/***/ },
+/* 221 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $ = __webpack_require__(185);
+
+	module.exports = function repeat(count){
+	  var str = String($.assertDefined(this))
+	    , res = ''
+	    , n   = $.toInteger(count);
+	  if(n < 0 || n == Infinity)throw RangeError("Count can't be negative");
+	  for(;n > 0; (n >>>= 1) && (str += str))if(n & 1)res += str;
+	  return res;
+	};
+
+/***/ },
+/* 222 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 22.1.3.31 Array.prototype[@@unscopables]
+	var $           = __webpack_require__(185)
+	  , UNSCOPABLES = __webpack_require__(216)('unscopables');
+	if($.FW && !(UNSCOPABLES in []))$.hide(Array.prototype, UNSCOPABLES, {});
+	module.exports = function(key){
+	  if($.FW)[][UNSCOPABLES][key] = true;
+	};
+
+/***/ },
+/* 223 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Optional / simple context binding
+	var assertFunction = __webpack_require__(209).fn;
+	module.exports = function(fn, that, length){
+	  assertFunction(fn);
+	  if(~length && that === undefined)return fn;
+	  switch(length){
+	    case 1: return function(a){
+	      return fn.call(that, a);
+	    };
+	    case 2: return function(a, b){
+	      return fn.call(that, a, b);
+	    };
+	    case 3: return function(a, b, c){
+	      return fn.call(that, a, b, c);
+	    };
+	  } return function(/* ...args */){
+	      return fn.apply(that, arguments);
+	    };
+	};
+
+/***/ },
+/* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var assertObject = __webpack_require__(209).obj;
+	function close(iterator){
+	  var ret = iterator['return'];
+	  if(ret !== undefined)assertObject(ret.call(iterator));
+	}
+	function call(iterator, fn, value, entries){
+	  try {
+	    return entries ? fn(assertObject(value)[0], value[1]) : fn(value);
+	  } catch(e){
+	    close(iterator);
+	    throw e;
+	  }
+	}
+	call.close = close;
+	module.exports = call;
+
+/***/ },
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var SYMBOL_ITERATOR = __webpack_require__(216)('iterator')
+	  , SAFE_CLOSING    = false;
+	try {
+	  var riter = [7][SYMBOL_ITERATOR]();
+	  riter['return'] = function(){ SAFE_CLOSING = true; };
+	  Array.from(riter, function(){ throw 2; });
+	} catch(e){ /* empty */ }
+	module.exports = function(exec){
+	  if(!SAFE_CLOSING)return false;
+	  var safe = false;
+	  try {
+	    var arr  = [7]
+	      , iter = arr[SYMBOL_ITERATOR]();
+	    iter.next = function(){ safe = true; };
+	    arr[SYMBOL_ITERATOR] = function(){ return iter; };
+	    exec(arr);
+	  } catch(e){ /* empty */ }
+	  return safe;
+	};
+
+/***/ },
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $       = __webpack_require__(185)
+	  , SPECIES = __webpack_require__(216)('species');
+	module.exports = function(C){
+	  if($.DESC && !(SPECIES in C))$.setDesc(C, SPECIES, {
+	    configurable: true,
+	    get: $.that
+	  });
+	};
+
+/***/ },
+/* 227 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var ctx  = __webpack_require__(223)
+	  , get  = __webpack_require__(219).get
+	  , call = __webpack_require__(224);
+	module.exports = function(iterable, entries, fn, that){
+	  var iterator = get(iterable)
+	    , f        = ctx(fn, that, entries ? 2 : 1)
+	    , step;
+	  while(!(step = iterator.next()).done){
+	    if(call(iterator, f, step.value, entries) === false){
+	      return call.close(iterator);
+	    }
+	  }
+	};
+
+/***/ },
+/* 228 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $      = __webpack_require__(185)
+	  , ctx    = __webpack_require__(223)
+	  , cof    = __webpack_require__(204)
+	  , invoke = __webpack_require__(206)
+	  , cel    = __webpack_require__(203)
+	  , global             = $.g
+	  , isFunction         = $.isFunction
+	  , html               = $.html
+	  , process            = global.process
+	  , setTask            = global.setImmediate
+	  , clearTask          = global.clearImmediate
+	  , postMessage        = global.postMessage
+	  , addEventListener   = global.addEventListener
+	  , MessageChannel     = global.MessageChannel
+	  , counter            = 0
+	  , queue              = {}
+	  , ONREADYSTATECHANGE = 'onreadystatechange'
+	  , defer, channel, port;
+	function run(){
+	  var id = +this;
+	  if($.has(queue, id)){
+	    var fn = queue[id];
+	    delete queue[id];
+	    fn();
+	  }
+	}
+	function listner(event){
+	  run.call(event.data);
+	}
+	// Node.js 0.9+ & IE10+ has setImmediate, otherwise:
+	if(!isFunction(setTask) || !isFunction(clearTask)){
+	  setTask = function(fn){
+	    var args = [], i = 1;
+	    while(arguments.length > i)args.push(arguments[i++]);
+	    queue[++counter] = function(){
+	      invoke(isFunction(fn) ? fn : Function(fn), args);
+	    };
+	    defer(counter);
+	    return counter;
+	  };
+	  clearTask = function(id){
+	    delete queue[id];
+	  };
+	  // Node.js 0.8-
+	  if(cof(process) == 'process'){
+	    defer = function(id){
+	      process.nextTick(ctx(run, id, 1));
+	    };
+	  // Modern browsers, skip implementation for WebWorkers
+	  // IE8 has postMessage, but it's sync & typeof its postMessage is object
+	  } else if(addEventListener && isFunction(postMessage) && !global.importScripts){
+	    defer = function(id){
+	      postMessage(id, '*');
+	    };
+	    addEventListener('message', listner, false);
+	  // WebWorkers
+	  } else if(isFunction(MessageChannel)){
+	    channel = new MessageChannel;
+	    port    = channel.port2;
+	    channel.port1.onmessage = listner;
+	    defer = ctx(port.postMessage, port, 1);
+	  // IE8-
+	  } else if(ONREADYSTATECHANGE in cel('script')){
+	    defer = function(id){
+	      html.appendChild(cel('script'))[ONREADYSTATECHANGE] = function(){
+	        html.removeChild(this);
+	        run.call(id);
+	      };
+	    };
+	  // Rest old browsers
+	  } else {
+	    defer = function(id){
+	      setTimeout(ctx(run, id, 1), 0);
+	    };
+	  }
+	}
+	module.exports = {
+	  set:   setTask,
+	  clear: clearTask
+	};
+
+/***/ },
+/* 229 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $        = __webpack_require__(185)
+	  , ctx      = __webpack_require__(223)
+	  , safe     = __webpack_require__(208).safe
+	  , assert   = __webpack_require__(209)
+	  , forOf    = __webpack_require__(227)
+	  , step     = __webpack_require__(219).step
+	  , has      = $.has
+	  , set      = $.set
+	  , isObject = $.isObject
+	  , hide     = $.hide
+	  , isFrozen = Object.isFrozen || $.core.Object.isFrozen
+	  , ID       = safe('id')
+	  , O1       = safe('O1')
+	  , LAST     = safe('last')
+	  , FIRST    = safe('first')
+	  , ITER     = safe('iter')
+	  , SIZE     = $.DESC ? safe('size') : 'size'
+	  , id       = 0;
+
+	function fastKey(it, create){
+	  // return primitive with prefix
+	  if(!isObject(it))return (typeof it == 'string' ? 'S' : 'P') + it;
+	  // can't set id to frozen object
+	  if(isFrozen(it))return 'F';
+	  if(!has(it, ID)){
+	    // not necessary to add id
+	    if(!create)return 'E';
+	    // add missing object id
+	    hide(it, ID, ++id);
+	  // return object id with prefix
+	  } return 'O' + it[ID];
+	}
+
+	function getEntry(that, key){
+	  // fast case
+	  var index = fastKey(key), entry;
+	  if(index != 'F')return that[O1][index];
+	  // frozen object case
+	  for(entry = that[FIRST]; entry; entry = entry.n){
+	    if(entry.k == key)return entry;
+	  }
+	}
+
+	module.exports = {
+	  getConstructor: function(NAME, IS_MAP, ADDER){
+	    function C(){
+	      var that     = assert.inst(this, C, NAME)
+	        , iterable = arguments[0];
+	      set(that, O1, $.create(null));
+	      set(that, SIZE, 0);
+	      set(that, LAST, undefined);
+	      set(that, FIRST, undefined);
+	      if(iterable != undefined)forOf(iterable, IS_MAP, that[ADDER], that);
+	    }
+	    $.mix(C.prototype, {
+	      // 23.1.3.1 Map.prototype.clear()
+	      // 23.2.3.2 Set.prototype.clear()
+	      clear: function clear(){
+	        for(var that = this, data = that[O1], entry = that[FIRST]; entry; entry = entry.n){
+	          entry.r = true;
+	          if(entry.p)entry.p = entry.p.n = undefined;
+	          delete data[entry.i];
+	        }
+	        that[FIRST] = that[LAST] = undefined;
+	        that[SIZE] = 0;
+	      },
+	      // 23.1.3.3 Map.prototype.delete(key)
+	      // 23.2.3.4 Set.prototype.delete(value)
+	      'delete': function(key){
+	        var that  = this
+	          , entry = getEntry(that, key);
+	        if(entry){
+	          var next = entry.n
+	            , prev = entry.p;
+	          delete that[O1][entry.i];
+	          entry.r = true;
+	          if(prev)prev.n = next;
+	          if(next)next.p = prev;
+	          if(that[FIRST] == entry)that[FIRST] = next;
+	          if(that[LAST] == entry)that[LAST] = prev;
+	          that[SIZE]--;
+	        } return !!entry;
+	      },
+	      // 23.2.3.6 Set.prototype.forEach(callbackfn, thisArg = undefined)
+	      // 23.1.3.5 Map.prototype.forEach(callbackfn, thisArg = undefined)
+	      forEach: function forEach(callbackfn /*, that = undefined */){
+	        var f = ctx(callbackfn, arguments[1], 3)
+	          , entry;
+	        while(entry = entry ? entry.n : this[FIRST]){
+	          f(entry.v, entry.k, this);
+	          // revert to the last existing entry
+	          while(entry && entry.r)entry = entry.p;
+	        }
+	      },
+	      // 23.1.3.7 Map.prototype.has(key)
+	      // 23.2.3.7 Set.prototype.has(value)
+	      has: function has(key){
+	        return !!getEntry(this, key);
+	      }
+	    });
+	    if($.DESC)$.setDesc(C.prototype, 'size', {
+	      get: function(){
+	        return assert.def(this[SIZE]);
+	      }
+	    });
+	    return C;
+	  },
+	  def: function(that, key, value){
+	    var entry = getEntry(that, key)
+	      , prev, index;
+	    // change existing entry
+	    if(entry){
+	      entry.v = value;
+	    // create new entry
+	    } else {
+	      that[LAST] = entry = {
+	        i: index = fastKey(key, true), // <- index
+	        k: key,                        // <- key
+	        v: value,                      // <- value
+	        p: prev = that[LAST],          // <- previous entry
+	        n: undefined,                  // <- next entry
+	        r: false                       // <- removed
+	      };
+	      if(!that[FIRST])that[FIRST] = entry;
+	      if(prev)prev.n = entry;
+	      that[SIZE]++;
+	      // add to index
+	      if(index != 'F')that[O1][index] = entry;
+	    } return that;
+	  },
+	  getEntry: getEntry,
+	  // add .keys, .values, .entries, [@@iterator]
+	  // 23.1.3.4, 23.1.3.8, 23.1.3.11, 23.1.3.12, 23.2.3.5, 23.2.3.8, 23.2.3.10, 23.2.3.11
+	  setIter: function(C, NAME, IS_MAP){
+	    __webpack_require__(220)(C, NAME, function(iterated, kind){
+	      set(this, ITER, {o: iterated, k: kind});
+	    }, function(){
+	      var iter  = this[ITER]
+	        , kind  = iter.k
+	        , entry = iter.l;
+	      // revert to the last existing entry
+	      while(entry && entry.r)entry = entry.p;
+	      // get next entry
+	      if(!iter.o || !(iter.l = entry = entry ? entry.n : iter.o[FIRST])){
+	        // or finish the iteration
+	        iter.o = undefined;
+	        return step(1);
+	      }
+	      // return step by kind
+	      if(kind == 'keys'  )return step(0, entry.k);
+	      if(kind == 'values')return step(0, entry.v);
+	      return step(0, [entry.k, entry.v]);
+	    }, IS_MAP ? 'entries' : 'values' , !IS_MAP, true);
+	  }
+	};
+
+/***/ },
+/* 230 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $     = __webpack_require__(185)
+	  , $def  = __webpack_require__(205)
+	  , BUGGY = __webpack_require__(219).BUGGY
+	  , forOf = __webpack_require__(227)
+	  , species = __webpack_require__(226)
+	  , assertInstance = __webpack_require__(209).inst;
+
+	module.exports = function(NAME, methods, common, IS_MAP, IS_WEAK){
+	  var Base  = $.g[NAME]
+	    , C     = Base
+	    , ADDER = IS_MAP ? 'set' : 'add'
+	    , proto = C && C.prototype
+	    , O     = {};
+	  function fixMethod(KEY, CHAIN){
+	    var method = proto[KEY];
+	    if($.FW)proto[KEY] = function(a, b){
+	      var result = method.call(this, a === 0 ? 0 : a, b);
+	      return CHAIN ? this : result;
+	    };
+	  }
+	  if(!$.isFunction(C) || !(IS_WEAK || !BUGGY && proto.forEach && proto.entries)){
+	    // create collection constructor
+	    C = common.getConstructor(NAME, IS_MAP, ADDER);
+	    $.mix(C.prototype, methods);
+	  } else {
+	    var inst  = new C
+	      , chain = inst[ADDER](IS_WEAK ? {} : -0, 1)
+	      , buggyZero;
+	    // wrap for init collections from iterable
+	    if(!__webpack_require__(225)(function(iter){ new C(iter); })){ // eslint-disable-line no-new
+	      C = function(){
+	        assertInstance(this, C, NAME);
+	        var that     = new Base
+	          , iterable = arguments[0];
+	        if(iterable != undefined)forOf(iterable, IS_MAP, that[ADDER], that);
+	        return that;
+	      };
+	      C.prototype = proto;
+	      if($.FW)proto.constructor = C;
+	    }
+	    IS_WEAK || inst.forEach(function(val, key){
+	      buggyZero = 1 / key === -Infinity;
+	    });
+	    // fix converting -0 key to +0
+	    if(buggyZero){
+	      fixMethod('delete');
+	      fixMethod('has');
+	      IS_MAP && fixMethod('get');
+	    }
+	    // + fix .add & .set for chaining
+	    if(buggyZero || chain !== inst)fixMethod(ADDER, true);
+	  }
+
+	  __webpack_require__(204).set(C, NAME);
+
+	  O[NAME] = C;
+	  $def($def.G + $def.W + $def.F * (C != Base), O);
+	  species(C);
+	  species($.core[NAME]); // for wrapper
+
+	  if(!IS_WEAK)common.setIter(C, NAME, IS_MAP);
+
+	  return C;
+	};
+
+/***/ },
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $         = __webpack_require__(185)
+	  , safe      = __webpack_require__(208).safe
+	  , assert    = __webpack_require__(209)
+	  , forOf     = __webpack_require__(227)
+	  , _has      = $.has
+	  , isObject  = $.isObject
+	  , hide      = $.hide
+	  , isFrozen  = Object.isFrozen || $.core.Object.isFrozen
+	  , id        = 0
+	  , ID        = safe('id')
+	  , WEAK      = safe('weak')
+	  , LEAK      = safe('leak')
+	  , method    = __webpack_require__(207)
+	  , find      = method(5)
+	  , findIndex = method(6);
+	function findFrozen(store, key){
+	  return find(store.array, function(it){
+	    return it[0] === key;
+	  });
+	}
+	// fallback for frozen keys
+	function leakStore(that){
+	  return that[LEAK] || hide(that, LEAK, {
+	    array: [],
+	    get: function(key){
+	      var entry = findFrozen(this, key);
+	      if(entry)return entry[1];
+	    },
+	    has: function(key){
+	      return !!findFrozen(this, key);
+	    },
+	    set: function(key, value){
+	      var entry = findFrozen(this, key);
+	      if(entry)entry[1] = value;
+	      else this.array.push([key, value]);
+	    },
+	    'delete': function(key){
+	      var index = findIndex(this.array, function(it){
+	        return it[0] === key;
+	      });
+	      if(~index)this.array.splice(index, 1);
+	      return !!~index;
+	    }
+	  })[LEAK];
+	}
+
+	module.exports = {
+	  getConstructor: function(NAME, IS_MAP, ADDER){
+	    function C(){
+	      $.set(assert.inst(this, C, NAME), ID, id++);
+	      var iterable = arguments[0];
+	      if(iterable != undefined)forOf(iterable, IS_MAP, this[ADDER], this);
+	    }
+	    $.mix(C.prototype, {
+	      // 23.3.3.2 WeakMap.prototype.delete(key)
+	      // 23.4.3.3 WeakSet.prototype.delete(value)
+	      'delete': function(key){
+	        if(!isObject(key))return false;
+	        if(isFrozen(key))return leakStore(this)['delete'](key);
+	        return _has(key, WEAK) && _has(key[WEAK], this[ID]) && delete key[WEAK][this[ID]];
+	      },
+	      // 23.3.3.4 WeakMap.prototype.has(key)
+	      // 23.4.3.4 WeakSet.prototype.has(value)
+	      has: function has(key){
+	        if(!isObject(key))return false;
+	        if(isFrozen(key))return leakStore(this).has(key);
+	        return _has(key, WEAK) && _has(key[WEAK], this[ID]);
+	      }
+	    });
+	    return C;
+	  },
+	  def: function(that, key, value){
+	    if(isFrozen(assert.obj(key))){
+	      leakStore(that).set(key, value);
+	    } else {
+	      _has(key, WEAK) || hide(key, WEAK, {});
+	      key[WEAK][that[ID]] = value;
+	    } return that;
+	  },
+	  leakStore: leakStore,
+	  WEAK: WEAK,
+	  ID: ID
+	};
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $            = __webpack_require__(185)
+	  , assertObject = __webpack_require__(209).obj;
+	module.exports = function ownKeys(it){
+	  assertObject(it);
+	  var keys       = $.getNames(it)
+	    , getSymbols = $.getSymbols;
+	  return getSymbols ? keys.concat(getSymbols(it)) : keys;
+	};
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// http://wiki.ecmascript.org/doku.php?id=strawman:string_padding
+	var $      = __webpack_require__(185)
+	  , repeat = __webpack_require__(221);
+
+	module.exports = function(that, minLength, fillChar, left){
+	  // 1. Let O be CheckObjectCoercible(this value).
+	  // 2. Let S be ToString(O).
+	  var S = String($.assertDefined(that));
+	  // 4. If intMinLength is undefined, return S.
+	  if(minLength === undefined)return S;
+	  // 4. Let intMinLength be ToInteger(minLength).
+	  var intMinLength = $.toInteger(minLength);
+	  // 5. Let fillLen be the number of characters in S minus intMinLength.
+	  var fillLen = intMinLength - S.length;
+	  // 6. If fillLen < 0, then throw a RangeError exception.
+	  // 7. If fillLen is +∞, then throw a RangeError exception.
+	  if(fillLen < 0 || fillLen === Infinity){
+	    throw new RangeError('Cannot satisfy string length ' + minLength + ' for string: ' + S);
+	  }
+	  // 8. Let sFillStr be the string represented by fillStr.
+	  // 9. If sFillStr is undefined, let sFillStr be a space character.
+	  var sFillStr = fillChar === undefined ? ' ' : String(fillChar);
+	  // 10. Let sFillVal be a String made of sFillStr, repeated until fillLen is met.
+	  var sFillVal = repeat.call(sFillStr, Math.ceil(fillLen / sFillStr.length));
+	  // truncate if we overflowed
+	  if(sFillVal.length > fillLen)sFillVal = left
+	    ? sFillVal.slice(sFillVal.length - fillLen)
+	    : sFillVal.slice(0, fillLen);
+	  // 11. Return a string made from sFillVal, followed by S.
+	  // 11. Return a String made from S, followed by sFillVal.
+	  return left ? sFillVal.concat(S) : S.concat(sFillVal);
+	};
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+	var $def  = __webpack_require__(205)
+	  , forOf = __webpack_require__(227);
+	module.exports = function(NAME){
+	  $def($def.P, NAME, {
+	    toJSON: function toJSON(){
+	      var arr = [];
+	      forOf(this, false, arr.push, arr);
+	      return arr;
+	    }
+	  });
+	};
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function($){
+	  $.FW   = true;
+	  $.path = $.g;
+	  return $;
+	};
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $      = __webpack_require__(185)
+	  , invoke = __webpack_require__(206)
+	  , assertFunction = __webpack_require__(209).fn;
+	module.exports = function(/* ...pargs */){
+	  var fn     = assertFunction(this)
+	    , length = arguments.length
+	    , pargs  = Array(length)
+	    , i      = 0
+	    , _      = $.path._
+	    , holder = false;
+	  while(length > i)if((pargs[i] = arguments[i++]) === _)holder = true;
+	  return function(/* ...args */){
+	    var that    = this
+	      , _length = arguments.length
+	      , j = 0, k = 0, args;
+	    if(!holder && !_length)return invoke(fn, pargs, that);
+	    args = pargs.slice();
+	    if(holder)for(;length > j; j++)if(args[j] === _)args[j] = arguments[k++];
+	    while(_length > k)args.push(arguments[k++]);
+	    return invoke(fn, args, that);
+	  };
+	};
+
+/***/ },
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19823,7 +23449,7 @@
 
 
 /***/ },
-/* 151 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19860,10 +23486,10 @@
 
 
 /***/ },
-/* 152 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -19876,8 +23502,8 @@
 
 	'use strict';
 
-	var traverseAllChildren = __webpack_require__(30);
-	var warning = __webpack_require__(31);
+	var traverseAllChildren = __webpack_require__(32);
+	var warning = __webpack_require__(33);
 
 	/**
 	 * @param {function} traverseContext Context passed through traversal.
@@ -19888,8 +23514,8 @@
 	  // We found a component instance.
 	  var result = traverseContext;
 	  var keyUnique = !result.hasOwnProperty(name);
-	  if ("production" !== process.env.NODE_ENV) {
-	    ("production" !== process.env.NODE_ENV ? warning(
+	  if ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV) {
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? warning(
 	      keyUnique,
 	      'flattenChildren(...): Encountered two children with the same key, ' +
 	      '`%s`. Child keys must be unique; when two children share a key, only ' +
@@ -19918,13 +23544,12 @@
 
 	module.exports = flattenChildren;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 153 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -19938,11 +23563,11 @@
 
 	/*jslint evil: true, sub: true */
 
-	var ExecutionEnvironment = __webpack_require__(24);
+	var ExecutionEnvironment = __webpack_require__(27);
 
-	var createArrayFromMixed = __webpack_require__(156);
-	var getMarkupWrap = __webpack_require__(154);
-	var invariant = __webpack_require__(27);
+	var createArrayFromMixed = __webpack_require__(243);
+	var getMarkupWrap = __webpack_require__(241);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Dummy container used to render all markup.
@@ -19978,7 +23603,7 @@
 	 */
 	function createNodesFromMarkup(markup, handleScript) {
 	  var node = dummyNode;
-	  ("production" !== process.env.NODE_ENV ? invariant(!!dummyNode, 'createNodesFromMarkup dummy not initialized') : invariant(!!dummyNode));
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(!!dummyNode, 'createNodesFromMarkup dummy not initialized') : invariant(!!dummyNode));
 	  var nodeName = getNodeName(markup);
 
 	  var wrap = nodeName && getMarkupWrap(nodeName);
@@ -19995,7 +23620,7 @@
 
 	  var scripts = node.getElementsByTagName('script');
 	  if (scripts.length) {
-	    ("production" !== process.env.NODE_ENV ? invariant(
+	    ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	      handleScript,
 	      'createNodesFromMarkup(...): Unexpected <script> element rendered.'
 	    ) : invariant(handleScript));
@@ -20011,13 +23636,12 @@
 
 	module.exports = createNodesFromMarkup;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 154 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -20028,9 +23652,9 @@
 	 * @providesModule getMarkupWrap
 	 */
 
-	var ExecutionEnvironment = __webpack_require__(24);
+	var ExecutionEnvironment = __webpack_require__(27);
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Dummy container used to detect which wraps are necessary.
@@ -20113,7 +23737,7 @@
 	 * @return {?array} Markup wrap configuration, if applicable.
 	 */
 	function getMarkupWrap(nodeName) {
-	  ("production" !== process.env.NODE_ENV ? invariant(!!dummyNode, 'Markup wrapping node not initialized') : invariant(!!dummyNode));
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(!!dummyNode, 'Markup wrapping node not initialized') : invariant(!!dummyNode));
 	  if (!markupWrap.hasOwnProperty(nodeName)) {
 	    nodeName = '*';
 	  }
@@ -20131,10 +23755,9 @@
 
 	module.exports = getMarkupWrap;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ },
-/* 155 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20213,7 +23836,7 @@
 
 
 /***/ },
-/* 156 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20228,7 +23851,7 @@
 	 * @typechecks
 	 */
 
-	var toArray = __webpack_require__(157);
+	var toArray = __webpack_require__(244);
 
 	/**
 	 * Perform a heuristic test to determine if an object is "array-like".
@@ -20303,10 +23926,10 @@
 
 
 /***/ },
-/* 157 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2014-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -20318,7 +23941,7 @@
 	 * @typechecks
 	 */
 
-	var invariant = __webpack_require__(27);
+	var invariant = __webpack_require__(29);
 
 	/**
 	 * Convert array-like objects to arrays.
@@ -20334,19 +23957,19 @@
 
 	  // Some browse builtin objects can report typeof 'function' (e.g. NodeList in
 	  // old versions of Safari).
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    !Array.isArray(obj) &&
 	    (typeof obj === 'object' || typeof obj === 'function'),
 	    'toArray: Array-like object expected'
 	  ) : invariant(!Array.isArray(obj) &&
 	  (typeof obj === 'object' || typeof obj === 'function')));
 
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    typeof length === 'number',
 	    'toArray: Object needs a length property'
 	  ) : invariant(typeof length === 'number'));
 
-	  ("production" !== process.env.NODE_ENV ? invariant(
+	  ("production" !== ({"TERM_PROGRAM":"iTerm.app","TERM":"screen","SHELL":"/bin/bash","TMPDIR":"/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/","Apple_PubSub_Socket_Render":"/private/tmp/com.apple.launchd.GxH3XXHxOI/Render","USER":"ashafovaloff","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.wpdTb2qNVW/Listeners","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","TMUX":"/private/var/folders/n5/pthbb9x13c74tf9zgf_xzb5w0000gn/T/tmux-501/default,50229,0","PATH":"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin","PWD":"/Users/ashafovaloff/workspace/game","EDITOR":"vim","LANG":"en_US.UTF-8","ITERM_PROFILE":"Default","XPC_FLAGS":"0x0","TMUX_PANE":"%5","PS1":"\\W και ","XPC_SERVICE_NAME":"0","SHLVL":"2","HOME":"/Users/ashafovaloff","COLORFGBG":"7;0","ITERM_SESSION_ID":"w0t1p0","LOGNAME":"ashafovaloff","DISPLAY":"/private/tmp/com.apple.launchd.pXcPkGOdAI/org.macosforge.xquartz:0","_":"/usr/local/bin/webpack"}).NODE_ENV ? invariant(
 	    length === 0 ||
 	    (length - 1) in obj,
 	    'toArray: Object should have keys for indices'
@@ -20375,7 +23998,6 @@
 
 	module.exports = toArray;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
 
 /***/ }
 /******/ ]);
