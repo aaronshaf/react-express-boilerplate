@@ -1,0 +1,22 @@
+{
+  "name": "aaronshaf-react-express-boilerplate",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.3",
+    "react": "^0.13.2"
+  },
+  "devDependencies": {
+    "babel": "^5.2.16",
+    "babel-core": "^5.2.16",
+    "babel-loader": "^5.0.0",
+    "envify": "^3.4.0",
+    "format-message": "^2.4.0",
+    "transform": "^1.1.2",
+    "webpack": "^1.8.11"
+  }
+}
