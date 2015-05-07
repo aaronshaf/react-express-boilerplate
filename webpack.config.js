@@ -1,24 +1,21 @@
-const webpack = require('webpack')
+var webpack = require('webpack')
 
 module.exports = {
   entry: {
-    main: [
+    'public/main': [
 //      'babel/polyfill',
-      './app/main.js'
+      './client/main.js'
     ]
   },
   output: {
-    path: './dist',
-    publicPath: '/',
     filename: '[name].js'
   },
-  devtool: '#source-map',
   module: {
     loaders: [
-      { test: /\.css$/, loaders: [ 'file?name=[name].css', 'cssnext' ] },
-      { test: /\.js$/, exclude: /node_modules/, loaders: [ 'babel?stage=0', 'format-message' ] }
+      { test: /\.js$/, exclude: /node_modules/, loaders: [ 'babel?stage=1' ] }
     ]
   },
+/*
   plugins: [
     new webpack.DefinePlugin({
       "process.env": Object.keys(process.env).reduce(function(o, k) {
@@ -37,7 +34,6 @@ module.exports = {
       url: 'inline'
     }
   },
-/*
   formatMessage: {
     translations: require('./locales/en'),
     missingTranslation: 'ignore',
@@ -47,6 +43,5 @@ module.exports = {
     contentBase: 'dist/',
     host: 'localhost',
     inline: true
-  }
-*/
+  }*/
 }
